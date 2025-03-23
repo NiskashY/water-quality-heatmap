@@ -7,9 +7,9 @@
 ВАЖНО! для того чтобы драйвер завелся успешно - необходимо, чтобы путь до него был в переменной $PATH
 """
 
-from model.water_parameters import WaterParameters
-from model.geo import Point
-from bs4 import BeautifulSoup
+import time
+
+from model.water_parameters import Parameter, WaterParameters
 from typing import Optional
 
 from selenium import webdriver
@@ -18,6 +18,61 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
+
+
+def parse_float(text: str) -> float:
+    if "/" in text:
+        text = text.split("/")[0].strip()
+    if "-" in text:
+        text = text.split("-")[1].strip()  # берем максимум
+    if "<" in text:
+        text = text[1:]
+    return float(text.replace(",", "."))
+
+
+def parse_smell(td):
+    return Parameter(
+        name=td[0].find_elements(By.TAG_NAME, "span")[0].text,
+        units=td[1].text,
+        value=parse_float(td[2].text),  # has format 0/0
+        max_allowed_concentration=parse_float(td[3].text),
+    )
+
+
+def parse_taste(td):
+    return Parameter(
+        name=td[0].find_elements(By.TAG_NAME, "span")[0].text,
+        units=td[1].text,
+        value=parse_float(td[2].text),
+        max_allowed_concentration=parse_float(td[3].text),
+    )
+
+
+def parse_color(td):
+    return Parameter(
+        name=td[0].find_elements(By.TAG_NAME, "span")[0].text,
+        units=td[1].text,
+        value=parse_float(td[2].text),
+        max_allowed_concentration=parse_float(td[3].text),
+    )
+
+
+def parse_muddiness(td):
+    return Parameter(
+        name=td[0].find_elements(By.TAG_NAME, "span")[0].text,
+        units=td[1].text,
+        value=parse_float(td[2].text),
+        max_allowed_concentration=parse_float(td[3].text),
+    )
+
+
+def parse_general_mineralization(td):
+    return Parameter(
+        name=td[0].find_elements(By.TAG_NAME, "span")[0].text,
+        units=td[1].text,
+        value=parse_float(td[2].text),
+        max_allowed_concentration=parse_float(td[3].text),
+    )
 
 
 class Client:
@@ -52,8 +107,7 @@ class Client:
 
     def v1_request(self, address: str) -> Optional[WaterParameters]:
         chrome_options = Options()
-        chrome_options.add_argument("--headless=new")
-        chrome_options.headless = True
+        # chrome_options.add_argument("--headless=new")
         driver = webdriver.Chrome(options=chrome_options)
 
         try:
@@ -64,32 +118,24 @@ class Client:
             input_field.send_keys(Keys.RETURN)  # RETURN == ENTER
 
             print("start to wait")
-            wait = WebDriverWait(driver, 1)  # Wait up to 10 seconds
-            wait.until(EC.presence_of_element_located((By.ID, "info-params-0")))
-
+            table_name = "info-params-0"
+            wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
+            wait.until(EC.presence_of_element_located((By.ID, table_name)))
+            time.sleep(0.5)
             print("Successfully retrieved info from site")
-            results = driver.find_elements(By.ID, "info-params-0")[0]
-            rows = results.find_elements(By.TAG_NAME, "tr")
-            for row in rows:
-                cells = row.find_elements(By.TAG_NAME, "td")  # For data cells
+            results = driver.find_elements(By.ID, table_name)
+            info_params = results[0]
+            rows = info_params.find_elements(By.TAG_NAME, "tr")
 
-                # Combine headers and cells (if headers exist)
-                row_data = [cell.text for cell in cells[1:]]
-
-                # Print the row data as a tab-separated string
-                print("\t".join(row_data))
-            print(results)
+            return WaterParameters(
+                smell=parse_smell(rows[0].find_elements(By.TAG_NAME, "td")),
+                taste=parse_taste(rows[1].find_elements(By.TAG_NAME, "td")),
+                color=parse_color(rows[2].find_elements(By.TAG_NAME, "td")),
+                muddiness=parse_muddiness(rows[3].find_elements(By.TAG_NAME, "td")),
+                general_mineralization=parse_general_mineralization(
+                    rows[4].find_elements(By.TAG_NAME, "td")
+                ),
+            )
         finally:
             # Close the browser
             driver.quit()
-
-        # response = requests.get(self.__url, headers=self.__headers)
-        # print(response.status_code)
-        # if response.status_code == 200:
-        #     soup = BeautifulSoup(response.text, "html.parser")
-        #     headlines = soup.find(
-        #         "input",
-        #         {"id": "address-selector"},
-        #     )
-        #     print(headlines)
-        return None
