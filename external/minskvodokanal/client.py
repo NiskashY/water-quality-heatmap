@@ -19,6 +19,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
+import logging
+
 
 def parse_float(text: str) -> float:
     if "/" in text:
@@ -77,56 +79,37 @@ def parse_general_mineralization(td):
 
 class Client:
     __url: str = "https://minskvodokanal.by/water/home/"
-    __headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-    }
 
     """
     Создаем веб-сессию через библиотеку selenium.
-    Я использую Chrome, так как это самы популярный браузер (соответсвенно для него веб-драйвер найти легче всего)
-    
-    Set up the WebDriver (e.g., Chrome)
-    Replace with the path to your WebDriver if not in PATH
-    Open the target web page
-    Replace with the URL of your target page
-    
-    Locate the input field and fill it
-    Replace with the appropriate locator
-    Replace with the text you want to input
-    
-    Submit the form (if applicable)
-    Simulate pressing Enter
-    
-    Wait for the page to process the input and update
-    Wait up to 10 seconds
-    Replace with the appropriate locator
-    Parse the updated page content
-    Replace with the appropriate locator
-    Print the text of each result
+    Я использую Chrome, так как это самый популярный браузер 
+    (соответственно для него веб-драйвер найти легче всего)
     """
 
     def v1_request(self, address: str) -> Optional[WaterParameters]:
         chrome_options = Options()
-        # chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument("--headless=new")
         driver = webdriver.Chrome(options=chrome_options)
 
         try:
+            logging.info("Starting webdriver")
             driver.get(self.__url)
 
+            logging.info("Send address to site")
             input_field = driver.find_element(By.ID, "address-selector")
             input_field.send_keys(address)
             input_field.send_keys(Keys.RETURN)  # RETURN == ENTER
 
-            print("start to wait")
+            logging.info("Searching for info-params-0")
             table_name = "info-params-0"
             wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds
             wait.until(EC.presence_of_element_located((By.ID, table_name)))
             time.sleep(0.5)
-            print("Successfully retrieved info from site")
-            results = driver.find_elements(By.ID, table_name)
-            info_params = results[0]
+
+            info_params = driver.find_elements(By.ID, table_name)[0]
             rows = info_params.find_elements(By.TAG_NAME, "tr")
 
+            logging.info("Start parsing into WaterParameters")
             return WaterParameters(
                 smell=parse_smell(rows[0].find_elements(By.TAG_NAME, "td")),
                 taste=parse_taste(rows[1].find_elements(By.TAG_NAME, "td")),
@@ -137,5 +120,4 @@ class Client:
                 ),
             )
         finally:
-            # Close the browser
             driver.quit()
