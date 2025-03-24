@@ -1,0 +1,4 @@
+pg:
+  dbname: water_heatmap_db
+  username: water_heatmap_admin
+  password: repkep2018
