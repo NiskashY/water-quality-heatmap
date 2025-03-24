@@ -108,6 +108,8 @@ class Client:
 
             info_params = driver.find_elements(By.ID, table_name)[0]
             rows = info_params.find_elements(By.TAG_NAME, "tr")
+            if len(rows) == 0:
+                return None
 
             logging.info("Start parsing into WaterParameters")
             return WaterParameters(

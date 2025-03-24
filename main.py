@@ -5,5 +5,5 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 client = Client()
-response = client.v1_request("Леонида Звезды 42")
-print(response)
+print(client.v1_request("лвоалова"))
+print(client.v1_request("Леонида Звезды 42"))
