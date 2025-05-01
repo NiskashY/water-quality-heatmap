@@ -1,11 +1,11 @@
-from external.minskvodokanal.client import Client
+from external.minskvodokanal.client import Client as MinskVodokanalClient
 from external.pg.client import PgClient
 
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
-client = Client()
+client = MinskVodokanalClient()
 print(client.v1_request("Леонида Звезды 42"))
 
 pg_client = PgClient()

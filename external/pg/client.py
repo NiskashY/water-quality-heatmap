@@ -10,33 +10,11 @@ from black.handle_ipynb_magics import Optional
 from psycopg2.extras import register_composite
 from model.geo import Hexagon
 from model.water_parameters import WaterParameters, Parameter
-
-
-@dataclass
-class PgSettings:
-    dbname: str
-    username: str
-    password: str
-
-
-def _read_pg_settings() -> PgSettings:
-    def _get_port(port):
-        if port is not None:
-            return int(port)
-        return None
-
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    with open(dir_path + "/config.yaml", "r") as stream:
-        data_loaded = yaml.safe_load(stream)["pg"]
-        return PgSettings(
-            dbname=data_loaded["dbname"],
-            username=data_loaded["username"],
-            password=data_loaded["password"],
-        )
+from external.config.pg_config import PgConfig, read_pg_config
 
 
 class PgClient:
-    __pg_settings: PgSettings = _read_pg_settings()
+    __pg_settings: PgConfig = read_pg_config()
 
     def __get_db_connection(self):
         return psycopg2.connect(
