@@ -25,7 +25,12 @@ class GeocoderClient:
         )
 
     # convert with h3 library
-    def hexagon(self, address: str):
+    def hexagon(self, address: str, hex_resolution: int):
         geo_point = self.coordinates(address)
-        # h3.latlng_to_cell(geo)
-        pass
+        return h3.latlng_to_cell(
+            geo_point.latitude, geo_point.longitude, hex_resolution
+        )
+
+    def hexagon_to_nearby_house(self, h3_cell: str):
+        lat, lon = h3.cell_to_latlng(h3_cell)
+        return self.address(Point(latitude=lat, longitude=lon))
