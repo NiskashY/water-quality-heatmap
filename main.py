@@ -2,16 +2,16 @@ import logging
 
 import h3
 
-from external.web.ato.client import get_all_addresses
-from external.yandex.geocoder.client import GeocoderClient
+import model
 from external.pg.client import PgClient
-from external.web.minskvodokanal.client import MinskVodokanalClient
+from external.web.ato.client import get_all_addresses
 from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task
-from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, retrieve_houses_with_coordinates
-from logic.water_quality.water_parameters import compute_avg_parameters_by_hexagons
-from model.geo import make_hex_id
+from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, \
+    retrieve_houses_with_coordinates
+from model.geo import make_hex_id, AddressInfo, Point, Hexagon
+from model.water_parameters import Parameter
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 def test_enrich_and_print():
     def enrich_and_print(addresses_and_coordinates, hex_res):
@@ -39,9 +39,60 @@ def enrich_and_save():
 def test_avg_parameters():
     calculate_water_parameters_task()
 
+def test_pg_client_select_address_info():
+    pg_client = PgClient()
+    target = 'Республика Беларусь, г.Минск, Газеты Звязда просп., 42'
+    address_info: AddressInfo = pg_client.get_address_info(target)
+    assert address_info.address == target
+    assert address_info.coordinates == Point(latitude=53.86037, longitude=27.46016)
+    assert address_info.water_parameters.smell == Parameter('Запах', 'баллы', 1.5, 2.0)
+    assert address_info.water_parameters.taste == Parameter('Привкус', 'баллы', 1.2, 2.0)
+    assert address_info.water_parameters.color == Parameter('Цветность', 'градусы', 0.8, 1.5)
+    assert address_info.water_parameters.muddiness == Parameter('Мутность', 'мг/дм3', 0.5, 1.0)
+    assert address_info.water_parameters.general_mineralization == Parameter('Общая минерализация  ***', 'мг/дм3', 150, 200)
+
+
+
+def test_pg_client_select_hex_info():
+    pg_client = PgClient()
+    target = '871f4e143ffffff'
+    hexagon: Hexagon = pg_client.get_info_about_hex(target)
+    assert hexagon.hex_id == target
+    assert hexagon.hex_resolution == h3.get_resolution(target)
+    assert hexagon.hex_color == (148,211,31)
+    assert hexagon.avg_water_parameters.smell == Parameter('Запах', 'баллы', 1.5, 2.0)
+    assert hexagon.avg_water_parameters.taste == Parameter('Привкус', 'баллы', 1.2, 2.0)
+    assert hexagon.avg_water_parameters.color == Parameter('Цветность', 'градусы', 0.8, 1.5)
+    assert hexagon.avg_water_parameters.muddiness == Parameter('Мутность', 'мг/дм3', 0.5, 1.0)
+    assert hexagon.avg_water_parameters.general_mineralization == Parameter('Общая минерализация  ***', 'мг/дм3', 150, 200)
+
+
+def test_pg_client_select_all_hexes():
+    pg_client = PgClient()
+    hexagons: list[Hexagon] = pg_client.get_all_hexes_with_res(7)
+    assert len(hexagons) == 2
+    
+    hexagon = hexagons[0]
+    target = '871f4e143ffffff'
+    assert hexagon.hex_id == target
+    assert hexagon.hex_resolution == h3.get_resolution(target)
+    assert hexagon.hex_color == (148,211,31)
+    assert hexagon.avg_water_parameters.smell == Parameter('Запах', 'баллы', 1.5, 2.0)
+    assert hexagon.avg_water_parameters.taste == Parameter('Привкус', 'баллы', 1.2, 2.0)
+    assert hexagon.avg_water_parameters.color == Parameter('Цветность', 'градусы', 0.8, 1.5)
+    assert hexagon.avg_water_parameters.muddiness == Parameter('Мутность', 'мг/дм3', 0.5, 1.0)
+    assert hexagon.avg_water_parameters.general_mineralization == Parameter('Общая минерализация  ***', 'мг/дм3', 150, 200)
+
+    hexagon = hexagons[1]
+    target = '871f4e14effffff'
+    assert hexagon.hex_id == target
+    assert hexagon.hex_resolution == h3.get_resolution(target)
+    assert hexagon.hex_color == (148,211,31)
+
 if __name__ == "__main__":
-    print(h3.get_resolution('891fb466257ffff'))
-    print(h3.cell_to_parent('891fb466257ffff', 7))
+    test_pg_client_select_address_info()
+    test_pg_client_select_hex_info()
+    test_pg_client_select_all_hexes()
     # test_avg_parameters()
 
 # h3_cell = client.hexagon(address, hex_res)

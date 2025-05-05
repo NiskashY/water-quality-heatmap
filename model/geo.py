@@ -16,10 +16,19 @@ class GeoPointEncoder(JSONEncoder):
 
 @dataclass
 class Hexagon:
-    hex_id: str
     created_at: datetime
-    hex_color: str
+    hex_id: str
+    hex_resolution: int
+    hex_color: tuple[int, int, int]
+    avg_water_parameters: WaterParameters
+
+@dataclass
+class AddressInfo:
+    created_at: datetime
+    address: str
+    coordinates: Point
     water_parameters: WaterParameters
+
 
 def make_hex_id(h3_res: int):
     return f'hex_res_{h3_res}_id'

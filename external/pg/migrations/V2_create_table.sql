@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS HEXAGONS (
 
 INSERT INTO HEXAGONS VALUES (
   NOW(),
-  '871fb4662ffffff',
+  '871f4e143ffffff',
   7, -- resolution
   ROW(
     148,
@@ -50,14 +50,14 @@ CREATE TYPE GEO_POINT as (
     longitude NUMERIC
 );
 
-CREATE TABLE IF NOT EXISTS HOUSES_WATER_QUALITY (
+CREATE TABLE IF NOT EXISTS ADDRESS_INFO (
   created_at timestamp NOT NULL,
   address TEXT NOT NULL,
   coordinates GEO_POINT NOT NULL,
   water_parameters WATER_PARAMETERS
 );
 
-INSERT INTO HOUSES_WATER_QUALITY VALUES (
+INSERT INTO ADDRESS_INFO VALUES (
   NOW(),
   'Республика Беларусь, г.Минск, Газеты Звязда просп., 42',
   ROW(
