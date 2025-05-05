@@ -137,7 +137,7 @@ class MinskVodokanalClient:
                 return wp
             except selenium.common.exceptions.StaleElementReferenceException as e:
                 logging.error(e)
-                error_flag = True
+                has_errors = True
 
         assert has_errors == False, "check errors in logs. Selenium failed to retrieve water parameters info"
         return None

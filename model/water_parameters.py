@@ -8,6 +8,9 @@ class Parameter:
     value: float
     max_allowed_concentration: float
 
+    def norm(self):
+        return self.value / self.max_allowed_concentration
+
 
 @dataclass
 class WaterParameters:

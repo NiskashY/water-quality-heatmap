@@ -1,10 +1,11 @@
 import copy
-
+from termcolor import colored
 import h3
 from tqdm import tqdm
 from tqdm.contrib.logging import logging_redirect_tqdm
 
 from external.web.minskvodokanal.client import MinskVodokanalClient
+from logic.water_quality.color import determine_color
 from model.geo import make_hex_id, Point
 from model.water_parameters import WaterParameters, Parameter
 
@@ -52,9 +53,9 @@ def compute_avg_parameters_by_hexagons(addresses_with_coordinates, water_paramet
         avg_wp = _compute_avg_water_parameters(list_of_water_params)
         hex_id_to_avg_water_parameters[hex_id] = avg_wp
 
-        # print(f'\thex_id = {hex_id}')
-        # for wp in list_of_water_params:
-        #     print(f'\t\t{wp}')
-        # print(f'\t\tAVG = {avg_wp}')
-
+        print(f'\thex_id = {hex_id}')
+        for wp in list_of_water_params:
+            print(f'\t\t{wp}')
+        print(f'\t\tAVG = {avg_wp}')
+        print(f'\t\tcolor = rgb{determine_color(avg_wp)}')
     return hex_id_to_avg_water_parameters
