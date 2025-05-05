@@ -11,7 +11,7 @@ from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses
 from model.geo import make_hex_id, AddressInfo, Point, Hexagon
 from model.water_parameters import Parameter, WaterParameters
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
 def test_enrich_and_print():
     def enrich_and_print(addresses_and_coordinates, hex_res):
@@ -33,7 +33,7 @@ def test_enrich_and_print():
 
 def enrich_and_save():
     addresses = get_all_addresses()
-    houses = retrieve_houses_with_coordinates(addresses, geocoder_requests_limit=2)
+    houses = retrieve_houses_with_coordinates(addresses, geocoder_requests_limit=10000)
     dump_addresses_to_file(houses)
 
 def test_avg_parameters():
@@ -113,8 +113,11 @@ if __name__ == "__main__":
     test_pg_client_select_address_info()
     test_pg_client_select_hex_info()
     test_pg_client_select_all_hexes()
-    test_pg_client_insert_hex()
-    test_pg_client_insert_address_info()
+
+    enrich_and_save()
+
+    # test_pg_client_insert_hex()
+    # test_pg_client_insert_address_info()
     # test_avg_parameters()
 
 # h3_cell = client.hexagon(address, hex_res)

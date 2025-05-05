@@ -18,9 +18,12 @@ def calculate_water_parameters_task():
     water_parameters = retrieve_water_parameters(addresses_with_coordinates)
 
     avg_water_parameters_by_hexagon = compute_avg_parameters_by_hexagons(addresses_with_coordinates, water_parameters)
-    return
-    # pg_client = PgClient()
-    # pg_client.save_address_info(addresses_with_coordinates, water_parameters)
+
+    pg_client = PgClient()
+    for address_with_coords, water_params in zip(addresses_with_coordinates, water_parameters):
+        pg_client.insert_hexagon(
+
+        )
 
 
 
