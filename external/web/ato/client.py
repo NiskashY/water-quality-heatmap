@@ -64,7 +64,8 @@ def get_all_addresses():
 
     with open(f'{get_path_for_saving()}/minsk_addresses.txt') as f:
         lines = f.read().splitlines()
-        return [f'{geo_prefix}, {address}' for address in lines]
+        if lines:
+            return [f'{geo_prefix}, {address}' for address in lines]
 
     with requests.Session() as session:
         logging.info(f'ATO.BY client. Starting web-scraping.')

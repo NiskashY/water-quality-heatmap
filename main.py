@@ -1,19 +1,28 @@
+import logging
+
+
 from external.yandex.geocoder.client import GeocoderClient
 from external.pg.client import PgClient
 from external.web.minskvodokanal.client import MinskVodokanalClient
-from logic.web.retrieve_houses import retrieve_and_dump_addresses_to_file
-import logging
+from logic.web.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons
 
 logging.basicConfig(level=logging.INFO)
 
-retrieve_and_dump_addresses_to_file()
-#
-# address = "Республика Беларусь, г. Минск, Газеты Звезды 42"
-# hex_res = 9
-#
-# client = GeocoderClient()
-#
-# coordinates = client.coordinates(address)
+def enrich_and_print(addresses_and_coordinates, hex_res):
+    enriched = enrich_with_hexagons(addresses_and_coordinates, hex_res)
+
+    unique_hex_ids = {obj['hex_id'] for obj in enriched}
+    print(f'\nUnique hexes (len = {len(unique_hex_ids)})')
+    for hex_id in unique_hex_ids:
+        print(f'\t{hex_id}')
+
+houses = read_already_fetched_houses()
+print(houses)
+print( f'Total houses = {len(houses)}')
+enrich_and_print(houses, 9)
+enrich_and_print(houses, 8)
+enrich_and_print(houses, 7)
+enrich_and_print(houses, 6)
 # h3_cell = client.hexagon(address, hex_res)
 # nearby_house = client.hexagon_to_nearby_house(h3_cell)
 #
