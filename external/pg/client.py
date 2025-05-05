@@ -1,16 +1,18 @@
 import logging
 import time
+from typing import Optional
 
 import psycopg2
-import yaml
-import os
 
-from dataclasses import dataclass
-from black.handle_ipynb_magics import Optional
 from psycopg2.extras import register_composite
 from model.geo import Hexagon
 from model.water_parameters import WaterParameters, Parameter
 from external.config.pg_config import PgConfig, read_pg_config
+
+
+def _register_custom_types(conn):
+    register_composite("parameter", conn)
+    register_composite("water_parameters", conn)  # без этого не распарсим
 
 
 class PgClient:
@@ -23,10 +25,6 @@ class PgClient:
             password=self.__pg_settings.password,
         )
 
-    def __register_custom_types(self, conn):
-        register_composite("parameter", conn)
-        register_composite("water_parameters", conn)  # без этого не распарсим
-
     def get_hex(
         self,
         hex_id: str,
@@ -35,7 +33,7 @@ class PgClient:
         try:
             logging.info("Starting conn for SELECT")
             conn = self.__get_db_connection()
-            self.__register_custom_types(conn)
+            _register_custom_types(conn)
 
             with conn.cursor() as cursor:
                 cursor.execute(
@@ -67,7 +65,7 @@ class PgClient:
         try:
             logging.info("Starting conn for INSERT")
             conn = self.__get_db_connection()
-            self.__register_custom_types(conn)
+            __register_custom_types(conn)
 
             with conn.cursor() as cursor:
                 cursor.execute(

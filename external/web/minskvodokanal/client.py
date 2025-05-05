@@ -77,7 +77,7 @@ def parse_general_mineralization(td):
     )
 
 
-class Client:
+class MinskVodokanalClient:
     __url: str = "https://minskvodokanal.by/water/home/"
 
     """
