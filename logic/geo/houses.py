@@ -1,7 +1,6 @@
 import json
 import logging
 import copy
-import random
 
 import h3
 import yandex_geocoder
@@ -9,9 +8,8 @@ import yandex_geocoder
 from tqdm import tqdm
 from tqdm.contrib.logging import logging_redirect_tqdm
 
-from external.web.ato.client import get_all_addresses
 from external.yandex.geocoder.client import GeocoderClient
-from model.geo import GeoPointEncoder
+from model.geo import GeoPointEncoder, make_hex_id
 from resources.utils import get_path_for_saving
 
 def read_already_fetched_houses():
@@ -22,8 +20,7 @@ def read_already_fetched_houses():
             logging.error("Not valid json file, file not exists or empty file")
             return []
 
-def retrieve_houses():
-    addresses = get_all_addresses()
+def retrieve_houses_with_coordinates(addresses: list[str], geocoder_requests_limit=None):
     logging.info(f"starting geocoding of addresses. Input count = {len(addresses)}")
     geocoder = GeocoderClient()
 
@@ -32,10 +29,7 @@ def retrieve_houses():
 
     with logging_redirect_tqdm():
         need_to_process_address = list(filter(lambda x: x not in already_fetched_addresses, addresses))
-        for address in tqdm(need_to_process_address[:1]):
-        # used_indices = {random.randint(0, len(need_to_process_address)) for _ in range(500)}
-        # for idx in tqdm(used_indices):
-        #     address = need_to_process_address[idx]
+        for address in tqdm(need_to_process_address[:geocoder_requests_limit or 10]):
             try:
                 coordinates = geocoder.coordinates(address)
                 houses.append({
@@ -57,5 +51,5 @@ def enrich_with_hexagons(addresses_with_coordinates, h3_resolution: int):
     for json_obj in enriched:
         lat = json_obj['coordinates']['latitude']
         lon = json_obj['coordinates']['longitude']
-        json_obj['hex_id'] = h3.latlng_to_cell(lat, lon, h3_resolution)
+        json_obj[make_hex_id(h3_resolution)] = h3.latlng_to_cell(lat, lon, h3_resolution)
     return enriched

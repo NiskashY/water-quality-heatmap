@@ -20,3 +20,6 @@ class Hexagon:
     created_at: datetime
     hex_color: str
     water_parameters: WaterParameters
+
+def make_hex_id(h3_res: int):
+    return f'hex_res_{h3_res}_id'

@@ -1,3 +1,4 @@
 yandex:
   geocoder:
     api_key: "52afd32b-2096-48e3-a8cf-8126cc58c620"
+    requests_limit: 2

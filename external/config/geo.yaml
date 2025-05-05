@@ -1,0 +1,4 @@
+map_settings:
+  allowed_hexagons_resolutions:
+    - 7
+    - 8
