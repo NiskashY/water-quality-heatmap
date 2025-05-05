@@ -40,7 +40,9 @@ def test_avg_parameters():
     calculate_water_parameters_task()
 
 if __name__ == "__main__":
-    test_avg_parameters()
+    print(h3.get_resolution('891fb466257ffff'))
+    print(h3.cell_to_parent('891fb466257ffff', 7))
+    # test_avg_parameters()
 
 # h3_cell = client.hexagon(address, hex_res)
 # nearby_house = client.hexagon_to_nearby_house(h3_cell)
