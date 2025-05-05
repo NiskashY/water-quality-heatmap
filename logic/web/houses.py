@@ -1,6 +1,8 @@
 import json
 import logging
 import copy
+import random
+
 import h3
 import yandex_geocoder
 
@@ -30,7 +32,10 @@ def retrieve_houses():
 
     with logging_redirect_tqdm():
         need_to_process_address = list(filter(lambda x: x not in already_fetched_addresses, addresses))
-        for address in tqdm(need_to_process_address[:100]):
+        for address in tqdm(need_to_process_address[:1]):
+        # used_indices = {random.randint(0, len(need_to_process_address)) for _ in range(500)}
+        # for idx in tqdm(used_indices):
+        #     address = need_to_process_address[idx]
             try:
                 coordinates = geocoder.coordinates(address)
                 houses.append({
