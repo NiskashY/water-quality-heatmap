@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 from json import JSONEncoder
+from typing import Optional
 
 from model.water_parameters import WaterParameters
 
@@ -20,14 +21,14 @@ class Hexagon:
     hex_id: str
     hex_resolution: int
     hex_color: tuple[int, int, int]
-    avg_water_parameters: WaterParameters
+    avg_water_parameters: Optional[WaterParameters]
 
 @dataclass
 class AddressInfo:
     created_at: datetime
     address: str
     coordinates: Point
-    water_parameters: WaterParameters
+    water_parameters: Optional[WaterParameters]
 
 
 def make_hex_id(h3_res: int):

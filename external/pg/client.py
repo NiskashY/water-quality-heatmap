@@ -2,6 +2,7 @@ import logging
 import time
 from typing import Optional
 
+import h3
 import psycopg2
 from psycopg2.extras import register_composite
 
@@ -46,16 +47,36 @@ class PgClient:
                 conn.close()
                 logging.debug("Connection for select closed")
 
+    def __insert_query(self, query: str, *kwargs):
+        conn = None
+        try:
+            logging.debug("Starting conn for INSERT")
+            conn = self.__get_db_connection()
+            _register_custom_types(conn)
+
+            with conn.cursor() as cursor:
+                cursor.execute(query,(*kwargs,),)
+                conn.commit()
+        except Exception as e:
+            logging.warning(f"Insertion error occurred {e}")
+            if conn:
+                conn.rollback()
+            raise
+        finally:
+            if conn:
+                conn.close()
+                logging.debug("Connection for insert closed")
+
     def get_address_info(self, address: str) -> Optional[AddressInfo]:
-        query = "SELECT created_at, address, coordinates, water_parameters FROM address_info WHERE address = %s"
+        query = "SELECT created_at, address, coordinates, water_parameters FROM address_info WHERE address = %s ORDER BY created_at DESC LIMIT 1"
         result = self.__select_query(query, address)
-        assert len(result) < 2
+        assert len(result) < 2, 'will fail after multiple instances with diff created_at_ts'
         return _parse_address_info(result[0]) if result else None
 
-
     def get_info_about_hex(self, hex_id: str) -> Optional[Hexagon]:
-        query = "SELECT created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_id = %s"
+        query = "SELECT created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_id = %s ORDER BY created_at DESC LIMIT 1"
         result = self.__select_query(query, hex_id)
+        assert len(result) < 2, 'will fail after multiple instances with diff created_at_ts'
         return _parse_hexagon(result[0]) if result else None
 
     def get_all_hexes_with_res(self, hex_resolution: int) -> list[Hexagon]:
@@ -63,45 +84,57 @@ class PgClient:
         result = self.__select_query(query, hex_resolution)
         return [_parse_hexagon(res) for res in result]
 
-    def insert(
+    def insert_hexagon(
         self,
         hex_id: str,
-        hex_color: str,
+        hex_color: tuple[int, int, int],
         water_parameters: WaterParameters,
     ):
-        conn = None
-        try:
-            logging.info("Starting conn for INSERT")
-            conn = self.__get_db_connection()
-            _register_custom_types(conn)
+        query = "INSERT INTO hexagons (created_at, hex_id, hex_resolution, hex_color, avg_water_parameters) VALUES (NOW(), %s, %s, ROW(%s, %s, %s)::color, ROW(%s, %s, %s, %s, %s)::water_parameters)"
+        r, g, b = hex_color
+        self.__insert_query(
+            query,
+            hex_id,
+            h3.get_resolution(hex_id),
+            r, g, b,
+            _get_tuple(water_parameters.smell),
+            _get_tuple(water_parameters.taste),
+            _get_tuple(water_parameters.color),
+            _get_tuple(water_parameters.muddiness),
+            _get_tuple(water_parameters.general_mineralization),
+        )
 
-            with conn.cursor() as cursor:
-                cursor.execute(
-                    """
-                    INSERT INTO hexagons (hex_id, created_at, water_parameters)
-                    VALUES (%s, %s, ROW(%s, %s, %s, %s, %s)::water_parameters)
-                    """,
-                    (
-                        hex_id,
-                        int(time.time()),
-                        hex_color,
-                        _get_tuple(water_parameters.smell),
-                        _get_tuple(water_parameters.taste),
-                        _get_tuple(water_parameters.color),
-                        _get_tuple(water_parameters.muddiness),
-                        _get_tuple(water_parameters.general_mineralization),
-                    ),
-                )
-                conn.commit()
-        except Exception as e:
-            logging.WARN(f"Insertion error occurred {e}")
-            if conn:
-                conn.rollback()
-            raise
-        finally:
-            if conn:
-                conn.close()
-                logging.info("Connection for insert closed")
+    def insert_address_info(
+            self,
+            address: str,
+            coordinates: Point,
+            water_parameters: Optional[WaterParameters]
+    ):
+        if water_parameters:
+            query = "INSERT INTO address_info (created_at, address, coordinates) VALUES (NOW(), %s, ROW(%s, %s)::geo_point, ROW(%s, %s, %s, %s, %s)::water_parameters)"
+            self.__insert_query(
+                query,
+                address,
+                coordinates.latitude,
+                coordinates.longitude,
+                _get_tuple(water_parameters.smell),
+                _get_tuple(water_parameters.taste),
+                _get_tuple(water_parameters.color),
+                _get_tuple(water_parameters.muddiness),
+                _get_tuple(water_parameters.general_mineralization),
+            )
+        else:
+            if self.get_address_info(address) is not None:
+                return
+
+            query = "INSERT INTO address_info (created_at, address, coordinates) VALUES (NOW(), %s, ROW(%s, %s)::geo_point)"
+            self.__insert_query(
+                query,
+                address,
+                coordinates.latitude,
+                coordinates.longitude,
+            )
+
 
 def _parse_tuple(s: str) -> tuple[int, int, int]:
     x, y, z = s.strip("()").split(",")
@@ -111,7 +144,9 @@ def _parse_tuple(s: str) -> tuple[int, int, int]:
 def _parse_parameter(name, units, value, max_allowed_concentration):
     return Parameter(name, units, float(value), float(max_allowed_concentration))
 
-def _parse_water_params(db_water_params) -> WaterParameters:
+def _parse_water_params(db_water_params) -> WaterParameters | None:
+    if db_water_params is None:
+        return None
     return WaterParameters(
             smell=_parse_parameter(*db_water_params[0]),
             taste=_parse_parameter(*db_water_params[1]),

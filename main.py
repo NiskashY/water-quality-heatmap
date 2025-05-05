@@ -9,7 +9,7 @@ from logic.cron.calculate_water_parameters_task import calculate_water_parameter
 from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, \
     retrieve_houses_with_coordinates
 from model.geo import make_hex_id, AddressInfo, Point, Hexagon
-from model.water_parameters import Parameter
+from model.water_parameters import Parameter, WaterParameters
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -70,8 +70,7 @@ def test_pg_client_select_hex_info():
 def test_pg_client_select_all_hexes():
     pg_client = PgClient()
     hexagons: list[Hexagon] = pg_client.get_all_hexes_with_res(7)
-    assert len(hexagons) == 2
-    
+
     hexagon = hexagons[0]
     target = '871f4e143ffffff'
     assert hexagon.hex_id == target
@@ -89,10 +88,33 @@ def test_pg_client_select_all_hexes():
     assert hexagon.hex_resolution == h3.get_resolution(target)
     assert hexagon.hex_color == (148,211,31)
 
+def test_pg_client_insert_hex():
+    pg_client = PgClient()
+    pg_client.insert_hexagon(
+        '8711a0d80ffffff',
+        (123, 123, 123),
+        WaterParameters(
+            smell=Parameter('Запах', 'баллы', 1.5, 2.0),
+            taste=Parameter('Привкус', 'баллы', 1.2, 2.0),
+            color=Parameter('Цветность', 'градусы', 0.8, 1.5),
+            muddiness=Parameter('Мутность', 'мг/дм3', 0.5, 1.0),
+            general_mineralization=Parameter('Общая минерализация  ***', 'мг/дм3', 150, 200),
+        ))
+
+def test_pg_client_insert_address_info():
+    pg_client = PgClient()
+    pg_client.insert_address_info(
+        'Республика Беларусь, г. Минск, Краснозвездная ул., 14А/6',
+        Point(latitude=53.908092, longitude=27.588861),
+        None
+    )
+
 if __name__ == "__main__":
     test_pg_client_select_address_info()
     test_pg_client_select_hex_info()
     test_pg_client_select_all_hexes()
+    test_pg_client_insert_hex()
+    test_pg_client_insert_address_info()
     # test_avg_parameters()
 
 # h3_cell = client.hexagon(address, hex_res)
