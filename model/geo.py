@@ -57,7 +57,9 @@ class AddressInfoDecoder(JSONDecoder):
             return WaterParameters(**dct)
 
         if 'created_at' in dct and 'address' in dct and 'coordinates' in dct:
-            return AddressInfo(**dct)
+            addr = AddressInfo(**dct)
+            addr.created_at = datetime.strptime(addr.created_at, '%Y-%m-%d %H:%M:%S.%f')
+            return addr
         if 'address' in dct and 'coordinates' in dct:
             return AddressInfo(created_at=datetime.now(), water_parameters=None, **dct)
 

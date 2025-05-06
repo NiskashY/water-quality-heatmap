@@ -119,9 +119,9 @@ if __name__ == "__main__":
     # test_pg_client_select_all_available_address_info()
     # enrich_and_save()
     # #
-    # calculate_water_parameters_task
+    calculate_water_parameters_task()
     # save_coordinates()
-    save_aggregated_hexagons_information()
+    # save_aggregated_hexagons_information()
 
     # test_pg_client_insert_hex()
     # test_pg_client_insert_address_info()

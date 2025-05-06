@@ -6,7 +6,7 @@ from dataclasses import dataclass
 class GeocoderConfig:
     api_key: str
     requests_limit: int
-
+    chunk_request_size: int
 
 def read_geocoder_config():
     dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -14,5 +14,6 @@ def read_geocoder_config():
         data_loaded = yaml.safe_load(stream)["yandex"]["geocoder"]
         return GeocoderConfig(
             api_key=data_loaded["api_key"],
-            requests_limit=int(data_loaded["requests_limit"])
+            requests_limit=int(data_loaded["requests_limit"]),
+            chunk_request_size=int(data_loaded["chunk_request_size"]),
         )

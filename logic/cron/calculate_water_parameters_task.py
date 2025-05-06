@@ -1,4 +1,9 @@
+import logging
+import random
+
 from tqdm import tqdm
+import more_itertools as mit
+from tqdm.contrib.logging import logging_redirect_tqdm
 
 from external.pg.client import PgClient
 from external.web.ato.client import get_all_addresses
@@ -63,29 +68,35 @@ def save_coordinates_and_water_parameters():
     geocoder_config = read_geocoder_config()
 
     addresses_of_minsk = get_all_addresses()
-    addresses_infos = retrieve_address_info(
+    all_addresses_infos = retrieve_address_info(
         addresses_of_minsk,
         geocoder_requests_limit=geocoder_config.requests_limit
     )
-    water_parameters = retrieve_water_parameters(addresses_infos)
-    assert len(addresses_infos) == len(water_parameters)
 
-    pg_client = PgClient()
-    all_addresses_info_in_pg = pg_client.get_all_address_info()
-    all_addresses_info_in_pg = {address_info.address: address_info for address_info in  all_addresses_info_in_pg}
+    batched = list(mit.chunked(all_addresses_infos, geocoder_config.chunk_request_size))
+    random.shuffle(batched)
+    for idx, addresses_infos in enumerate(batched):
+        logging.info(f"Address progress: {idx * geocoder_config.chunk_request_size}/{len(all_addresses_infos)}")
 
-    need_to_be_processed = []
-    for address_info, fetched_water_parameters in tqdm(zip(addresses_infos, water_parameters), desc="Filter address_infos for saving"):
-        if need_to_skip_saving(address_info, fetched_water_parameters, all_addresses_info_in_pg):
-            continue
-        need_to_be_processed.append((address_info, fetched_water_parameters))
+        water_parameters = retrieve_water_parameters(addresses_infos)
+        assert len(addresses_infos) == len(water_parameters)
 
-    for address_info, fetched_water_parameters in tqdm(need_to_be_processed, desc="Save coordinates and water parameters in pg"):
-        pg_client.insert_address_info(
-            address_info.address,
-            address_info.coordinates,
-            fetched_water_parameters
-        )
+        pg_client = PgClient()
+        all_addresses_info_in_pg = pg_client.get_all_address_info()
+        all_addresses_info_in_pg = {address_info.address: address_info for address_info in  all_addresses_info_in_pg}
+
+        need_to_be_processed = []
+        for address_info, fetched_water_parameters in tqdm(zip(addresses_infos, water_parameters), desc="Filter address_infos for saving"):
+            if need_to_skip_saving(address_info, fetched_water_parameters, all_addresses_info_in_pg):
+                continue
+            need_to_be_processed.append((address_info, fetched_water_parameters))
+
+        for address_info, fetched_water_parameters in tqdm(need_to_be_processed, desc="Save coordinates and water parameters in pg"):
+            pg_client.insert_address_info(
+                address_info.address,
+                address_info.coordinates,
+                fetched_water_parameters
+            )
 
 def save_aggregated_hexagons_information():
     pg_client = PgClient()

@@ -76,7 +76,8 @@ def retrieve_water_parameters(addresses_infos: list[AddressInfo]) -> list[WaterP
             return diff.days
 
         def predicate(x: AddressInfo):
-            return x.water_parameters is None and get_amount_of_days(x.created_at) > 2
+            return x.water_parameters is None \
+                # and get_amount_of_days(x.created_at) > 0
         def negative_predicate(x: AddressInfo):
             return not predicate(x)
 
