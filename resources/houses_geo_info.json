@@ -97996,11 +97996,911 @@
         "water_parameters": null
     },
     {
+        "created_at": "2025-05-06 14:57:59.114146",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 24А",
+        "coordinates": {
+            "latitude": 53.916345,
+            "longitude": 27.528459
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.129718",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 24",
+        "coordinates": {
+            "latitude": 53.916064,
+            "longitude": 27.528018
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.160007",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 26",
+        "coordinates": {
+            "latitude": 53.91661,
+            "longitude": 27.527884
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.160007",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 26",
+        "coordinates": {
+            "latitude": 53.91661,
+            "longitude": 27.527884
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.174076",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 28/А",
+        "coordinates": {
+            "latitude": 53.917321,
+            "longitude": 27.528315
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.186773",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 28",
+        "coordinates": {
+            "latitude": 53.917108,
+            "longitude": 27.527767
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.201308",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 29",
+        "coordinates": {
+            "latitude": 53.917257,
+            "longitude": 27.52615
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.216044",
+        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 30",
+        "coordinates": {
+            "latitude": 53.917612,
+            "longitude": 27.527641
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.229986",
+        "address": "Республика Беларусь, г. Минск, Григория Ширмы ул., 3",
+        "coordinates": {
+            "latitude": 53.877699,
+            "longitude": 27.452129
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.245418",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 1",
+        "coordinates": {
+            "latitude": 53.886902,
+            "longitude": 27.617059
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.259439",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 3",
+        "coordinates": {
+            "latitude": 53.887173,
+            "longitude": 27.61608
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.273267",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 4",
+        "coordinates": {
+            "latitude": 53.887613,
+            "longitude": 27.61546
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.290624",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 5",
+        "coordinates": {
+            "latitude": 53.8867,
+            "longitude": 27.615101
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.308644",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 6",
+        "coordinates": {
+            "latitude": 53.887756,
+            "longitude": 27.614059
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.320939",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 7",
+        "coordinates": {
+            "latitude": 53.887284,
+            "longitude": 27.61493
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.332515",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 9",
+        "coordinates": {
+            "latitude": 53.886907,
+            "longitude": 27.614041
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.342166",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 11",
+        "coordinates": {
+            "latitude": 53.887475,
+            "longitude": 27.613242
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.352521",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 13",
+        "coordinates": {
+            "latitude": 53.886934,
+            "longitude": 27.612855
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.363196",
+        "address": "Республика Беларусь, г. Минск, Грицевца ул., 13А/1",
+        "coordinates": {
+            "latitude": 53.886594,
+            "longitude": 27.613008
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.372667",
+        "address": "Республика Беларусь, г. Минск, Гродненская ул., 4",
+        "coordinates": {
+            "latitude": 53.839022,
+            "longitude": 27.636984
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.381724",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 14",
+        "coordinates": {
+            "latitude": 53.855749,
+            "longitude": 27.447098
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.393786",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 20",
+        "coordinates": {
+            "latitude": 53.853774,
+            "longitude": 27.444547
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.407579",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 20А",
+        "coordinates": {
+            "latitude": 53.854268,
+            "longitude": 27.444026
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.420171",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 22",
+        "coordinates": {
+            "latitude": 53.854432,
+            "longitude": 27.443442
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.430234",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 24А",
+        "coordinates": {
+            "latitude": 53.853827,
+            "longitude": 27.44205
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.439717",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 24",
+        "coordinates": {
+            "latitude": 53.854076,
+            "longitude": 27.441897
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.448305",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 26",
+        "coordinates": {
+            "latitude": 53.853344,
+            "longitude": 27.442166
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.458226",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 28",
+        "coordinates": {
+            "latitude": 53.852504,
+            "longitude": 27.442741
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.468144",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 32",
+        "coordinates": {
+            "latitude": 53.852839,
+            "longitude": 27.441313
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.478853",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 34",
+        "coordinates": {
+            "latitude": 53.852876,
+            "longitude": 27.440217
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.490710",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 36",
+        "coordinates": {
+            "latitude": 53.852982,
+            "longitude": 27.439085
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.499713",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 38",
+        "coordinates": {
+            "latitude": 53.852037,
+            "longitude": 27.440298
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.511267",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 40",
+        "coordinates": {
+            "latitude": 53.852026,
+            "longitude": 27.439373
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.521752",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 42",
+        "coordinates": {
+            "latitude": 53.852032,
+            "longitude": 27.43851
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.532297",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 44",
+        "coordinates": {
+            "latitude": 53.851516,
+            "longitude": 27.439382
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.546950",
+        "address": "Республика Беларусь, г. Минск, Громова ул., 46",
+        "coordinates": {
+            "latitude": 53.850943,
+            "longitude": 27.439463
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.557431",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/4",
+        "coordinates": {
+            "latitude": 53.890585,
+            "longitude": 27.531216
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.571735",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/7",
+        "coordinates": {
+            "latitude": 53.891338,
+            "longitude": 27.531702
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.582543",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/6",
+        "coordinates": {
+            "latitude": 53.891259,
+            "longitude": 27.531648
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.592454",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/5",
+        "coordinates": {
+            "latitude": 53.890686,
+            "longitude": 27.531199
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.606339",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2",
+        "coordinates": {
+            "latitude": 53.89067,
+            "longitude": 27.53163
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.616580",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/1",
+        "coordinates": {
+            "latitude": 53.890797,
+            "longitude": 27.531693
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.629618",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/2",
+        "coordinates": {
+            "latitude": 53.890755,
+            "longitude": 27.531675
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.644422",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/3",
+        "coordinates": {
+            "latitude": 53.890564,
+            "longitude": 27.531603
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.660145",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/11",
+        "coordinates": {
+            "latitude": 53.889428,
+            "longitude": 27.529941
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.676823",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/3",
+        "coordinates": {
+            "latitude": 53.889523,
+            "longitude": 27.528656
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.695827",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/8",
+        "coordinates": {
+            "latitude": 53.889911,
+            "longitude": 27.531522
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.711063",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/9",
+        "coordinates": {
+            "latitude": 53.889263,
+            "longitude": 27.531441
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.725382",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/10",
+        "coordinates": {
+            "latitude": 53.889125,
+            "longitude": 27.530282
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.736464",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/7",
+        "coordinates": {
+            "latitude": 53.889608,
+            "longitude": 27.531046
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.753713",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/6",
+        "coordinates": {
+            "latitude": 53.889985,
+            "longitude": 27.530713
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.771570",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/5",
+        "coordinates": {
+            "latitude": 53.890378,
+            "longitude": 27.529941
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.789569",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/4",
+        "coordinates": {
+            "latitude": 53.890325,
+            "longitude": 27.529626
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.805077",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/2",
+        "coordinates": {
+            "latitude": 53.889619,
+            "longitude": 27.529393
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.820507",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/1",
+        "coordinates": {
+            "latitude": 53.889789,
+            "longitude": 27.52968
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.832884",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5",
+        "coordinates": {
+            "latitude": 53.889115,
+            "longitude": 27.529366
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.850685",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/5",
+        "coordinates": {
+            "latitude": 53.886743,
+            "longitude": 27.529195
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.866056",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7Б",
+        "coordinates": {
+            "latitude": 53.888006,
+            "longitude": 27.529932
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.883695",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7В",
+        "coordinates": {
+            "latitude": 53.888361,
+            "longitude": 27.530327
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.901144",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7/1",
+        "coordinates": {
+            "latitude": 53.888701,
+            "longitude": 27.530983
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.918839",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/1",
+        "coordinates": {
+            "latitude": 53.887422,
+            "longitude": 27.530821
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.936413",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7/A",
+        "coordinates": {
+            "latitude": 53.887289,
+            "longitude": 27.5296
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.955408",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/4",
+        "coordinates": {
+            "latitude": 53.886387,
+            "longitude": 27.529752
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.972873",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7",
+        "coordinates": {
+            "latitude": 53.888685,
+            "longitude": 27.529186
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:57:59.991815",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/8",
+        "coordinates": {
+            "latitude": 53.887666,
+            "longitude": 27.529276
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.008707",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/7",
+        "coordinates": {
+            "latitude": 53.887013,
+            "longitude": 27.529276
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.022348",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/6",
+        "coordinates": {
+            "latitude": 53.886764,
+            "longitude": 27.529788
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.036732",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7Б/1",
+        "coordinates": {
+            "latitude": 53.888547,
+            "longitude": 27.529537
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.046177",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7/2",
+        "coordinates": {
+            "latitude": 53.888786,
+            "longitude": 27.530309
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.057265",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/2",
+        "coordinates": {
+            "latitude": 53.886721,
+            "longitude": 27.530507
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.069311",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 9",
+        "coordinates": {
+            "latitude": 53.888292,
+            "longitude": 27.528504
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.082447",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11Г",
+        "coordinates": {
+            "latitude": 53.887088,
+            "longitude": 27.52862
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.095973",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11",
+        "coordinates": {
+            "latitude": 53.887724,
+            "longitude": 27.527506
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.107652",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11/В",
+        "coordinates": {
+            "latitude": 53.887326,
+            "longitude": 27.528755
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.124988",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11/Б",
+        "coordinates": {
+            "latitude": 53.886732,
+            "longitude": 27.528207
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.142861",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11/А",
+        "coordinates": {
+            "latitude": 53.887682,
+            "longitude": 27.528953
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.161223",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 15",
+        "coordinates": {
+            "latitude": 53.887056,
+            "longitude": 27.526914
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.179777",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 15А",
+        "coordinates": {
+            "latitude": 53.886424,
+            "longitude": 27.526384
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.194189",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 17",
+        "coordinates": {
+            "latitude": 53.886366,
+            "longitude": 27.52712
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.210881",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/2",
+        "coordinates": {
+            "latitude": 53.889136,
+            "longitude": 27.528315
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.224725",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/3",
+        "coordinates": {
+            "latitude": 53.889258,
+            "longitude": 27.528629
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.239195",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/1",
+        "coordinates": {
+            "latitude": 53.888881,
+            "longitude": 27.528611
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.250282",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/4",
+        "coordinates": {
+            "latitude": 53.889433,
+            "longitude": 27.528432
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.262650",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22",
+        "coordinates": {
+            "latitude": 53.888934,
+            "longitude": 27.52792
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.275061",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/7",
+        "coordinates": {
+            "latitude": 53.889189,
+            "longitude": 27.527318
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.291728",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/6",
+        "coordinates": {
+            "latitude": 53.889465,
+            "longitude": 27.527623
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.310062",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/5",
+        "coordinates": {
+            "latitude": 53.88963,
+            "longitude": 27.527902
+        },
+        "water_parameters": null
+    },
+    {
         "created_at": "2025-05-06 14:37:25.863745",
         "address": "Республика Беларусь, г. Минск, Грушевская ул., 33/А",
         "coordinates": {
             "latitude": 53.88575,
             "longitude": 27.524165
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.322984",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 37",
+        "coordinates": {
+            "latitude": 53.88575,
+            "longitude": 27.524165
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.339797",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 38",
+        "coordinates": {
+            "latitude": 53.887077,
+            "longitude": 27.52544
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.357148",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 41",
+        "coordinates": {
+            "latitude": 53.885639,
+            "longitude": 27.523464
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.373922",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 42",
+        "coordinates": {
+            "latitude": 53.887077,
+            "longitude": 27.52544
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.388380",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 46",
+        "coordinates": {
+            "latitude": 53.886663,
+            "longitude": 27.524677
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.401003",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 48",
+        "coordinates": {
+            "latitude": 53.886541,
+            "longitude": 27.524407
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.417207",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 49",
+        "coordinates": {
+            "latitude": 53.885305,
+            "longitude": 27.522682
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.435505",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 50",
+        "coordinates": {
+            "latitude": 53.886366,
+            "longitude": 27.524111
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.454785",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 56",
+        "coordinates": {
+            "latitude": 53.885713,
+            "longitude": 27.522745
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.472411",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 58",
+        "coordinates": {
+            "latitude": 53.88557,
+            "longitude": 27.522476
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.490754",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65Б",
+        "coordinates": {
+            "latitude": 53.88419,
+            "longitude": 27.521766
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.508950",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65В",
+        "coordinates": {
+            "latitude": 53.884169,
+            "longitude": 27.521622
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 14:58:00.525080",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65",
+        "coordinates": {
+            "latitude": 53.884004,
+            "longitude": 27.521281
         },
         "water_parameters": null
     },
@@ -101479,902 +102379,4502 @@
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:43.641106",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 24А",
+        "created_at": "2025-05-06 15:22:52.912729",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65/А",
         "coordinates": {
-            "latitude": 53.916345,
-            "longitude": 27.528459
+            "latitude": 53.883739,
+            "longitude": 27.522332
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:43.805996",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 24",
+        "created_at": "2025-05-06 15:22:53.085558",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 69",
         "coordinates": {
-            "latitude": 53.916064,
-            "longitude": 27.528018
+            "latitude": 53.88479,
+            "longitude": 27.521676
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:43.973377",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 26",
+        "created_at": "2025-05-06 15:22:53.257902",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 71",
         "coordinates": {
-            "latitude": 53.91661,
-            "longitude": 27.527884
+            "latitude": 53.884264,
+            "longitude": 27.52076
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.105246",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 26",
+        "created_at": "2025-05-06 15:22:53.417621",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 73",
         "coordinates": {
-            "latitude": 53.91661,
-            "longitude": 27.527884
+            "latitude": 53.883654,
+            "longitude": 27.520059
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.277370",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 28/А",
+        "created_at": "2025-05-06 15:22:53.559285",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 75А",
         "coordinates": {
-            "latitude": 53.917321,
-            "longitude": 27.528315
+            "latitude": 53.883442,
+            "longitude": 27.519493
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.399121",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 28",
+        "created_at": "2025-05-06 15:22:53.725910",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 75",
         "coordinates": {
-            "latitude": 53.917108,
-            "longitude": 27.527767
+            "latitude": 53.883824,
+            "longitude": 27.519395
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.539988",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 29",
+        "created_at": "2025-05-06 15:22:53.871023",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 77А",
         "coordinates": {
-            "latitude": 53.917257,
-            "longitude": 27.52615
+            "latitude": 53.88333,
+            "longitude": 27.51908
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.674367",
-        "address": "Республика Беларусь, г. Минск, Грибоедова ул., 30",
+        "created_at": "2025-05-06 15:22:53.995787",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 77",
         "coordinates": {
-            "latitude": 53.917612,
-            "longitude": 27.527641
+            "latitude": 53.883596,
+            "longitude": 27.519062
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.818051",
-        "address": "Республика Беларусь, г. Минск, Григория Ширмы ул., 3",
+        "created_at": "2025-05-06 15:22:54.112333",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 83А",
         "coordinates": {
-            "latitude": 53.877699,
-            "longitude": 27.452129
+            "latitude": 53.882561,
+            "longitude": 27.516987
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:44.934477",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 1",
+        "created_at": "2025-05-06 15:22:54.269027",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 85А",
         "coordinates": {
-            "latitude": 53.886902,
-            "longitude": 27.617059
+            "latitude": 53.882221,
+            "longitude": 27.517481
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.078127",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 3",
+        "created_at": "2025-05-06 15:22:54.410068",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 85",
         "coordinates": {
-            "latitude": 53.887173,
-            "longitude": 27.61608
+            "latitude": 53.882317,
+            "longitude": 27.516906
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.189036",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 4",
+        "created_at": "2025-05-06 15:22:54.546727",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 87",
         "coordinates": {
-            "latitude": 53.887613,
-            "longitude": 27.61546
+            "latitude": 53.882078,
+            "longitude": 27.51626
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.319265",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 5",
+        "created_at": "2025-05-06 15:22:54.676285",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 89",
         "coordinates": {
-            "latitude": 53.8867,
-            "longitude": 27.615101
+            "latitude": 53.881834,
+            "longitude": 27.515586
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.480863",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 6",
+        "created_at": "2025-05-06 15:22:54.807317",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 90",
         "coordinates": {
-            "latitude": 53.887756,
-            "longitude": 27.614059
+            "latitude": 53.883362,
+            "longitude": 27.516709
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.645755",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 7",
+        "created_at": "2025-05-06 15:22:54.977978",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 91А",
         "coordinates": {
-            "latitude": 53.887284,
-            "longitude": 27.61493
+            "latitude": 53.881234,
+            "longitude": 27.514193
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.835165",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 9",
+        "created_at": "2025-05-06 15:22:55.192263",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 91",
         "coordinates": {
-            "latitude": 53.886907,
-            "longitude": 27.614041
+            "latitude": 53.881451,
+            "longitude": 27.514014
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:45.983953",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 11",
+        "created_at": "2025-05-06 15:22:55.353347",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 102",
         "coordinates": {
-            "latitude": 53.887475,
-            "longitude": 27.613242
+            "latitude": 53.882561,
+            "longitude": 27.515442
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:46.122404",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 13",
+        "created_at": "2025-05-06 15:22:55.538870",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 104",
         "coordinates": {
-            "latitude": 53.886934,
-            "longitude": 27.612855
+            "latitude": 53.882539,
+            "longitude": 27.514696
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:46.298397",
-        "address": "Республика Беларусь, г. Минск, Грицевца ул., 13А/1",
+        "created_at": "2025-05-06 15:22:55.711428",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 108",
         "coordinates": {
-            "latitude": 53.886594,
-            "longitude": 27.613008
+            "latitude": 53.881823,
+            "longitude": 27.51361
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:46.459717",
-        "address": "Республика Беларусь, г. Минск, Гродненская ул., 4",
+        "created_at": "2025-05-06 15:22:55.863266",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 110",
         "coordinates": {
-            "latitude": 53.839022,
-            "longitude": 27.636984
+            "latitude": 53.881727,
+            "longitude": 27.513358
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:46.624589",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 14",
+        "created_at": "2025-05-06 15:22:56.012748",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 112",
         "coordinates": {
-            "latitude": 53.855749,
-            "longitude": 27.447098
+            "latitude": 53.881616,
+            "longitude": 27.513088
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:46.745475",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 20",
+        "created_at": "2025-05-06 15:22:56.174900",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 114",
         "coordinates": {
-            "latitude": 53.853774,
-            "longitude": 27.444547
+            "latitude": 53.881478,
+            "longitude": 27.512783
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:46.881384",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 20А",
+        "created_at": "2025-05-06 15:22:56.314904",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 116/1",
         "coordinates": {
-            "latitude": 53.854268,
-            "longitude": 27.444026
+            "latitude": 53.881552,
+            "longitude": 27.512451
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.029479",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 22",
+        "created_at": "2025-05-06 15:22:56.496533",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 116/2",
         "coordinates": {
-            "latitude": 53.854432,
-            "longitude": 27.443442
+            "latitude": 53.881324,
+            "longitude": 27.511912
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.212909",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 24А",
+        "created_at": "2025-05-06 15:22:56.643562",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 116",
         "coordinates": {
-            "latitude": 53.853827,
-            "longitude": 27.44205
+            "latitude": 53.881292,
+            "longitude": 27.512298
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.344993",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 24",
+        "created_at": "2025-05-06 15:22:56.792069",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 118А",
         "coordinates": {
-            "latitude": 53.854076,
-            "longitude": 27.441897
+            "latitude": 53.881117,
+            "longitude": 27.511714
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.476928",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 26",
+        "created_at": "2025-05-06 15:22:56.958351",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 118",
         "coordinates": {
-            "latitude": 53.853344,
-            "longitude": 27.442166
+            "latitude": 53.88108,
+            "longitude": 27.51175
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.618640",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 28",
+        "created_at": "2025-05-06 15:22:57.092773",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 119",
         "coordinates": {
-            "latitude": 53.852504,
-            "longitude": 27.442741
+            "latitude": 53.879631,
+            "longitude": 27.509522
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.750792",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 32",
+        "created_at": "2025-05-06 15:22:57.246143",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 120",
         "coordinates": {
-            "latitude": 53.852839,
-            "longitude": 27.441313
+            "latitude": 53.880926,
+            "longitude": 27.511373
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:47.912540",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 34",
+        "created_at": "2025-05-06 15:22:57.386656",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 123/2",
         "coordinates": {
-            "latitude": 53.852876,
-            "longitude": 27.440217
+            "latitude": 53.87893,
+            "longitude": 27.508067
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.073591",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 36",
+        "created_at": "2025-05-06 15:22:57.571663",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 123/3",
         "coordinates": {
-            "latitude": 53.852982,
-            "longitude": 27.439085
+            "latitude": 53.879413,
+            "longitude": 27.508974
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.196538",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 38",
+        "created_at": "2025-05-06 15:22:57.714845",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 123/1",
         "coordinates": {
-            "latitude": 53.852037,
-            "longitude": 27.440298
+            "latitude": 53.879254,
+            "longitude": 27.507968
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.357773",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 40",
+        "created_at": "2025-05-06 15:22:57.848519",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 123",
         "coordinates": {
-            "latitude": 53.852026,
-            "longitude": 27.439373
+            "latitude": 53.879286,
+            "longitude": 27.50813
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.490883",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 42",
+        "created_at": "2025-05-06 15:22:57.975464",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 124",
         "coordinates": {
-            "latitude": 53.852032,
-            "longitude": 27.43851
+            "latitude": 53.880061,
+            "longitude": 27.509001
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.688454",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 44",
+        "created_at": "2025-05-06 15:22:58.107413",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 125",
         "coordinates": {
-            "latitude": 53.851516,
-            "longitude": 27.439382
+            "latitude": 53.878596,
+            "longitude": 27.506207
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.814413",
-        "address": "Республика Беларусь, г. Минск, Громова ул., 46",
+        "created_at": "2025-05-06 15:22:58.274766",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 126",
         "coordinates": {
-            "latitude": 53.850943,
-            "longitude": 27.439463
+            "latitude": 53.879764,
+            "longitude": 27.508229
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:48.952091",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/4",
+        "created_at": "2025-05-06 15:22:58.452948",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 127",
         "coordinates": {
-            "latitude": 53.890585,
-            "longitude": 27.531216
+            "latitude": 53.878442,
+            "longitude": 27.505776
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.099121",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/7",
+        "created_at": "2025-05-06 15:22:58.624888",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 128",
         "coordinates": {
-            "latitude": 53.891338,
-            "longitude": 27.531702
+            "latitude": 53.879546,
+            "longitude": 27.507627
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.252561",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/6",
+        "created_at": "2025-05-06 15:22:58.760257",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 128А",
         "coordinates": {
-            "latitude": 53.891259,
-            "longitude": 27.531648
+            "latitude": 53.879806,
+            "longitude": 27.507582
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.416092",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/5",
+        "created_at": "2025-05-06 15:22:58.882982",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 129",
         "coordinates": {
-            "latitude": 53.890686,
-            "longitude": 27.531199
+            "latitude": 53.878203,
+            "longitude": 27.505129
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.576203",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2",
+        "created_at": "2025-05-06 15:22:59.018209",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 130",
+        "coordinates": {
+            "latitude": 53.879376,
+            "longitude": 27.507169
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:22:59.151122",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 131",
+        "coordinates": {
+            "latitude": 53.876823,
+            "longitude": 27.502902
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:22:59.314900",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 132",
+        "coordinates": {
+            "latitude": 53.879222,
+            "longitude": 27.506764
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:22:59.461120",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 133",
+        "coordinates": {
+            "latitude": 53.87712,
+            "longitude": 27.502488
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:22:59.590809",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 135",
+        "coordinates": {
+            "latitude": 53.876435,
+            "longitude": 27.501824
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:22:59.749019",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 136",
+        "coordinates": {
+            "latitude": 53.878734,
+            "longitude": 27.505093
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:22:59.889939",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 137",
+        "coordinates": {
+            "latitude": 53.876212,
+            "longitude": 27.500593
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.035422",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 138А",
+        "coordinates": {
+            "latitude": 53.878569,
+            "longitude": 27.503423
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.161980",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 140",
+        "coordinates": {
+            "latitude": 53.878208,
+            "longitude": 27.503638
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.292815",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 142",
+        "coordinates": {
+            "latitude": 53.877375,
+            "longitude": 27.501886
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.437710",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 144",
+        "coordinates": {
+            "latitude": 53.877263,
+            "longitude": 27.501294
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.567918",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 146",
+        "coordinates": {
+            "latitude": 53.876972,
+            "longitude": 27.500728
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.755126",
+        "address": "Республика Беларусь, г. Минск, Грушевская ул., 148",
+        "coordinates": {
+            "latitude": 53.876685,
+            "longitude": 27.500126
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:00.913641",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 1А",
         "coordinates": {
             "latitude": 53.89067,
-            "longitude": 27.53163
+            "longitude": 27.483381
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.692581",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/1",
+        "created_at": "2025-05-06 15:23:01.076736",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 1А/1",
         "coordinates": {
-            "latitude": 53.890797,
-            "longitude": 27.531693
+            "latitude": 53.890134,
+            "longitude": 27.481935
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.835617",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/2",
+        "created_at": "2025-05-06 15:23:01.211199",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3",
         "coordinates": {
-            "latitude": 53.890755,
-            "longitude": 27.531675
+            "latitude": 53.890489,
+            "longitude": 27.482716
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:49.965492",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 2/3",
+        "created_at": "2025-05-06 15:23:01.401422",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3/2",
+        "coordinates": {
+            "latitude": 53.8905,
+            "longitude": 27.482806
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:01.581995",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3Б/2",
+        "coordinates": {
+            "latitude": 53.890081,
+            "longitude": 27.482213
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:01.752018",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3Б/1",
+        "coordinates": {
+            "latitude": 53.890219,
+            "longitude": 27.482654
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:01.896636",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3А/1",
+        "coordinates": {
+            "latitude": 53.889773,
+            "longitude": 27.482779
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.038647",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3/3",
+        "coordinates": {
+            "latitude": 53.890691,
+            "longitude": 27.482716
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.173396",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3Б",
+        "coordinates": {
+            "latitude": 53.890319,
+            "longitude": 27.482133
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.351699",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3/1",
+        "coordinates": {
+            "latitude": 53.890404,
+            "longitude": 27.483381
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.503609",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3А/2",
+        "coordinates": {
+            "latitude": 53.889921,
+            "longitude": 27.483049
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.661261",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3А/3",
+        "coordinates": {
+            "latitude": 53.889858,
+            "longitude": 27.483175
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.828592",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 3/А",
+        "coordinates": {
+            "latitude": 53.890065,
+            "longitude": 27.482555
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:02.975457",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 5/2",
+        "coordinates": {
+            "latitude": 53.888982,
+            "longitude": 27.481881
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:03.144992",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 5",
+        "coordinates": {
+            "latitude": 53.889184,
+            "longitude": 27.48118
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:03.395127",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 5/1",
+        "coordinates": {
+            "latitude": 53.889157,
+            "longitude": 27.481171
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:03.541161",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 5/5",
+        "coordinates": {
+            "latitude": 53.889699,
+            "longitude": 27.482177
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:03.707749",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 5/4",
+        "coordinates": {
+            "latitude": 53.889603,
+            "longitude": 27.482519
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:03.857755",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 5/3",
+        "coordinates": {
+            "latitude": 53.889571,
+            "longitude": 27.4833
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:04.179627",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/8",
+        "coordinates": {
+            "latitude": 53.888775,
+            "longitude": 27.481728
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:04.315243",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/6",
+        "coordinates": {
+            "latitude": 53.888091,
+            "longitude": 27.480749
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:04.451550",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/5",
+        "coordinates": {
+            "latitude": 53.887916,
+            "longitude": 27.48083
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:04.568675",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/3",
+        "coordinates": {
+            "latitude": 53.888796,
+            "longitude": 27.481234
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:04.719725",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7А/3",
+        "coordinates": {
+            "latitude": 53.886599,
+            "longitude": 27.482016
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.020991",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/7",
+        "coordinates": {
+            "latitude": 53.887624,
+            "longitude": 27.481827
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.161418",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7Б/3",
+        "coordinates": {
+            "latitude": 53.887019,
+            "longitude": 27.482393
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.320588",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7Б/2",
+        "coordinates": {
+            "latitude": 53.887613,
+            "longitude": 27.482133
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.472579",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7А/2",
+        "coordinates": {
+            "latitude": 53.886753,
+            "longitude": 27.482501
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.621401",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/2",
+        "coordinates": {
+            "latitude": 53.888855,
+            "longitude": 27.480803
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.742674",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7Б",
+        "coordinates": {
+            "latitude": 53.88696,
+            "longitude": 27.482052
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:05.865197",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7А",
+        "coordinates": {
+            "latitude": 53.886817,
+            "longitude": 27.481441
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.031669",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/9",
+        "coordinates": {
+            "latitude": 53.88877,
+            "longitude": 27.482088
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.205328",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7",
+        "coordinates": {
+            "latitude": 53.888414,
+            "longitude": 27.480866
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.346264",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/4",
+        "coordinates": {
+            "latitude": 53.888319,
+            "longitude": 27.482681
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.487132",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 7/1",
+        "coordinates": {
+            "latitude": 53.888452,
+            "longitude": 27.480884
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.631007",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 9",
+        "coordinates": {
+            "latitude": 53.886138,
+            "longitude": 27.481719
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.801664",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 9/А",
+        "coordinates": {
+            "latitude": 53.886138,
+            "longitude": 27.481719
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:06.955517",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 9Б",
+        "coordinates": {
+            "latitude": 53.885543,
+            "longitude": 27.481351
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:07.116358",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 9/1",
+        "coordinates": {
+            "latitude": 53.885803,
+            "longitude": 27.481935
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:07.280094",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/4",
+        "coordinates": {
+            "latitude": 53.884142,
+            "longitude": 27.484208
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:07.414674",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/2",
+        "coordinates": {
+            "latitude": 53.883612,
+            "longitude": 27.483462
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:07.596756",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11",
+        "coordinates": {
+            "latitude": 53.883251,
+            "longitude": 27.483076
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:07.729271",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/1",
+        "coordinates": {
+            "latitude": 53.883389,
+            "longitude": 27.48277
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:07.857106",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11А/1",
+        "coordinates": {
+            "latitude": 53.884609,
+            "longitude": 27.482276
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:08.011152",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/3",
+        "coordinates": {
+            "latitude": 53.883994,
+            "longitude": 27.484037
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:08.154180",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/7",
+        "coordinates": {
+            "latitude": 53.883776,
+            "longitude": 27.484405
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:08.298402",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/6",
+        "coordinates": {
+            "latitude": 53.884084,
+            "longitude": 27.484585
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:08.441157",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/5",
+        "coordinates": {
+            "latitude": 53.884328,
+            "longitude": 27.483983
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:08.622049",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/8",
+        "coordinates": {
+            "latitude": 53.884429,
+            "longitude": 27.48286
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:08.830187",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/7",
+        "coordinates": {
+            "latitude": 53.883776,
+            "longitude": 27.484405
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:09.011721",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/6",
+        "coordinates": {
+            "latitude": 53.884084,
+            "longitude": 27.484585
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:09.188418",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/5",
+        "coordinates": {
+            "latitude": 53.884328,
+            "longitude": 27.483983
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:09.340555",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 11/А",
+        "coordinates": {
+            "latitude": 53.884572,
+            "longitude": 27.482222
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:09.495721",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/10",
+        "coordinates": {
+            "latitude": 53.884137,
+            "longitude": 27.486148
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:09.702900",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/9",
+        "coordinates": {
+            "latitude": 53.884041,
+            "longitude": 27.485402
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:09.891109",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/8",
+        "coordinates": {
+            "latitude": 53.883681,
+            "longitude": 27.485079
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.088580",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/7",
+        "coordinates": {
+            "latitude": 53.884668,
+            "longitude": 27.489121
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.234361",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/6",
+        "coordinates": {
+            "latitude": 53.88255,
+            "longitude": 27.484253
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.375195",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/5",
+        "coordinates": {
+            "latitude": 53.883527,
+            "longitude": 27.486822
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.513122",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/4",
+        "coordinates": {
+            "latitude": 53.883452,
+            "longitude": 27.486723
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.661969",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/3",
+        "coordinates": {
+            "latitude": 53.882906,
+            "longitude": 27.485681
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.830546",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15/2",
+        "coordinates": {
+            "latitude": 53.882799,
+            "longitude": 27.483812
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:10.941824",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 15",
+        "coordinates": {
+            "latitude": 53.884471,
+            "longitude": 27.489535
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:11.076649",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/12",
+        "coordinates": {
+            "latitude": 53.89103,
+            "longitude": 27.478854
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:11.248624",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/14",
+        "coordinates": {
+            "latitude": 53.890224,
+            "longitude": 27.478827
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:11.381536",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/13",
         "coordinates": {
             "latitude": 53.890564,
-            "longitude": 27.531603
+            "longitude": 27.478701
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.096026",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/11",
+        "created_at": "2025-05-06 15:23:11.514635",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/11",
         "coordinates": {
-            "latitude": 53.889428,
-            "longitude": 27.529941
+            "latitude": 53.891381,
+            "longitude": 27.478369
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.238831",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/3",
+        "created_at": "2025-05-06 15:23:11.656401",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/8",
         "coordinates": {
-            "latitude": 53.889523,
-            "longitude": 27.528656
+            "latitude": 53.891168,
+            "longitude": 27.479608
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.407051",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/8",
+        "created_at": "2025-05-06 15:23:11.791630",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/7",
         "coordinates": {
-            "latitude": 53.889911,
-            "longitude": 27.531522
+            "latitude": 53.890893,
+            "longitude": 27.480237
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.571492",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/9",
+        "created_at": "2025-05-06 15:23:11.924495",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/6",
         "coordinates": {
-            "latitude": 53.889263,
-            "longitude": 27.531441
+            "latitude": 53.890839,
+            "longitude": 27.479411
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.739250",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/10",
+        "created_at": "2025-05-06 15:23:12.096211",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/5",
         "coordinates": {
-            "latitude": 53.889125,
-            "longitude": 27.530282
+            "latitude": 53.890776,
+            "longitude": 27.479959
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.867058",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/7",
+        "created_at": "2025-05-06 15:23:12.256144",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/4",
         "coordinates": {
-            "latitude": 53.889608,
-            "longitude": 27.531046
+            "latitude": 53.890617,
+            "longitude": 27.48127
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:50.983386",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/6",
+        "created_at": "2025-05-06 15:23:12.438475",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/3",
         "coordinates": {
-            "latitude": 53.889985,
-            "longitude": 27.530713
+            "latitude": 53.89068,
+            "longitude": 27.48189
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:51.132627",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/5",
+        "created_at": "2025-05-06 15:23:12.594732",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/2",
         "coordinates": {
-            "latitude": 53.890378,
-            "longitude": 27.529941
+            "latitude": 53.890404,
+            "longitude": 27.481522
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:51.274517",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/4",
+        "created_at": "2025-05-06 15:23:12.769252",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/15",
         "coordinates": {
-            "latitude": 53.890325,
-            "longitude": 27.529626
+            "latitude": 53.890357,
+            "longitude": 27.479707
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:51.432866",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/2",
+        "created_at": "2025-05-06 15:23:12.926956",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/16",
         "coordinates": {
-            "latitude": 53.889619,
-            "longitude": 27.529393
+            "latitude": 53.889667,
+            "longitude": 27.480587
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:51.637231",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5/1",
+        "created_at": "2025-05-06 15:23:13.069651",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/9",
         "coordinates": {
-            "latitude": 53.889789,
-            "longitude": 27.52968
+            "latitude": 53.891333,
+            "longitude": 27.479096
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:51.784072",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 5",
+        "created_at": "2025-05-06 15:23:13.218202",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16/1",
         "coordinates": {
-            "latitude": 53.889115,
-            "longitude": 27.529366
+            "latitude": 53.890357,
+            "longitude": 27.481414
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:51.973343",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/5",
+        "created_at": "2025-05-06 15:23:13.342959",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 16",
         "coordinates": {
-            "latitude": 53.886743,
-            "longitude": 27.529195
+            "latitude": 53.890081,
+            "longitude": 27.481028
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:52.113948",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7Б",
+        "created_at": "2025-05-06 15:23:13.511698",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 17А",
         "coordinates": {
-            "latitude": 53.888006,
-            "longitude": 27.529932
+            "latitude": 53.882677,
+            "longitude": 27.488223
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:52.278368",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7В",
+        "created_at": "2025-05-06 15:23:13.638070",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 17",
         "coordinates": {
-            "latitude": 53.888361,
-            "longitude": 27.530327
+            "latitude": 53.881504,
+            "longitude": 27.487945
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:52.427407",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7/1",
+        "created_at": "2025-05-06 15:23:13.763802",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 17",
         "coordinates": {
-            "latitude": 53.888701,
-            "longitude": 27.530983
+            "latitude": 53.881504,
+            "longitude": 27.487945
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:52.568553",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/1",
-        "coordinates": {
-            "latitude": 53.887422,
-            "longitude": 27.530821
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:52.699881",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7/A",
-        "coordinates": {
-            "latitude": 53.887289,
-            "longitude": 27.5296
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:52.883246",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/4",
-        "coordinates": {
-            "latitude": 53.886387,
-            "longitude": 27.529752
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.032937",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7",
-        "coordinates": {
-            "latitude": 53.888685,
-            "longitude": 27.529186
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.179418",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/8",
-        "coordinates": {
-            "latitude": 53.887666,
-            "longitude": 27.529276
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.331262",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/7",
-        "coordinates": {
-            "latitude": 53.887013,
-            "longitude": 27.529276
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.472990",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/6",
-        "coordinates": {
-            "latitude": 53.886764,
-            "longitude": 27.529788
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.616916",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7Б/1",
-        "coordinates": {
-            "latitude": 53.888547,
-            "longitude": 27.529537
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.813868",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7/2",
-        "coordinates": {
-            "latitude": 53.888786,
-            "longitude": 27.530309
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:53.967145",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 7А/2",
-        "coordinates": {
-            "latitude": 53.886721,
-            "longitude": 27.530507
-        },
-        "water_parameters": null
-    },
-    {
-        "created_at": "2025-05-06 14:57:54.092560",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 9",
+        "created_at": "2025-05-06 15:23:13.918568",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 18/1",
         "coordinates": {
             "latitude": 53.888292,
-            "longitude": 27.528504
+            "longitude": 27.478683
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:54.227434",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11Г",
+        "created_at": "2025-05-06 15:23:14.079258",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 18/2",
         "coordinates": {
-            "latitude": 53.887088,
-            "longitude": 27.52862
+            "latitude": 53.888149,
+            "longitude": 27.478261
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:54.387850",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11",
+        "created_at": "2025-05-06 15:23:14.235815",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 18/4",
         "coordinates": {
-            "latitude": 53.887724,
-            "longitude": 27.527506
+            "latitude": 53.888998,
+            "longitude": 27.478072
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:54.524667",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11/В",
+        "created_at": "2025-05-06 15:23:14.381994",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 18/5",
         "coordinates": {
-            "latitude": 53.887326,
-            "longitude": 27.528755
+            "latitude": 53.888542,
+            "longitude": 27.479959
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:54.663690",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11/Б",
+        "created_at": "2025-05-06 15:23:14.527186",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 18",
         "coordinates": {
-            "latitude": 53.886732,
-            "longitude": 27.528207
+            "latitude": 53.887751,
+            "longitude": 27.480084
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:54.820082",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 11/А",
+        "created_at": "2025-05-06 15:23:14.660016",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 18/3",
         "coordinates": {
-            "latitude": 53.887682,
-            "longitude": 27.528953
+            "latitude": 53.888308,
+            "longitude": 27.478216
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:54.981962",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 15",
+        "created_at": "2025-05-06 15:23:14.786888",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 19/4",
         "coordinates": {
-            "latitude": 53.887056,
-            "longitude": 27.526914
+            "latitude": 53.880602,
+            "longitude": 27.491179
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.166023",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 15А",
+        "created_at": "2025-05-06 15:23:14.954788",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 19/1",
         "coordinates": {
-            "latitude": 53.886424,
-            "longitude": 27.526384
+            "latitude": 53.880618,
+            "longitude": 27.489589
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.281762",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 17",
+        "created_at": "2025-05-06 15:23:15.088664",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 19/2",
         "coordinates": {
-            "latitude": 53.886366,
-            "longitude": 27.52712
+            "latitude": 53.880087,
+            "longitude": 27.488942
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.424076",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/2",
+        "created_at": "2025-05-06 15:23:15.254886",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 19/3",
         "coordinates": {
-            "latitude": 53.889136,
-            "longitude": 27.528315
+            "latitude": 53.880183,
+            "longitude": 27.490586
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.554330",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/3",
+        "created_at": "2025-05-06 15:23:15.417904",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 19",
         "coordinates": {
-            "latitude": 53.889258,
-            "longitude": 27.528629
+            "latitude": 53.880491,
+            "longitude": 27.490172
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.689636",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/1",
+        "created_at": "2025-05-06 15:23:15.582523",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 20А",
         "coordinates": {
-            "latitude": 53.888881,
-            "longitude": 27.528611
+            "latitude": 53.889407,
+            "longitude": 27.476078
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.814444",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/4",
+        "created_at": "2025-05-06 15:23:15.710357",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 20",
         "coordinates": {
-            "latitude": 53.889433,
-            "longitude": 27.528432
+            "latitude": 53.888802,
+            "longitude": 27.478683
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:55.932985",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22",
+        "created_at": "2025-05-06 15:23:15.847207",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 21/1",
         "coordinates": {
-            "latitude": 53.888934,
-            "longitude": 27.52792
+            "latitude": 53.881621,
+            "longitude": 27.490936
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.086871",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/7",
+        "created_at": "2025-05-06 15:23:15.992269",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 21/2",
         "coordinates": {
-            "latitude": 53.889189,
-            "longitude": 27.527318
+            "latitude": 53.881308,
+            "longitude": 27.491861
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.276452",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/6",
+        "created_at": "2025-05-06 15:23:16.109717",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 21",
         "coordinates": {
-            "latitude": 53.889465,
-            "longitude": 27.527623
+            "latitude": 53.881637,
+            "longitude": 27.492337
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.415385",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 22/5",
+        "created_at": "2025-05-06 15:23:16.270137",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 21А",
         "coordinates": {
-            "latitude": 53.88963,
-            "longitude": 27.527902
+            "latitude": 53.882194,
+            "longitude": 27.49143
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.573051",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 37",
+        "created_at": "2025-05-06 15:23:16.402495",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/8",
         "coordinates": {
-            "latitude": 53.88575,
-            "longitude": 27.524165
+            "latitude": 53.885703,
+            "longitude": 27.480246
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.752622",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 38",
+        "created_at": "2025-05-06 15:23:16.566653",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22Б",
         "coordinates": {
-            "latitude": 53.887077,
-            "longitude": 27.52544
+            "latitude": 53.884731,
+            "longitude": 27.480534
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.880615",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 41",
+        "created_at": "2025-05-06 15:23:16.694429",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/7",
         "coordinates": {
-            "latitude": 53.885639,
-            "longitude": 27.523464
+            "latitude": 53.885517,
+            "longitude": 27.480426
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:56.993045",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 42",
+        "created_at": "2025-05-06 15:23:16.878122",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/2",
         "coordinates": {
-            "latitude": 53.887077,
-            "longitude": 27.52544
+            "latitude": 53.885809,
+            "longitude": 27.479518
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:57.132470",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 46",
+        "created_at": "2025-05-06 15:23:17.012794",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/3",
         "coordinates": {
-            "latitude": 53.886663,
-            "longitude": 27.524677
+            "latitude": 53.885241,
+            "longitude": 27.478521
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:57.289422",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 48",
+        "created_at": "2025-05-06 15:23:17.131685",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/4",
         "coordinates": {
-            "latitude": 53.886541,
-            "longitude": 27.524407
+            "latitude": 53.886992,
+            "longitude": 27.480282
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:57.437436",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 49",
+        "created_at": "2025-05-06 15:23:17.266393",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22",
         "coordinates": {
-            "latitude": 53.885305,
-            "longitude": 27.522682
+            "latitude": 53.886483,
+            "longitude": 27.480318
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:57.609264",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 50",
+        "created_at": "2025-05-06 15:23:17.406895",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/1",
         "coordinates": {
-            "latitude": 53.886366,
-            "longitude": 27.524111
+            "latitude": 53.885888,
+            "longitude": 27.48012
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:57.749566",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 56",
+        "created_at": "2025-05-06 15:23:17.559565",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/6",
         "coordinates": {
-            "latitude": 53.885713,
-            "longitude": 27.522745
+            "latitude": 53.88773,
+            "longitude": 27.478387
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:57.881393",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 58",
+        "created_at": "2025-05-06 15:23:17.730038",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 22/5",
         "coordinates": {
-            "latitude": 53.88557,
-            "longitude": 27.522476
+            "latitude": 53.887151,
+            "longitude": 27.479554
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:58.014057",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65Б",
+        "created_at": "2025-05-06 15:23:17.865538",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 23/1",
         "coordinates": {
-            "latitude": 53.88419,
-            "longitude": 27.521766
+            "latitude": 53.879636,
+            "longitude": 27.490801
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:58.211984",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65В",
+        "created_at": "2025-05-06 15:23:18.061145",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 23Б",
         "coordinates": {
-            "latitude": 53.884169,
-            "longitude": 27.521622
+            "latitude": 53.879811,
+            "longitude": 27.491475
         },
         "water_parameters": null
     },
     {
-        "created_at": "2025-05-06 14:57:58.339468",
-        "address": "Республика Беларусь, г. Минск, Грушевская ул., 65",
+        "created_at": "2025-05-06 15:23:18.251987",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 23А",
         "coordinates": {
-            "latitude": 53.884004,
-            "longitude": 27.521281
+            "latitude": 53.879769,
+            "longitude": 27.49143
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:18.377527",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 24",
+        "coordinates": {
+            "latitude": 53.884291,
+            "longitude": 27.480435
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:18.500798",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 24А",
+        "coordinates": {
+            "latitude": 53.884211,
+            "longitude": 27.479483
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:18.630390",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 26",
+        "coordinates": {
+            "latitude": 53.88359,
+            "longitude": 27.478306
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:18.767323",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 26/1",
+        "coordinates": {
+            "latitude": 53.883861,
+            "longitude": 27.477731
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:18.909649",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28",
+        "coordinates": {
+            "latitude": 53.884684,
+            "longitude": 27.476671
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.080742",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28/Д",
+        "coordinates": {
+            "latitude": 53.88212,
+            "longitude": 27.473661
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.216173",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28А/2",
+        "coordinates": {
+            "latitude": 53.883988,
+            "longitude": 27.475422
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.342767",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28/Г",
+        "coordinates": {
+            "latitude": 53.881711,
+            "longitude": 27.474937
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.475855",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28/В",
+        "coordinates": {
+            "latitude": 53.882417,
+            "longitude": 27.47359
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.612542",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28/Б",
+        "coordinates": {
+            "latitude": 53.882635,
+            "longitude": 27.475404
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.740197",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 28/А",
+        "coordinates": {
+            "latitude": 53.884015,
+            "longitude": 27.474155
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:19.880048",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30А/1",
+        "coordinates": {
+            "latitude": 53.88247,
+            "longitude": 27.476392
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:20.044784",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30/Д",
+        "coordinates": {
+            "latitude": 53.88342,
+            "longitude": 27.479959
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:20.207085",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30/Б",
+        "coordinates": {
+            "latitude": 53.882237,
+            "longitude": 27.475404
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:20.351992",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30Д/6",
+        "coordinates": {
+            "latitude": 53.88324,
+            "longitude": 27.480309
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:20.508140",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30/Е",
+        "coordinates": {
+            "latitude": 53.881128,
+            "longitude": 27.472116
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:20.701327",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30Д/1",
+        "coordinates": {
+            "latitude": 53.88358,
+            "longitude": 27.480543
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:20.882500",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30А/2",
+        "coordinates": {
+            "latitude": 53.882449,
+            "longitude": 27.476123
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.020777",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30Д/2",
+        "coordinates": {
+            "latitude": 53.883155,
+            "longitude": 27.479051
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.161689",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30А/3",
+        "coordinates": {
+            "latitude": 53.882407,
+            "longitude": 27.47606
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.279364",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30Д/3",
+        "coordinates": {
+            "latitude": 53.882699,
+            "longitude": 27.478899
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.405006",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30Д/5",
+        "coordinates": {
+            "latitude": 53.883091,
+            "longitude": 27.48092
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.586942",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30/В",
+        "coordinates": {
+            "latitude": 53.881303,
+            "longitude": 27.475898
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.739706",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30",
+        "coordinates": {
+            "latitude": 53.883728,
+            "longitude": 27.481135
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:21.903784",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30/А",
+        "coordinates": {
+            "latitude": 53.882449,
+            "longitude": 27.476204
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.056219",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 30/Г",
+        "coordinates": {
+            "latitude": 53.880905,
+            "longitude": 27.475557
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.200984",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 31",
+        "coordinates": {
+            "latitude": 53.87902,
+            "longitude": 27.491394
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.341728",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 32",
+        "coordinates": {
+            "latitude": 53.883134,
+            "longitude": 27.481522
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.478985",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 33",
+        "coordinates": {
+            "latitude": 53.879503,
+            "longitude": 27.492176
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.654622",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 34/2",
+        "coordinates": {
+            "latitude": 53.881791,
+            "longitude": 27.480291
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.794180",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 34/3",
+        "coordinates": {
+            "latitude": 53.882396,
+            "longitude": 27.480066
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:22.961752",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 34/4",
+        "coordinates": {
+            "latitude": 53.882577,
+            "longitude": 27.479527
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.088985",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 34/5",
+        "coordinates": {
+            "latitude": 53.88229,
+            "longitude": 27.47924
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.221776",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 34/1",
+        "coordinates": {
+            "latitude": 53.881897,
+            "longitude": 27.480938
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.357070",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 34",
+        "coordinates": {
+            "latitude": 53.882693,
+            "longitude": 27.481827
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.477602",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 35",
+        "coordinates": {
+            "latitude": 53.87876,
+            "longitude": 27.493415
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.626358",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 36",
+        "coordinates": {
+            "latitude": 53.881356,
+            "longitude": 27.480462
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.761888",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 37А",
+        "coordinates": {
+            "latitude": 53.878553,
+            "longitude": 27.492885
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:23.894507",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 37",
+        "coordinates": {
+            "latitude": 53.878341,
+            "longitude": 27.492319
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.056989",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38/4",
+        "coordinates": {
+            "latitude": 53.882263,
+            "longitude": 27.478737
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.222644",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38А",
+        "coordinates": {
+            "latitude": 53.881144,
+            "longitude": 27.47721
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.350875",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38В",
+        "coordinates": {
+            "latitude": 53.881159,
+            "longitude": 27.477641
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.469027",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38/1",
+        "coordinates": {
+            "latitude": 53.88264,
+            "longitude": 27.476788
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.622552",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38/2",
+        "coordinates": {
+            "latitude": 53.882773,
+            "longitude": 27.477515
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.773652",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38/3",
+        "coordinates": {
+            "latitude": 53.883012,
+            "longitude": 27.478234
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:24.960529",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 38",
+        "coordinates": {
+            "latitude": 53.881266,
+            "longitude": 27.478836
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:25.114561",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 39",
+        "coordinates": {
+            "latitude": 53.878113,
+            "longitude": 27.494008
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:25.266636",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 40А/4",
+        "coordinates": {
+            "latitude": 53.87988,
+            "longitude": 27.480327
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:25.457627",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 40А/2",
+        "coordinates": {
+            "latitude": 53.88048,
+            "longitude": 27.48039
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:25.633506",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 40А/1",
+        "coordinates": {
+            "latitude": 53.880236,
+            "longitude": 27.481243
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:25.872865",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 40",
+        "coordinates": {
+            "latitude": 53.880841,
+            "longitude": 27.480974
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.043905",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 40/А",
+        "coordinates": {
+            "latitude": 53.880109,
+            "longitude": 27.480974
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.251456",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 40А/3",
+        "coordinates": {
+            "latitude": 53.880066,
+            "longitude": 27.48065
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.395724",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 41",
+        "coordinates": {
+            "latitude": 53.877794,
+            "longitude": 27.494951
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.584171",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 41/1",
+        "coordinates": {
+            "latitude": 53.877794,
+            "longitude": 27.494951
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.713581",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 42",
+        "coordinates": {
+            "latitude": 53.880894,
+            "longitude": 27.482124
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.851704",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 42А",
+        "coordinates": {
+            "latitude": 53.880565,
+            "longitude": 27.481917
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:26.972511",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 43А",
+        "coordinates": {
+            "latitude": 53.877401,
+            "longitude": 27.49594
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:27.120901",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 44/1",
+        "coordinates": {
+            "latitude": 53.879286,
+            "longitude": 27.486669
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:27.254050",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 44Б",
+        "coordinates": {
+            "latitude": 53.879525,
+            "longitude": 27.48701
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:27.387379",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 44А",
+        "coordinates": {
+            "latitude": 53.878182,
+            "longitude": 27.488591
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:27.557016",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 44/3",
+        "coordinates": {
+            "latitude": 53.878097,
+            "longitude": 27.48913
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:27.745914",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 44/2",
+        "coordinates": {
+            "latitude": 53.879212,
+            "longitude": 27.488385
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:27.907948",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 45",
+        "coordinates": {
+            "latitude": 53.878527,
+            "longitude": 27.49664
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:28.084938",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 46",
+        "coordinates": {
+            "latitude": 53.87833,
+            "longitude": 27.489903
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:28.213859",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 46/1",
+        "coordinates": {
+            "latitude": 53.877863,
+            "longitude": 27.490047
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:28.361713",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 48",
+        "coordinates": {
+            "latitude": 53.877858,
+            "longitude": 27.49081
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:28.524420",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 48/1",
+        "coordinates": {
+            "latitude": 53.877476,
+            "longitude": 27.490469
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:28.685179",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 48/2",
+        "coordinates": {
+            "latitude": 53.876982,
+            "longitude": 27.490999
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:28.864388",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 48/3",
+        "coordinates": {
+            "latitude": 53.877295,
+            "longitude": 27.491448
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.029640",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 50/5",
+        "coordinates": {
+            "latitude": 53.87635,
+            "longitude": 27.492481
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.201441",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 50/4",
+        "coordinates": {
+            "latitude": 53.876483,
+            "longitude": 27.491484
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.345835",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 50/3",
+        "coordinates": {
+            "latitude": 53.876526,
+            "longitude": 27.492769
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.483477",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 50/2",
+        "coordinates": {
+            "latitude": 53.876828,
+            "longitude": 27.492571
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.631587",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 50/1",
+        "coordinates": {
+            "latitude": 53.877104,
+            "longitude": 27.492149
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.763472",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 50",
+        "coordinates": {
+            "latitude": 53.87695,
+            "longitude": 27.491628
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:29.927840",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 52",
+        "coordinates": {
+            "latitude": 53.874466,
+            "longitude": 27.493649
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.080781",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 52/1",
+        "coordinates": {
+            "latitude": 53.875353,
+            "longitude": 27.492481
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.239502",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 52/2",
+        "coordinates": {
+            "latitude": 53.874917,
+            "longitude": 27.492831
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.381842",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 52/3",
+        "coordinates": {
+            "latitude": 53.87522,
+            "longitude": 27.493119
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.520343",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 52/4",
+        "coordinates": {
+            "latitude": 53.874917,
+            "longitude": 27.494044
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.679186",
+        "address": "Республика Беларусь, г. Минск, Гурского ул., 52/5",
+        "coordinates": {
+            "latitude": 53.874716,
+            "longitude": 27.493945
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.806892",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 2",
+        "coordinates": {
+            "latitude": 53.957509,
+            "longitude": 27.737865
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:30.940766",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 3",
+        "coordinates": {
+            "latitude": 53.958134,
+            "longitude": 27.737847
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:31.059714",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 4А",
+        "coordinates": {
+            "latitude": 53.957323,
+            "longitude": 27.73888
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:31.216111",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 4",
+        "coordinates": {
+            "latitude": 53.957519,
+            "longitude": 27.738709
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:31.372032",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 5",
+        "coordinates": {
+            "latitude": 53.958605,
+            "longitude": 27.738476
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:31.549962",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 6",
+        "coordinates": {
+            "latitude": 53.958007,
+            "longitude": 27.738961
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:31.691908",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 7",
+        "coordinates": {
+            "latitude": 53.958828,
+            "longitude": 27.739275
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:31.862804",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 8",
+        "coordinates": {
+            "latitude": 53.957742,
+            "longitude": 27.739572
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.026211",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 9",
+        "coordinates": {
+            "latitude": 53.959405,
+            "longitude": 27.740497
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.167325",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 9А",
+        "coordinates": {
+            "latitude": 53.959442,
+            "longitude": 27.739491
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.312398",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 11",
+        "coordinates": {
+            "latitude": 53.960004,
+            "longitude": 27.742365
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.438252",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 11/А",
+        "coordinates": {
+            "latitude": 53.960269,
+            "longitude": 27.739931
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.569059",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 12",
+        "coordinates": {
+            "latitude": 53.958128,
+            "longitude": 27.740614
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.718211",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 14",
+        "coordinates": {
+            "latitude": 53.958414,
+            "longitude": 27.741243
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:32.908004",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 16",
+        "coordinates": {
+            "latitude": 53.95913,
+            "longitude": 27.741261
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.048137",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 18",
+        "coordinates": {
+            "latitude": 53.958568,
+            "longitude": 27.742599
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.184636",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 20",
+        "coordinates": {
+            "latitude": 53.959018,
+            "longitude": 27.742042
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.352207",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 22",
+        "coordinates": {
+            "latitude": 53.958293,
+            "longitude": 27.743102
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.491162",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 24",
+        "coordinates": {
+            "latitude": 53.957959,
+            "longitude": 27.743524
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.654148",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 26А",
+        "coordinates": {
+            "latitude": 53.957297,
+            "longitude": 27.744836
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.800682",
+        "address": "Республика Беларусь, г. Минск, Гуртьева ул., 26Б",
+        "coordinates": {
+            "latitude": 53.958218,
+            "longitude": 27.744692
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:33.932138",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 2",
+        "coordinates": {
+            "latitude": 53.901302,
+            "longitude": 27.516251
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.053446",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 2/3",
+        "coordinates": {
+            "latitude": 53.901637,
+            "longitude": 27.516619
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.190121",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 2/2",
+        "coordinates": {
+            "latitude": 53.901398,
+            "longitude": 27.517589
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.391502",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 2/1",
+        "coordinates": {
+            "latitude": 53.90178,
+            "longitude": 27.517068
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.518753",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 2А",
+        "coordinates": {
+            "latitude": 53.901297,
+            "longitude": 27.517095
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.660709",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 3",
+        "coordinates": {
+            "latitude": 53.900814,
+            "longitude": 27.515253
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.821498",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 4/4",
+        "coordinates": {
+            "latitude": 53.902347,
+            "longitude": 27.516772
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:34.953050",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 4/3",
+        "coordinates": {
+            "latitude": 53.902082,
+            "longitude": 27.516888
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.101459",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 4/1",
+        "coordinates": {
+            "latitude": 53.901711,
+            "longitude": 27.516655
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.255872",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 4/2",
+        "coordinates": {
+            "latitude": 53.901828,
+            "longitude": 27.5174
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.415248",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 4",
+        "coordinates": {
+            "latitude": 53.901647,
+            "longitude": 27.516206
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.550784",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 6/1",
+        "coordinates": {
+            "latitude": 53.902719,
+            "longitude": 27.516879
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.697511",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 6",
+        "coordinates": {
+            "latitude": 53.902204,
+            "longitude": 27.515909
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.839559",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 7",
+        "coordinates": {
+            "latitude": 53.901111,
+            "longitude": 27.514894
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:35.985992",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 9",
+        "coordinates": {
+            "latitude": 53.901419,
+            "longitude": 27.514903
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:36.126042",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 10",
+        "coordinates": {
+            "latitude": 53.902772,
+            "longitude": 27.515047
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:36.297646",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 13",
+        "coordinates": {
+            "latitude": 53.901642,
+            "longitude": 27.514634
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:36.437064",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 15",
+        "coordinates": {
+            "latitude": 53.901833,
+            "longitude": 27.514517
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:36.569408",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 17",
+        "coordinates": {
+            "latitude": 53.901934,
+            "longitude": 27.514427
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:36.693656",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 19",
+        "coordinates": {
+            "latitude": 53.902119,
+            "longitude": 27.514283
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:36.841878",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20А/4",
+        "coordinates": {
+            "latitude": 53.902724,
+            "longitude": 27.515756
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.006795",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20А/2",
+        "coordinates": {
+            "latitude": 53.902942,
+            "longitude": 27.516628
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.165115",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20А/3",
+        "coordinates": {
+            "latitude": 53.902841,
+            "longitude": 27.51617
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.316477",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20/3",
+        "coordinates": {
+            "latitude": 53.904241,
+            "longitude": 27.51511
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.432462",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20/2",
+        "coordinates": {
+            "latitude": 53.904209,
+            "longitude": 27.514849
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.561783",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20/1",
+        "coordinates": {
+            "latitude": 53.903912,
+            "longitude": 27.514193
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.714059",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20А",
+        "coordinates": {
+            "latitude": 53.903074,
+            "longitude": 27.515855
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:37.904171",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 20",
+        "coordinates": {
+            "latitude": 53.903849,
+            "longitude": 27.514355
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.098491",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 21",
+        "coordinates": {
+            "latitude": 53.902305,
+            "longitude": 27.514292
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.248510",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 22/2",
+        "coordinates": {
+            "latitude": 53.904687,
+            "longitude": 27.514768
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.378846",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 22",
+        "coordinates": {
+            "latitude": 53.905541,
+            "longitude": 27.513565
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.558353",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 22/5",
+        "coordinates": {
+            "latitude": 53.905392,
+            "longitude": 27.515586
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.738684",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 22/4",
+        "coordinates": {
+            "latitude": 53.90553,
+            "longitude": 27.514975
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.879208",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 22/1",
+        "coordinates": {
+            "latitude": 53.904973,
+            "longitude": 27.513771
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:38.996861",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 22/3",
+        "coordinates": {
+            "latitude": 53.905477,
+            "longitude": 27.514589
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:39.117718",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 23",
+        "coordinates": {
+            "latitude": 53.902432,
+            "longitude": 27.514193
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:39.268138",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 25",
+        "coordinates": {
+            "latitude": 53.902719,
+            "longitude": 27.513996
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:39.428411",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 27",
+        "coordinates": {
+            "latitude": 53.902883,
+            "longitude": 27.513906
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:39.579545",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 29",
+        "coordinates": {
+            "latitude": 53.903122,
+            "longitude": 27.51378
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:39.744182",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 31",
+        "coordinates": {
+            "latitude": 53.903281,
+            "longitude": 27.513654
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:39.899933",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 33",
+        "coordinates": {
+            "latitude": 53.903514,
+            "longitude": 27.513583
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:40.071772",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 35",
+        "coordinates": {
+            "latitude": 53.903732,
+            "longitude": 27.513331
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:40.267833",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 37",
+        "coordinates": {
+            "latitude": 53.903934,
+            "longitude": 27.513286
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:40.452575",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 39",
+        "coordinates": {
+            "latitude": 53.904077,
+            "longitude": 27.513259
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:40.617155",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 41",
+        "coordinates": {
+            "latitude": 53.904236,
+            "longitude": 27.512873
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:40.747774",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 43",
+        "coordinates": {
+            "latitude": 53.904262,
+            "longitude": 27.513151
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:40.876797",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 47",
+        "coordinates": {
+            "latitude": 53.904512,
+            "longitude": 27.513008
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.041423",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 48",
+        "coordinates": {
+            "latitude": 53.907196,
+            "longitude": 27.512532
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.177038",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 49",
+        "coordinates": {
+            "latitude": 53.904745,
+            "longitude": 27.512909
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.344233",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 53",
+        "coordinates": {
+            "latitude": 53.905154,
+            "longitude": 27.512693
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.489743",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 55",
+        "coordinates": {
+            "latitude": 53.905472,
+            "longitude": 27.512505
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.624644",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 57",
+        "coordinates": {
+            "latitude": 53.905668,
+            "longitude": 27.512406
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.771456",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 59",
+        "coordinates": {
+            "latitude": 53.905965,
+            "longitude": 27.512253
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:41.910634",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 61",
+        "coordinates": {
+            "latitude": 53.906416,
+            "longitude": 27.512002
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.041211",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 63",
+        "coordinates": {
+            "latitude": 53.906809,
+            "longitude": 27.511795
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.167575",
+        "address": "Республика Беларусь, г. Минск, Гусовского ул., 65",
+        "coordinates": {
+            "latitude": 53.906809,
+            "longitude": 27.511795
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.304123",
+        "address": "Республика Беларусь, г. Минск, Дальний пер., 2",
+        "coordinates": {
+            "latitude": 53.866524,
+            "longitude": 27.562244
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.429823",
+        "address": "Республика Беларусь, г. Минск, Дальний пер., 3",
+        "coordinates": {
+            "latitude": 53.866747,
+            "longitude": 27.562056
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.600334",
+        "address": "Республика Беларусь, г. Минск, Дальний пер., 4",
+        "coordinates": {
+            "latitude": 53.866524,
+            "longitude": 27.562244
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.753315",
+        "address": "Республика Беларусь, г. Минск, Дальний пер., 5",
+        "coordinates": {
+            "latitude": 53.866747,
+            "longitude": 27.562056
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:42.930110",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 3",
+        "coordinates": {
+            "latitude": 53.910437,
+            "longitude": 27.486705
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.074214",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 4",
+        "coordinates": {
+            "latitude": 53.910224,
+            "longitude": 27.488996
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.263353",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 5",
+        "coordinates": {
+            "latitude": 53.910681,
+            "longitude": 27.485043
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.420434",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 6",
+        "coordinates": {
+            "latitude": 53.910405,
+            "longitude": 27.490154
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.577031",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 7А",
+        "coordinates": {
+            "latitude": 53.910288,
+            "longitude": 27.48807
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.719133",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 7Б",
+        "coordinates": {
+            "latitude": 53.911153,
+            "longitude": 27.486921
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.845031",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 7",
+        "coordinates": {
+            "latitude": 53.911338,
+            "longitude": 27.48657
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:43.973596",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 8/1",
+        "coordinates": {
+            "latitude": 53.911025,
+            "longitude": 27.489166
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:44.133705",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 8/2",
+        "coordinates": {
+            "latitude": 53.911285,
+            "longitude": 27.49019
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:44.276438",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 9",
+        "coordinates": {
+            "latitude": 53.912261,
+            "longitude": 27.486471
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:44.414342",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 10/B",
+        "coordinates": {
+            "latitude": 53.911763,
+            "longitude": 27.489238
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:44.564223",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 10/A",
+        "coordinates": {
+            "latitude": 53.911747,
+            "longitude": 27.490325
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:44.734519",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 10Б",
+        "coordinates": {
+            "latitude": 53.911699,
+            "longitude": 27.489885
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:44.893521",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 10",
+        "coordinates": {
+            "latitude": 53.911763,
+            "longitude": 27.489238
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.039329",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 11",
+        "coordinates": {
+            "latitude": 53.913163,
+            "longitude": 27.486364
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.192921",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 12А",
+        "coordinates": {
+            "latitude": 53.912139,
+            "longitude": 27.489741
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.309549",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 12",
+        "coordinates": {
+            "latitude": 53.912123,
+            "longitude": 27.490846
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.449006",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 13/2",
+        "coordinates": {
+            "latitude": 53.912107,
+            "longitude": 27.485142
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.629473",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 13/1",
+        "coordinates": {
+            "latitude": 53.912818,
+            "longitude": 27.485384
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.769076",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 13/3",
+        "coordinates": {
+            "latitude": 53.91171,
+            "longitude": 27.484064
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:45.950860",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 14/2",
+        "coordinates": {
+            "latitude": 53.913216,
+            "longitude": 27.490424
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:46.131098",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 14/1",
+        "coordinates": {
+            "latitude": 53.912776,
+            "longitude": 27.489696
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:46.254898",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 15А",
+        "coordinates": {
+            "latitude": 53.913799,
+            "longitude": 27.484944
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:46.403220",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 15",
+        "coordinates": {
+            "latitude": 53.913704,
+            "longitude": 27.485573
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:46.573048",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 16",
+        "coordinates": {
+            "latitude": 53.912611,
+            "longitude": 27.488564
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:46.813447",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 17",
+        "coordinates": {
+            "latitude": 53.914091,
+            "longitude": 27.485501
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:46.976815",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 18/3",
+        "coordinates": {
+            "latitude": 53.913428,
+            "longitude": 27.491179
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:47.112104",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 18/1",
+        "coordinates": {
+            "latitude": 53.913396,
+            "longitude": 27.488771
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:47.249898",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 18/2",
+        "coordinates": {
+            "latitude": 53.913651,
+            "longitude": 27.48975
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:47.393886",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 19",
+        "coordinates": {
+            "latitude": 53.914229,
+            "longitude": 27.486418
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:47.517079",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 20",
+        "coordinates": {
+            "latitude": 53.914536,
+            "longitude": 27.489068
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:47.685441",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 22",
+        "coordinates": {
+            "latitude": 53.916286,
+            "longitude": 27.487882
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:47.870571",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 24",
+        "coordinates": {
+            "latitude": 53.916727,
+            "longitude": 27.48843
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.029929",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 26",
+        "coordinates": {
+            "latitude": 53.917522,
+            "longitude": 27.488277
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.175286",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 30/А",
+        "coordinates": {
+            "latitude": 53.9181,
+            "longitude": 27.490658
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.317740",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 30",
+        "coordinates": {
+            "latitude": 53.918333,
+            "longitude": 27.491771
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.461264",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 32",
+        "coordinates": {
+            "latitude": 53.918339,
+            "longitude": 27.492939
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.605328",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 34/А",
+        "coordinates": {
+            "latitude": 53.919224,
+            "longitude": 27.493299
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.765449",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 34",
+        "coordinates": {
+            "latitude": 53.918662,
+            "longitude": 27.494035
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:48.918868",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 36",
+        "coordinates": {
+            "latitude": 53.919203,
+            "longitude": 27.494781
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:49.084821",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 38",
+        "coordinates": {
+            "latitude": 53.919839,
+            "longitude": 27.49514
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:49.217450",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 40",
+        "coordinates": {
+            "latitude": 53.920523,
+            "longitude": 27.49505
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:49.341223",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 42",
+        "coordinates": {
+            "latitude": 53.920502,
+            "longitude": 27.494323
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:49.508942",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 44",
+        "coordinates": {
+            "latitude": 53.920009,
+            "longitude": 27.494448
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:49.703516",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 46",
+        "coordinates": {
+            "latitude": 53.920189,
+            "longitude": 27.493676
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:49.876049",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 48",
+        "coordinates": {
+            "latitude": 53.919781,
+            "longitude": 27.492849
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.017753",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 48А",
+        "coordinates": {
+            "latitude": 53.920158,
+            "longitude": 27.492948
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.153682",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 50/1",
+        "coordinates": {
+            "latitude": 53.919314,
+            "longitude": 27.492275
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.342968",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 50/2",
+        "coordinates": {
+            "latitude": 53.918827,
+            "longitude": 27.492445
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.527113",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 52",
+        "coordinates": {
+            "latitude": 53.919733,
+            "longitude": 27.4917
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.648688",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 54",
+        "coordinates": {
+            "latitude": 53.91897,
+            "longitude": 27.491565
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.770490",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 56",
+        "coordinates": {
+            "latitude": 53.919341,
+            "longitude": 27.490747
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:50.892718",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 58",
+        "coordinates": {
+            "latitude": 53.918752,
+            "longitude": 27.490172
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.013130",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 60",
+        "coordinates": {
+            "latitude": 53.918434,
+            "longitude": 27.488663
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.165696",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 62",
+        "coordinates": {
+            "latitude": 53.918832,
+            "longitude": 27.48887
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.320731",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 64",
+        "coordinates": {
+            "latitude": 53.919261,
+            "longitude": 27.48905
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.478033",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 64А",
+        "coordinates": {
+            "latitude": 53.919516,
+            "longitude": 27.490074
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.634062",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 64Б",
+        "coordinates": {
+            "latitude": 53.919436,
+            "longitude": 27.490074
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.798355",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 66",
+        "coordinates": {
+            "latitude": 53.919664,
+            "longitude": 27.489319
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:51.998509",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 68",
+        "coordinates": {
+            "latitude": 53.920131,
+            "longitude": 27.491277
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:52.181981",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 70",
+        "coordinates": {
+            "latitude": 53.92029,
+            "longitude": 27.489346
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:52.350053",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 72",
+        "coordinates": {
+            "latitude": 53.920587,
+            "longitude": 27.490442
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:52.495786",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 74",
+        "coordinates": {
+            "latitude": 53.920985,
+            "longitude": 27.489436
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:52.637247",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 76",
+        "coordinates": {
+            "latitude": 53.92116,
+            "longitude": 27.490235
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:52.778179",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 78",
+        "coordinates": {
+            "latitude": 53.9216,
+            "longitude": 27.489984
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:52.907099",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 80",
+        "coordinates": {
+            "latitude": 53.921107,
+            "longitude": 27.49117
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.067109",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 82",
+        "coordinates": {
+            "latitude": 53.921812,
+            "longitude": 27.491062
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.197467",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 86",
+        "coordinates": {
+            "latitude": 53.921457,
+            "longitude": 27.488978
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.320531",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 88",
+        "coordinates": {
+            "latitude": 53.922013,
+            "longitude": 27.489238
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.474471",
+        "address": "Республика Беларусь, г. Минск, Данилы Сердича ул., 88А",
+        "coordinates": {
+            "latitude": 53.921515,
+            "longitude": 27.489364
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.600994",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 1",
+        "coordinates": {
+            "latitude": 53.942211,
+            "longitude": 27.484145
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.729337",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 2",
+        "coordinates": {
+            "latitude": 53.941946,
+            "longitude": 27.483354
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.847143",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 3",
+        "coordinates": {
+            "latitude": 53.942099,
+            "longitude": 27.484612
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:53.981585",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 4",
+        "coordinates": {
+            "latitude": 53.941856,
+            "longitude": 27.483723
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:54.099029",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 5",
+        "coordinates": {
+            "latitude": 53.942009,
+            "longitude": 27.485052
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:54.258350",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 6",
+        "coordinates": {
+            "latitude": 53.941744,
+            "longitude": 27.484091
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:54.424671",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 7",
+        "coordinates": {
+            "latitude": 53.941925,
+            "longitude": 27.485501
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:54.626012",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 8",
+        "coordinates": {
+            "latitude": 53.941675,
+            "longitude": 27.484432
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:54.770559",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 9",
+        "coordinates": {
+            "latitude": 53.941898,
+            "longitude": 27.485546
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:54.957685",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 10",
+        "coordinates": {
+            "latitude": 53.941495,
+            "longitude": 27.485079
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.127102",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 11",
+        "coordinates": {
+            "latitude": 53.941771,
+            "longitude": 27.486022
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.280687",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 12",
+        "coordinates": {
+            "latitude": 53.941389,
+            "longitude": 27.485483
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.447466",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 13",
+        "coordinates": {
+            "latitude": 53.941675,
+            "longitude": 27.486355
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.574680",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 14",
+        "coordinates": {
+            "latitude": 53.941304,
+            "longitude": 27.485825
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.698035",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 15",
+        "coordinates": {
+            "latitude": 53.941559,
+            "longitude": 27.486651
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.861966",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 16",
+        "coordinates": {
+            "latitude": 53.941209,
+            "longitude": 27.486157
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:55.982574",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 18",
+        "coordinates": {
+            "latitude": 53.94113,
+            "longitude": 27.486561
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:56.132764",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 19",
+        "coordinates": {
+            "latitude": 53.94123,
+            "longitude": 27.488079
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:56.265334",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 20",
+        "coordinates": {
+            "latitude": 53.940923,
+            "longitude": 27.487352
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:56.416222",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 21",
+        "coordinates": {
+            "latitude": 53.941092,
+            "longitude": 27.488484
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:56.574744",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 22",
+        "coordinates": {
+            "latitude": 53.940774,
+            "longitude": 27.487765
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:56.707277",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 23",
+        "coordinates": {
+            "latitude": 53.940976,
+            "longitude": 27.488843
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:56.862383",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 24",
+        "coordinates": {
+            "latitude": 53.940509,
+            "longitude": 27.487666
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.019262",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 26",
+        "coordinates": {
+            "latitude": 53.940292,
+            "longitude": 27.487531
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.143176",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 28",
+        "coordinates": {
+            "latitude": 53.940165,
+            "longitude": 27.487999
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.311361",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 30",
+        "coordinates": {
+            "latitude": 53.940382,
+            "longitude": 27.48825
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.438658",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 32",
+        "coordinates": {
+            "latitude": 53.94061,
+            "longitude": 27.488376
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.590263",
+        "address": "Республика Беларусь, г. Минск, Даровская ул., 34",
+        "coordinates": {
+            "latitude": 53.940467,
+            "longitude": 27.488807
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.745924",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 5А",
+        "coordinates": {
+            "latitude": 53.918211,
+            "longitude": 27.551482
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:57.872469",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 5",
+        "coordinates": {
+            "latitude": 53.918169,
+            "longitude": 27.551761
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.001834",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13/2",
+        "coordinates": {
+            "latitude": 53.918482,
+            "longitude": 27.549515
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.148845",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13Б/1",
+        "coordinates": {
+            "latitude": 53.91915,
+            "longitude": 27.550369
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.324923",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13Г",
+        "coordinates": {
+            "latitude": 53.919765,
+            "longitude": 27.550081
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.459896",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13В",
+        "coordinates": {
+            "latitude": 53.919553,
+            "longitude": 27.550521
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.574468",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13",
+        "coordinates": {
+            "latitude": 53.919325,
+            "longitude": 27.550872
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.697930",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13/Б",
+        "coordinates": {
+            "latitude": 53.919373,
+            "longitude": 27.550458
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.863559",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 13/А",
+        "coordinates": {
+            "latitude": 53.918848,
+            "longitude": 27.550943
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:58.990524",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 23",
+        "coordinates": {
+            "latitude": 53.919028,
+            "longitude": 27.548222
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:59.155521",
+        "address": "Республика Беларусь, г. Минск, Даумана ул., 23А",
+        "coordinates": {
+            "latitude": 53.919177,
+            "longitude": 27.548527
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:59.318378",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 1",
+        "coordinates": {
+            "latitude": 53.917267,
+            "longitude": 27.687434
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:59.552038",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 1Б",
+        "coordinates": {
+            "latitude": 53.917209,
+            "longitude": 27.687002
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:59.710343",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 2",
+        "coordinates": {
+            "latitude": 53.917506,
+            "longitude": 27.687317
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:23:59.858172",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 3",
+        "coordinates": {
+            "latitude": 53.917612,
+            "longitude": 27.687182
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:00.022641",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 4",
+        "coordinates": {
+            "latitude": 53.917766,
+            "longitude": 27.687263
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:00.185388",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 5",
+        "coordinates": {
+            "latitude": 53.917952,
+            "longitude": 27.687263
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:00.405794",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 7А",
+        "coordinates": {
+            "latitude": 53.9181,
+            "longitude": 27.687299
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:00.596072",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 7",
+        "coordinates": {
+            "latitude": 53.91819,
+            "longitude": 27.687281
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:00.757682",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 7Б",
+        "coordinates": {
+            "latitude": 53.918217,
+            "longitude": 27.687344
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:00.921816",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 8",
+        "coordinates": {
+            "latitude": 53.918371,
+            "longitude": 27.68711
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:01.125360",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 9Б",
+        "coordinates": {
+            "latitude": 53.919479,
+            "longitude": 27.686095
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:01.332670",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 9А",
+        "coordinates": {
+            "latitude": 53.920136,
+            "longitude": 27.686508
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:01.532068",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 9",
+        "coordinates": {
+            "latitude": 53.920126,
+            "longitude": 27.686023
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:01.731063",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 10",
+        "coordinates": {
+            "latitude": 53.920465,
+            "longitude": 27.685835
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:01.911252",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 11",
+        "coordinates": {
+            "latitude": 53.919845,
+            "longitude": 27.687362
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:02.096676",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 11А",
+        "coordinates": {
+            "latitude": 53.919611,
+            "longitude": 27.687281
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:02.305266",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 12",
+        "coordinates": {
+            "latitude": 53.920704,
+            "longitude": 27.685808
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:02.545921",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 13",
+        "coordinates": {
+            "latitude": 53.920168,
+            "longitude": 27.68729
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:02.759956",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 14А",
+        "coordinates": {
+            "latitude": 53.92108,
+            "longitude": 27.686239
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:02.909221",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 14",
+        "coordinates": {
+            "latitude": 53.921017,
+            "longitude": 27.685709
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:03.040455",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 15",
+        "coordinates": {
+            "latitude": 53.920497,
+            "longitude": 27.687308
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:03.212107",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 16",
+        "coordinates": {
+            "latitude": 53.921409,
+            "longitude": 27.685709
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:03.373922",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 17",
+        "coordinates": {
+            "latitude": 53.920736,
+            "longitude": 27.687353
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:03.589021",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 17А",
+        "coordinates": {
+            "latitude": 53.920789,
+            "longitude": 27.687011
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:03.784747",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 19",
+        "coordinates": {
+            "latitude": 53.921091,
+            "longitude": 27.687272
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:03.984661",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 21Б",
+        "coordinates": {
+            "latitude": 53.921754,
+            "longitude": 27.687964
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:04.208683",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 21А",
+        "coordinates": {
+            "latitude": 53.921711,
+            "longitude": 27.687586
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:04.395135",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 21",
+        "coordinates": {
+            "latitude": 53.921494,
+            "longitude": 27.686589
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:04.634406",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 22",
+        "coordinates": {
+            "latitude": 53.920274,
+            "longitude": 27.684388
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:04.845123",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 23",
+        "coordinates": {
+            "latitude": 53.920301,
+            "longitude": 27.684694
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:05.016448",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 24",
+        "coordinates": {
+            "latitude": 53.920306,
+            "longitude": 27.685071
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:05.176862",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 25",
+        "coordinates": {
+            "latitude": 53.919993,
+            "longitude": 27.685143
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:05.369790",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 26",
+        "coordinates": {
+            "latitude": 53.919967,
+            "longitude": 27.684658
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:05.540771",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 28",
+        "coordinates": {
+            "latitude": 53.920836,
+            "longitude": 27.685026
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:05.776145",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 28А",
+        "coordinates": {
+            "latitude": 53.920635,
+            "longitude": 27.685062
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:05.904140",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 30",
+        "coordinates": {
+            "latitude": 53.921027,
+            "longitude": 27.684837
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:06.103525",
+        "address": "Республика Беларусь, г. Минск, Дачная ул., 32А",
+        "coordinates": {
+            "latitude": 53.921017,
+            "longitude": 27.68428
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:06.295253",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 1В",
+        "coordinates": {
+            "latitude": 53.864724,
+            "longitude": 27.561454
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:06.438043",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 1Б",
+        "coordinates": {
+            "latitude": 53.864724,
+            "longitude": 27.561364
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:06.607936",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 1А",
+        "coordinates": {
+            "latitude": 53.864734,
+            "longitude": 27.561526
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:06.745983",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 2",
+        "coordinates": {
+            "latitude": 53.864426,
+            "longitude": 27.561014
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:06.888320",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 10",
+        "coordinates": {
+            "latitude": 53.864368,
+            "longitude": 27.564095
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:07.035372",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 12",
+        "coordinates": {
+            "latitude": 53.864602,
+            "longitude": 27.5659
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:07.226726",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 14/А",
+        "coordinates": {
+            "latitude": 53.864602,
+            "longitude": 27.5659
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:07.405832",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 14",
+        "coordinates": {
+            "latitude": 53.864602,
+            "longitude": 27.5659
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:07.603715",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 16",
+        "coordinates": {
+            "latitude": 53.864602,
+            "longitude": 27.5659
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:07.758412",
+        "address": "Республика Беларусь, г. Минск, Дачный пер., 18",
+        "coordinates": {
+            "latitude": 53.864602,
+            "longitude": 27.5659
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:07.926875",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 1",
+        "coordinates": {
+            "latitude": 53.901509,
+            "longitude": 27.624057
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:08.088060",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 1А",
+        "coordinates": {
+            "latitude": 53.901515,
+            "longitude": 27.624084
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:08.232250",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 2",
+        "coordinates": {
+            "latitude": 53.90118,
+            "longitude": 27.624147
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:08.586131",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 3",
+        "coordinates": {
+            "latitude": 53.90169,
+            "longitude": 27.624273
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:08.741085",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 4",
+        "coordinates": {
+            "latitude": 53.901398,
+            "longitude": 27.624722
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:08.877121",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 5",
+        "coordinates": {
+            "latitude": 53.901748,
+            "longitude": 27.624659
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.040272",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 6",
+        "coordinates": {
+            "latitude": 53.901483,
+            "longitude": 27.624902
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.181905",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 7",
+        "coordinates": {
+            "latitude": 53.901843,
+            "longitude": 27.624902
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.333734",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 8",
+        "coordinates": {
+            "latitude": 53.901488,
+            "longitude": 27.625306
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.478887",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 9/1",
+        "coordinates": {
+            "latitude": 53.901992,
+            "longitude": 27.625558
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.644950",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 9",
+        "coordinates": {
+            "latitude": 53.901923,
+            "longitude": 27.625117
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.806445",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 10",
+        "coordinates": {
+            "latitude": 53.901674,
+            "longitude": 27.625387
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:09.956536",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 11",
+        "coordinates": {
+            "latitude": 53.902141,
+            "longitude": 27.625683
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:10.101174",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 12",
+        "coordinates": {
+            "latitude": 53.90179,
+            "longitude": 27.625737
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:10.247419",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 13",
+        "coordinates": {
+            "latitude": 53.90222,
+            "longitude": 27.625953
+        },
+        "water_parameters": null
+    },
+    {
+        "created_at": "2025-05-06 15:24:10.376986",
+        "address": "Республика Беларусь, г. Минск, Двинская ул., 14",
+        "coordinates": {
+            "latitude": 53.90187,
+            "longitude": 27.62598
         },
         "water_parameters": null
     }

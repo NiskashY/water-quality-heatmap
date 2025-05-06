@@ -5,7 +5,8 @@ import h3
 import model
 from external.pg.client import PgClient
 from external.web.ato.client import get_all_addresses
-from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task, save_coordinates
+from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task, save_coordinates, \
+    save_aggregated_hexagons_information
 from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, \
     retrieve_address_info
 from model.geo import make_hex_id, AddressInfo, Point, Hexagon
@@ -119,7 +120,8 @@ if __name__ == "__main__":
     # enrich_and_save()
     # #
     # calculate_water_parameters_task
-    save_coordinates()
+    # save_coordinates()
+    save_aggregated_hexagons_information()
 
     # test_pg_client_insert_hex()
     # test_pg_client_insert_address_info()

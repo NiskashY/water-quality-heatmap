@@ -93,7 +93,7 @@ def save_aggregated_hexagons_information():
     avg_water_parameters_by_hexagon = compute_avg_parameters_by_hexagons(all_addresses_info)
 
     pg_client = PgClient()
-    for hex_id, avg_water_param in avg_water_parameters_by_hexagon.items():
+    for hex_id, avg_water_param in tqdm(avg_water_parameters_by_hexagon.items(), desc="Save hexagons info in pg"):
         pg_client.insert_hexagon(
             hex_id,
             determine_color(avg_water_param),

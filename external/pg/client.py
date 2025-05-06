@@ -88,7 +88,7 @@ class PgClient:
         return _parse_hexagon(result[0]) if result else None
 
     def get_all_hexes_with_res(self, hex_resolution: int) -> list[Hexagon]:
-        query = "SELECT created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_resolution = %s"
+        query = "SELECT DISTINCT ON (hex_id) created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_resolution = %s ORDER BY address, created_at DESC"
         result = self.__select_query(query, hex_resolution)
         return [_parse_hexagon(res) for res in result]
 
@@ -96,10 +96,19 @@ class PgClient:
         self,
         hex_id: str,
         hex_color: tuple[int, int, int],
-        water_parameters: WaterParameters,
+        water_parameters: Optional[WaterParameters],
     ):
-        query = "INSERT INTO hexagons (created_at, hex_id, hex_resolution, hex_color, avg_water_parameters) VALUES (NOW(), %s, %s, ROW(%s, %s, %s)::color, ROW(%s, %s, %s, %s, %s)::water_parameters)"
         r, g, b = hex_color
+        if water_parameters is None:
+            query = "INSERT INTO hexagons (created_at, hex_id, hex_resolution, hex_color) VALUES (NOW(), %s, %s, ROW(%s, %s, %s)::color)"
+            self.__insert_query(
+                query,
+                hex_id,
+                h3.get_resolution(hex_id),
+                r, g, b
+            )
+            return
+        query = "INSERT INTO hexagons (created_at, hex_id, hex_resolution, hex_color, avg_water_parameters) VALUES (NOW(), %s, %s, ROW(%s, %s, %s)::color, ROW(%s, %s, %s, %s, %s)::water_parameters)"
         self.__insert_query(
             query,
             hex_id,

@@ -9,6 +9,9 @@ from model.water_parameters import WaterParameters
 # 0.0 (0%) - зелёный (120° в HSV), 1.0 (100%) - красный (0° в HSV)
 # Конвертируем HSV в RGB
 def determine_color(water_params: WaterParameters):
+    if water_params is None:
+        return 184, 183, 174 # grey color
+
     norm_smell = water_params.smell.norm()
     norm_mineral = water_params.general_mineralization.norm()
     norm_color = water_params.color.norm()

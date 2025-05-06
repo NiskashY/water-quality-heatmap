@@ -46,26 +46,27 @@ def _log_debug_info(
 def compute_avg_parameters_by_hexagons(addresses_infos: list[AddressInfo]):
     geo_config: GeoConfig = read_geo_config()
 
-    hex_id_to_water_params: Dict[str, list[WaterParameters]] = defaultdict(list)
-    for hex_res in geo_config.allowed_hexagons_resolutions:
-        for address_info in addresses_infos:
-            if address_info.water_parameters is None:
-                continue
+    with logging_redirect_tqdm():
+        hex_id_to_water_params: Dict[str, list[WaterParameters]] = defaultdict(list)
+        for hex_res in geo_config.allowed_hexagons_resolutions:
+            for address_info in tqdm(addresses_infos, desc=f"Group coordinates to hexagons with hex_res={hex_res}"):
+                hex_id = h3.latlng_to_cell(
+                    address_info.coordinates.latitude,
+                    address_info.coordinates.longitude,
+                    hex_res
+                )
+                if hex_id not in hex_id_to_water_params:
+                    hex_id_to_water_params[hex_id] = []
+                if address_info.water_parameters:
+                    hex_id_to_water_params[hex_id].append(address_info.water_parameters)
 
-            hex_id = h3.latlng_to_cell(
-                address_info.coordinates.latitude,
-                address_info.coordinates.longitude,
-                hex_res
-            )
-            hex_id_to_water_params[hex_id].append(address_info.water_parameters)
+        hex_id_to_avg_water_parameters = {}
+        for hex_id, list_of_water_params in tqdm(hex_id_to_water_params.items(), desc=f"Calculate avg parameters for hexagons"):
+            avg_wp = _compute_avg_water_parameters(list_of_water_params)
+            hex_id_to_avg_water_parameters[hex_id] = avg_wp
+            _log_debug_info(hex_id, list_of_water_params, avg_wp)
 
-    hex_id_to_avg_water_parameters = {}
-    for hex_id, list_of_water_params in hex_id_to_water_params.items():
-        avg_wp = _compute_avg_water_parameters(list_of_water_params)
-        hex_id_to_avg_water_parameters[hex_id] = avg_wp
-        _log_debug_info(hex_id, list_of_water_params, avg_wp)
-
-    return hex_id_to_avg_water_parameters
+        return hex_id_to_avg_water_parameters
 
 def retrieve_water_parameters(addresses_infos: list[AddressInfo]) -> list[WaterParameters]:
     client = MinskVodokanalClient()
