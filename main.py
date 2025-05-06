@@ -5,9 +5,9 @@ import h3
 import model
 from external.pg.client import PgClient
 from external.web.ato.client import get_all_addresses
-from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task
+from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task, save_coordinates
 from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, \
-    retrieve_houses_with_coordinates
+    retrieve_address_info
 from model.geo import make_hex_id, AddressInfo, Point, Hexagon
 from model.water_parameters import Parameter, WaterParameters
 
@@ -33,7 +33,7 @@ def test_enrich_and_print():
 
 def enrich_and_save():
     addresses = get_all_addresses()
-    houses = retrieve_houses_with_coordinates(addresses, geocoder_requests_limit=10000)
+    houses = retrieve_address_info(addresses, geocoder_requests_limit=5)
     dump_addresses_to_file(houses)
 
 def test_avg_parameters():
@@ -51,8 +51,6 @@ def test_pg_client_select_address_info():
     assert address_info.water_parameters.muddiness == Parameter('Мутность', 'мг/дм3', 0.5, 1.0)
     assert address_info.water_parameters.general_mineralization == Parameter('Общая минерализация  ***', 'мг/дм3', 150, 200)
 
-
-
 def test_pg_client_select_hex_info():
     pg_client = PgClient()
     target = '871f4e143ffffff'
@@ -65,7 +63,6 @@ def test_pg_client_select_hex_info():
     assert hexagon.avg_water_parameters.color == Parameter('Цветность', 'градусы', 0.8, 1.5)
     assert hexagon.avg_water_parameters.muddiness == Parameter('Мутность', 'мг/дм3', 0.5, 1.0)
     assert hexagon.avg_water_parameters.general_mineralization == Parameter('Общая минерализация  ***', 'мг/дм3', 150, 200)
-
 
 def test_pg_client_select_all_hexes():
     pg_client = PgClient()
@@ -109,12 +106,20 @@ def test_pg_client_insert_address_info():
         None
     )
 
-if __name__ == "__main__":
-    test_pg_client_select_address_info()
-    test_pg_client_select_hex_info()
-    test_pg_client_select_all_hexes()
+def test_pg_client_select_all_available_address_info():
+    pg_client = PgClient()
+    res = pg_client.get_all_address_info()
+    assert len(res) == 12
 
-    enrich_and_save()
+if __name__ == "__main__":
+    # test_pg_client_select_address_info()
+    # test_pg_client_select_hex_info()
+    # test_pg_client_select_all_hexes()
+    # test_pg_client_select_all_available_address_info()
+    # enrich_and_save()
+    # #
+    # calculate_water_parameters_task
+    save_coordinates()
 
     # test_pg_client_insert_hex()
     # test_pg_client_insert_address_info()

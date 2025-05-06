@@ -1,12 +1,17 @@
 import copy
-from termcolor import colored
+import datetime
+import logging
+from collections import defaultdict
+from typing import Dict
+
 import h3
 from tqdm import tqdm
 from tqdm.contrib.logging import logging_redirect_tqdm
 
+from external.pg.client import PgClient
 from external.web.minskvodokanal.client import MinskVodokanalClient
 from logic.water_quality.color import determine_color
-from model.geo import make_hex_id, Point
+from model.geo import make_hex_id, Point, AddressInfo
 from model.water_parameters import WaterParameters, Parameter
 
 from external.config.geo_config import read_geo_config, GeoConfig
@@ -27,35 +32,56 @@ def _compute_avg_water_parameters(in_list_of_water_parameters: list[WaterParamet
         return avg_water_params
     return None
 
-def retrieve_water_parameters(addresses: list[str]) -> list[WaterParameters]:
-    client = MinskVodokanalClient()
-    with logging_redirect_tqdm():
-        res = [client.v1_request(address_and_coordinates['address']) for address_and_coordinates in tqdm(addresses)]
-        print(res)
-        return res
+def _log_debug_info(
+    hex_id: str,
+    water_params: list[WaterParameters],
+    avg_wp: WaterParameters
+) -> None:
+    logging.debug(f'\thex_id = {hex_id}')
+    for wp in water_params:
+        logging.debug(f'\t\t{wp}')
+    logging.debug(f'\t\tAVG = {avg_wp}')
+    logging.debug(f'\t\tcolor = rgb{determine_color(avg_wp)}')
 
-def compute_avg_parameters_by_hexagons(addresses_with_coordinates, water_parameters: list[WaterParameters]):
+def compute_avg_parameters_by_hexagons(addresses_infos: list[AddressInfo]):
     geo_config: GeoConfig = read_geo_config()
 
-    hex_id_to_list_of_water_parameters_map = {}
+    hex_id_to_water_params: Dict[str, list[WaterParameters]] = defaultdict(list)
     for hex_res in geo_config.allowed_hexagons_resolutions:
-        for address_obj, water_params in zip(addresses_with_coordinates, water_parameters):
-            lat, lon = address_obj['coordinates']['latitude'], address_obj['coordinates']['longitude']
+        for address_info in addresses_infos:
+            if address_info.water_parameters is None:
+                continue
 
-            hex_id = h3.latlng_to_cell(lat, lon, hex_res)
-            if hex_id in hex_id_to_list_of_water_parameters_map:
-                hex_id_to_list_of_water_parameters_map[hex_id].append(water_params)
-            else:
-                hex_id_to_list_of_water_parameters_map[hex_id] = [water_params]
+            hex_id = h3.latlng_to_cell(
+                address_info.coordinates.latitude,
+                address_info.coordinates.longitude,
+                hex_res
+            )
+            hex_id_to_water_params[hex_id].append(address_info.water_parameters)
 
     hex_id_to_avg_water_parameters = {}
-    for hex_id, list_of_water_params in hex_id_to_list_of_water_parameters_map.items():
+    for hex_id, list_of_water_params in hex_id_to_water_params.items():
         avg_wp = _compute_avg_water_parameters(list_of_water_params)
         hex_id_to_avg_water_parameters[hex_id] = avg_wp
+        _log_debug_info(hex_id, list_of_water_params, avg_wp)
 
-        print(f'\thex_id = {hex_id}')
-        for wp in list_of_water_params:
-            print(f'\t\t{wp}')
-        print(f'\t\tAVG = {avg_wp}')
-        print(f'\t\tcolor = rgb{determine_color(avg_wp)}')
     return hex_id_to_avg_water_parameters
+
+def retrieve_water_parameters(addresses_infos: list[AddressInfo]) -> list[WaterParameters]:
+    client = MinskVodokanalClient()
+    with logging_redirect_tqdm():
+        def get_amount_of_days(created_at):
+            diff = datetime.datetime.now() - created_at
+            return diff.days
+
+        def predicate(x: AddressInfo):
+            return x.water_parameters is None and get_amount_of_days(x.created_at) > 2
+        def negative_predicate(x: AddressInfo):
+            return not predicate(x)
+
+        not_fetched_water_parameters = list(filter(predicate, addresses_infos))
+        already_fetched_water_parameters = list(filter(negative_predicate, addresses_infos))
+        already_fetched_water_parameters = [addr.water_parameters for addr in already_fetched_water_parameters]
+        for address_info in tqdm(not_fetched_water_parameters, "Fetch water parameters from minskvodokanal.by"):
+            already_fetched_water_parameters.append(client.v1_request(address_info.address))
+        return already_fetched_water_parameters

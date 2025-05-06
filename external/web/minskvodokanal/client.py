@@ -93,19 +93,18 @@ class MinskVodokanalClient:
     def __init__(self):
         chrome_options = Options()
         chrome_options.add_argument("--headless=new")
-        logging.info("Starting webdriver for minskvodokanal")
+        logging.debug("Starting webdriver for minskvodokanal")
         self.__driver = webdriver.Chrome(options=chrome_options)
         self.__retries_count = 2
-        logging.info("Webdriver started")
+        logging.debug("Webdriver started")
 
     def __del__(self):
         self.__driver.quit()
 
     def v1_request(self, address: str) -> Optional[WaterParameters]:
-        has_errors = False
         for i in range(self.__retries_count):
             try:
-                logging.info(f"MinskVodokanal GET request for {address}")
+                logging.debug(f"MinskVodokanal GET request for {address}")
                 self.__driver.get(self.__url)
 
                 logging.debug("Send address to site")
@@ -137,7 +136,5 @@ class MinskVodokanalClient:
                 return wp
             except selenium.common.exceptions.StaleElementReferenceException as e:
                 logging.error(e)
-                has_errors = True
 
-        assert has_errors == False, "check errors in logs. Selenium failed to retrieve water parameters info"
         return None

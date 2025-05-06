@@ -73,6 +73,14 @@ class PgClient:
         assert len(result) < 2, 'will fail after multiple instances with diff created_at_ts'
         return _parse_address_info(result[0]) if result else None
 
+    """
+        SELECT latest information about all addresses saved inside pg.
+    """
+    def get_all_address_info(self) -> list[AddressInfo]:
+        query = "SELECT DISTINCT ON (address) created_at, address, coordinates, water_parameters FROM address_info ORDER BY address, created_at DESC"
+        result = self.__select_query(query,)
+        return [_parse_address_info(res) for res in result]
+
     def get_info_about_hex(self, hex_id: str) -> Optional[Hexagon]:
         query = "SELECT created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_id = %s ORDER BY created_at DESC LIMIT 1"
         result = self.__select_query(query, hex_id)
@@ -111,7 +119,7 @@ class PgClient:
             water_parameters: Optional[WaterParameters]
     ):
         if water_parameters:
-            query = "INSERT INTO address_info (created_at, address, coordinates) VALUES (NOW(), %s, ROW(%s, %s)::geo_point, ROW(%s, %s, %s, %s, %s)::water_parameters)"
+            query = "INSERT INTO address_info (created_at, address, coordinates, water_parameters) VALUES (NOW(), %s, ROW(%s, %s)::geo_point, ROW(%s, %s, %s, %s, %s)::water_parameters)"
             self.__insert_query(
                 query,
                 address,
@@ -124,9 +132,6 @@ class PgClient:
                 _get_tuple(water_parameters.general_mineralization),
             )
         else:
-            if self.get_address_info(address) is not None:
-                return
-
             query = "INSERT INTO address_info (created_at, address, coordinates) VALUES (NOW(), %s, ROW(%s, %s)::geo_point)"
             self.__insert_query(
                 query,
