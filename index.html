@@ -304,6 +304,18 @@
                     }
                   }
                 }
+              },
+              onClick(type, entity) {
+                console.log(type, entity);
+                if (type) {
+                  if (type.type == "feature") {
+                    polygon  = type.entity;
+                    if (currentHexagonMarker) {
+                       map.removeChild(currentHexagonMarker);
+                    }
+                    move_map_to_hexagon_and_show_water_parameters(map, polygon.properties.hint.hex_id);
+                  }
+                }
               }
             })
           );
