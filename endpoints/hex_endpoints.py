@@ -25,3 +25,10 @@ def get_hexagon_info(hex_id: str):
     pg_client = PgClient()
     hexagon = pg_client.get_info_about_hex(hex_id)
     return json.dumps(hexagon, cls=GeoEncoder, ensure_ascii=False)
+
+
+@app.route("/v1/address/<address>/info", methods=["GET"])
+def get_address_info(address: str):
+    pg_client = PgClient()
+    address_info = pg_client.get_address_info(address)
+    return json.dumps(address_info, cls=GeoEncoder, ensure_ascii=False)

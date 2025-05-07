@@ -42,6 +42,10 @@
         border: 1px solid #ddd;
         border-radius: 4px;
       }
+      .invalid {
+        border-color: #ff0000;
+        box-shadow: 0 0 0 1px #ff0000;
+      }
       button {
         background: #196dff;
         color: white;
@@ -111,8 +115,14 @@
       }
     </style>
     <script>
+      ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', [
+        '@yandex/ymaps3-default-ui-theme@0.0.19',
+        '@yandex/ymaps3-hint@0.1.1'
+      ]);
+
       let map;
       let currentHexagons = [];
+      let currentHexagonMarker;
 
       async function fetch_hexagons_info(hex_res) {
           url = `http://localhost:5000/v1/hexagon/all/${hex_res}/info`;
@@ -208,16 +218,21 @@
           });
       }
 
+      function get_latlon_of_minsk_center() {
+        return [53.9000000, 27.5666700]
+      }
+
       async function initMap() {
           await ymaps3.ready;
           const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapListener, YMapEntity} = ymaps3;
           const {YMapHint, YMapHintContext} = await ymaps3.import('@yandex/ymaps3-hint@0.0.1');
 
+          coordinates = get_latlon_of_minsk_center()
           map = new YMap(
               document.getElementById('map'),
               {
                   location: {
-                      center: [27.5666700, 53.9000000],
+                      center: [coordinates[1], coordinates[0]],
                       zoom: 12
                   }
               },
@@ -275,14 +290,18 @@
               onMouseEnter(type, entity) {
                 if (type) {
                   if (type.type == "feature") {
-                    updatePolygonProps(type.entity, 2)
+                    if (!currentHexagonMarker) {
+                      updatePolygonProps(type.entity, 2)
+                    }
                   }
                 }
               },
               onMouseLeave(type, entity) {
                 if (type) {
                   if (type.type == "feature") {
-                    updatePolygonProps(type.entity, 0.7)
+                    if (!currentHexagonMarker) {
+                      updatePolygonProps(type.entity, 0.7)
+                    }
                   }
                 }
               }
@@ -291,10 +310,71 @@
 
           const defaultResolution = document.getElementById('hex-resolution').value;
           await updateHexagons(defaultResolution);
+          return map;
       }
 
-      document.addEventListener('DOMContentLoaded', () => {
-          initMap();
+      async function move_map_to_hexagon_and_show_water_parameters(map, hex_id) {
+        const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
+
+        center_of_hex = h3.cellToLatLng(hex_id);
+        lat = center_of_hex[0]
+        lon = center_of_hex[1]
+        move_map_to_coordinates(map, lat, lon, 13)
+        currentHexagonMarker = new YMapDefaultMarker({
+          coordinates: [lon, lat],
+          size: 'small',
+        });
+        map.addChild(currentHexagonMarker);
+
+        polygon = currentHexagons.find((polygon, index, array) => {
+          return polygon.properties.hex_id == hex_id;
+        })
+        if (polygon) {
+          updateWaterParameters(polygon.properties.hint.avg_water_parameters);
+        }
+      }
+
+      async function move_map_to_coordinates(map, lat, lon, zoom_level) {
+        map.setLocation({
+          center: [lon, lat],
+          duration: 200,
+          zoom: zoom_level
+        })
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.code === "Escape") {
+          if (currentHexagonMarker) {
+            map.removeChild(currentHexagonMarker);
+            currentHexagonMarker = null;
+          }
+          coordinates = get_latlon_of_minsk_center();
+          move_map_to_coordinates(map, coordinates[0], coordinates[1], 12);
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', async (e) => {
+          map = await initMap();
+          const hexIdInput = document.getElementById('hex-id-input');
+
+          // Validate on Enter key press
+          hexIdInput.addEventListener('keydown', function(e) {
+              if (e.code === "Enter" && this.value != "") {
+                  if (!h3.isValidCell(this.value)) {
+                      this.classList.add('invalid');
+                      this.blur();
+                  } else {
+                    move_map_to_hexagon_and_show_water_parameters(map, this.value);
+                  }
+              }
+          });
+
+          // Remove invalid state when user starts typing
+          hexIdInput.addEventListener('input', function() {
+              if (this.classList.contains('invalid')) {
+                  this.classList.remove('invalid');
+              }
+          });
 
           document.getElementById('update-btn').addEventListener('click', async () => {
               const resolution = document.getElementById('hex-resolution').value;
@@ -309,12 +389,12 @@
     <div class="controls-container">
       <div class="control-panel">
         <div class="control-group">
-          <label for="hex-id">ID гексагона:</label>
-          <input type="text" id="hex-id" readonly>
+          <label for="hex-id-input">ID гексагона:</label>
+          <input type="text" id="hex-id-input" placeholder="Пример: 881f4e14cdfffff">
         </div>
 
         <div class="control-group">
-          <label for="hex-resolution">Разрешение гексагона:</label>
+          <label for="hex-resolution">Разрешение гексагонов на карте:</label>
           <select id="hex-resolution">
             <option value="7">7 (крупные)</option>
             <option value="8" selected>8 (средние)</option>
@@ -323,7 +403,7 @@
 
         <div class="control-group">
           <label for="address">Адрес:</label>
-          <input type="text" id="address" readonly>
+          <input type="text" id="address" placeholder="Пример: Республика Беларусь, г. Минск, Газеты Правда просп., 42">
         </div>
 
         <button id="update-btn">Обновить гексагоны</button>

@@ -4,5 +4,9 @@
     },
     "scripts": {
         "start": "npx http-server ."
+    },
+    "dependencies": {
+        "@yandex/ymaps3-default-ui-theme": "^0.0.19",
+        "@yandex/ymaps3-hint": "^0.1.1"
     }
 }
