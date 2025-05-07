@@ -89,7 +89,7 @@ class PgClient:
         return _parse_hexagon(result[0]) if result else None
 
     def get_all_hexes_with_res(self, hex_resolution: int) -> list[Hexagon]:
-        query = "SELECT DISTINCT ON (hex_id) created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_resolution = %s ORDER BY address, created_at DESC"
+        query = "SELECT DISTINCT ON (hex_id) created_at, hex_id, hex_resolution, hex_color, avg_water_parameters FROM hexagons WHERE hex_resolution = %s ORDER BY hex_id, created_at DESC"
         result = self.__select_query(query, hex_resolution)
         return [_parse_hexagon(res) for res in result]
 

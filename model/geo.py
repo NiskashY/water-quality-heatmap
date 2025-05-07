@@ -30,7 +30,7 @@ class AddressInfo:
     coordinates: Point
     water_parameters: Optional[WaterParameters]
 
-class AddressInfoEncoder(JSONEncoder):
+class GeoEncoder(JSONEncoder):
     def default(self, obj: Any) -> Any:
         if isinstance(obj, datetime):
             # формат ПГ
@@ -44,7 +44,7 @@ class AddressInfoEncoder(JSONEncoder):
 
         return super().default(obj)
 
-class AddressInfoDecoder(JSONDecoder):
+class GeoDecoder(JSONDecoder):
     def default(dct: Dict[str, Any]) -> Any:
         if all(k in dct for k in ('latitude', 'longitude')):
             return Point(**dct)

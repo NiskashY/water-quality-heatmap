@@ -4,3 +4,4 @@ yandex:
     api_key: "73d85061-9a55-44c1-a354-caada1fc9e8e"
     requests_limit: 2
     chunk_request_size: 10
+  js_maps:

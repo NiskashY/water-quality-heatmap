@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Гексагональная карта с выбором параметров</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/v3/?apikey=73d85061-9a55-44c1-a354-caada1fc9e8e&lang=ru_RU"></script>
+    <script src="https://unpkg.com/h3-js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .controls {
+        padding: 15px;
+        background: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+      }
+      .control-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      select, input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        background: #196dff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1458cc;
+      }
+      #map {
+        width: 100%;
+        height: 600px;
+      }
+      #info-panel {
+        padding: 15px;
+        background: #f9f9f9;
+        border-top: 1px solid #ddd;
+      }
+    </style>
+    <script>
+      let map;
+      let currentHexagons = [];
+
+      async function fetch_hexagons_with_colors(hex_res) {
+          url = `http://localhost:5000/v1/hexagon/all/${hex_res}/colors`;
+          const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+              'Access-Control-Allow-Origin': '*'
+            }
+          });
+          const result = await response.json();
+          console.log("Response from http server for hexagon colors", result);
+          return result;
+      }
+
+      function clearHexagons() {
+          currentHexagons.forEach(hexagon => {
+              map.removeChild(hexagon);
+          });
+          currentHexagons = [];
+      }
+
+      async function updateHexagons(hex_res) {
+          clearHexagons();
+          const hexagon_with_colors = await fetch_hexagons_with_colors(hex_res);
+          const {YMapFeature} = ymaps3;
+
+          hexagon_with_colors.forEach(function(item, index) {
+              const [hex_id, [r, g, b]] = item;
+              const hexagonBoundary = h3.cellToBoundary(hex_id);
+
+              const coordinates = hexagonBoundary.map(point => [point[1], point[0]]);
+              coordinates.push(coordinates[0]);
+
+              const POLYGON_STYLE = {
+                stroke: [{color: '#196dff', width: 2}],
+                fill: `rgb(${r}, ${g}, ${b})`,
+                fillOpacity: 0.7,
+                simplificationRate: 0
+              };
+
+              const polygon = new YMapFeature({
+                  geometry: {
+                      type: 'Polygon',
+                      coordinates: [coordinates]
+                  },
+                  style: POLYGON_STYLE,
+                  properties: {
+                      hex_id: hex_id,
+                      color: [r, g, b]
+                  }
+              });
+
+              map.addChild(polygon);
+              currentHexagons.push(polygon);
+          });
+      }
+
+      async function initMap() {
+          await ymaps3.ready;
+          const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapListener} = ymaps3;
+
+          map = new YMap(
+              document.getElementById('map'),
+              {
+                  location: {
+                      center: [27.5666700, 53.9000000],
+                      zoom: 12
+                  }
+              },
+              [
+                  new YMapDefaultSchemeLayer({}),
+                  new YMapDefaultFeaturesLayer({})
+              ]
+          );
+
+          const defaultResolution = document.getElementById('hex-resolution').value;
+          await updateHexagons(defaultResolution);
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+          initMap();
+
+          document.getElementById('update-btn').addEventListener('click', async () => {
+              const resolution = document.getElementById('hex-resolution').value;
+              await updateHexagons(resolution);
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <div class="controls">
+      <div class="control-group">
+        <label for="hex-id">ID гексагона:</label>
+        <input type="text" id="hex-id" readonly>
+      </div>
+
+      <div class="control-group">
+        <label for="hex-resolution">Разрешение гексагона:</label>
+        <select id="hex-resolution">
+          <option value="7">7 (крупные)</option>
+          <option value="8" selected>8 (средние)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" readonly>
+      </div>
+
+      <button id="update-btn">Обновить гексагоны</button>
+    </div>
+  </body>
+</html>

@@ -12,13 +12,13 @@ from tqdm.contrib.logging import logging_redirect_tqdm
 import model
 from external.pg.client import PgClient
 from external.yandex.geocoder.client import GeocoderClient
-from model.geo import GeoPointEncoder, make_hex_id, AddressInfo, AddressInfoEncoder, Point, AddressInfoDecoder
+from model.geo import GeoPointEncoder, make_hex_id, AddressInfo, GeoEncoder, Point, GeoDecoder
 from resources.utils import get_path_for_saving
 
 def read_already_fetched_houses_from_resources_file() -> list[AddressInfo]:
     with open(f'{get_path_for_saving()}/houses_geo_info.json') as f:
         try:
-            return json.load(f, object_hook=AddressInfoDecoder.default)
+            return json.load(f, object_hook=GeoDecoder.default)
         except json.decoder.JSONDecodeError as e:
             logging.error(f"Not valid json file, file not exists or empty file. Error: {e}")
             return []
@@ -81,7 +81,7 @@ def retrieve_address_info(addresses: list[str], geocoder_requests_limit=None):
 
 def dump_addresses_to_file(addresses_with_coordinates: list[AddressInfo]):
     with open(f'{get_path_for_saving()}/houses_geo_info.json', "w") as stream:
-        json.dump(addresses_with_coordinates, stream, indent=4, ensure_ascii=False, cls=AddressInfoEncoder)
+        json.dump(addresses_with_coordinates, stream, indent=4, ensure_ascii=False, cls=GeoEncoder)
 
 def enrich_with_hexagons(addresses_with_coordinates, h3_resolution: int):
     enriched = copy.deepcopy(addresses_with_coordinates)
