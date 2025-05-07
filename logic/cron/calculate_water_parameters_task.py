@@ -3,13 +3,12 @@ import random
 
 from tqdm import tqdm
 import more_itertools as mit
-from tqdm.contrib.logging import logging_redirect_tqdm
 
 from external.pg.client import PgClient
 from external.web.ato.client import get_all_addresses
 from external.config.yandex_configs import read_geocoder_config
 
-from logic.geo.houses import retrieve_address_info
+from logic.geo.houses import retrieve_addresses_info
 from logic.water_quality.color import determine_color
 from logic.water_quality.water_parameters import retrieve_water_parameters, compute_avg_parameters_by_hexagons
 
@@ -42,7 +41,7 @@ def save_coordinates():
     geocoder_config = read_geocoder_config()
 
     addresses_of_minsk = get_all_addresses()
-    addresses_infos = retrieve_address_info(
+    addresses_infos = retrieve_addresses_info(
         addresses_of_minsk,
         geocoder_requests_limit=geocoder_config.requests_limit
     )
@@ -68,7 +67,7 @@ def save_coordinates_and_water_parameters():
     geocoder_config = read_geocoder_config()
 
     addresses_of_minsk = get_all_addresses()
-    all_addresses_infos = retrieve_address_info(
+    all_addresses_infos = retrieve_addresses_info(
         addresses_of_minsk,
         geocoder_requests_limit=geocoder_config.requests_limit
     )

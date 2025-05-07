@@ -88,6 +88,10 @@
         padding-bottom: 10px;
         border-bottom: 1px solid #eee;
       }
+      .param-ts-value {
+        flex: 2;
+        color: #666;
+      }
       .param-name {
         flex: 2;
         font-weight: bold;
@@ -121,8 +125,35 @@
       ]);
 
       let map;
+      let map_features_layer;
       let currentHexagons = [];
       let currentHexagonMarker;
+      let currentAddressMarker;
+
+      let selected_created_at;
+
+      function is_any_marker_set() {
+        return currentHexagonMarker || currentAddressMarker;
+      }
+
+      function resetAllMarkers() {
+        resetAddressMarker();
+        resetHexagonMarker();
+      }
+
+      function resetAddressMarker() {
+        if (currentAddressMarker) {
+          map.removeChild(currentAddressMarker);
+          currentAddressMarker = null;
+        }
+      }
+
+      function resetHexagonMarker() {
+        if (currentHexagonMarker) {
+          map.removeChild(currentHexagonMarker);
+          currentHexagonMarker = null;
+        }
+      }
 
       async function fetch_hexagons_info(hex_res) {
           url = `http://localhost:5000/v1/hexagon/all/${hex_res}/info`;
@@ -134,6 +165,19 @@
           });
           const result = await response.json();
           console.log("Response from http server for hexagon colors", result);
+          return result;
+      }
+
+      async function fetch_address_info(address) {
+          url = `http://localhost:5000/v1/address/${address}/info`;
+          const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+              'Access-Control-Allow-Origin': '*'
+            }
+          });
+          const result = await response.json();
+          console.log("Response from http server for address_info", result);
           return result;
       }
 
@@ -169,11 +213,15 @@
 
           // Update water parameters display when hovering
           if (fillOpacityValue > 1) { // Only when mouse enters
-            updateWaterParameters(polygon.properties.hint.avg_water_parameters);
+            updateWaterParameters(
+              polygon.properties.hint.created_at,
+              polygon.properties.hint.avg_water_parameters,
+            );
           }
       }
 
-      function updateWaterParameters(params) {
+      function updateWaterParameters(created_at, params) {
+          document.getElementById('created-at-value').textContent = created_at ? created_at : '-';
           document.getElementById('smell-value').textContent = params?.smell ? Number(params.smell.value).toFixed(3) : '-';
           document.getElementById('taste-value').textContent = params?.taste ? Number(params.taste.value).toFixed(3) : '-';
           document.getElementById('color-value').textContent = params?.color ? Number(params.color.value).toFixed(3) : '-';
@@ -181,10 +229,18 @@
           document.getElementById('general-mineralization-value').textContent = params?.general_mineralization ? Number(params.general_mineralization.value).toFixed(3) : '-';
       }
 
+      function findMaxCreatedAt(hexagons_info) {
+        const maxDate = hexagons_info
+              .map(hexagon => hexagon.created_at)
+              .reduce((a, b) => new Date(a.trim()) > new Date(b.trim()) ? a : b).trim();
+        return maxDate;
+      }
+
       async function updateHexagons(hex_res) {
           clearHexagons();
           const hexagons_info = await fetch_hexagons_info(hex_res);
 
+          document.getElementById('created-at-timestamp').value = findMaxCreatedAt(hexagons_info);
           hexagons_info.forEach(function(item, index) {
               const hex_id = item.hex_id;
               const [r, g, b] = item.hex_color;
@@ -208,6 +264,7 @@
                       color: [r, g, b],
                       hint: {
                         "hex_id": hex_id,
+                        "created_at": created_at,
                         "avg_water_parameters": avg_water_parameters
                       }
                   }
@@ -227,7 +284,7 @@
           const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapListener, YMapEntity} = ymaps3;
           const {YMapHint, YMapHintContext} = await ymaps3.import('@yandex/ymaps3-hint@0.0.1');
 
-          coordinates = get_latlon_of_minsk_center()
+          coordinates = get_latlon_of_minsk_center();
           map = new YMap(
               document.getElementById('map'),
               {
@@ -290,7 +347,7 @@
               onMouseEnter(type, entity) {
                 if (type) {
                   if (type.type == "feature") {
-                    if (!currentHexagonMarker) {
+                    if (!is_any_marker_set()) {
                       updatePolygonProps(type.entity, 2)
                     }
                   }
@@ -299,16 +356,18 @@
               onMouseLeave(type, entity) {
                 if (type) {
                   if (type.type == "feature") {
-                    if (!currentHexagonMarker) {
+                    if (!is_any_marker_set()) {
                       updatePolygonProps(type.entity, 0.7)
                     }
                   }
                 }
               },
               onClick(type, entity) {
-                console.log(type, entity);
                 if (type) {
                   if (type.type == "feature") {
+                    if (currentAddressMarker) {
+                      return;
+                    }
                     polygon  = type.entity;
                     if (currentHexagonMarker) {
                        map.removeChild(currentHexagonMarker);
@@ -342,8 +401,30 @@
           return polygon.properties.hex_id == hex_id;
         })
         if (polygon) {
-          updateWaterParameters(polygon.properties.hint.avg_water_parameters);
+          updateWaterParameters(
+            polygon.properties.hint.created_at,
+            polygon.properties.hint.avg_water_parameters
+          );
         }
+      }
+
+      async function move_map_to_address_and_show_water_parameters(map, address_info) {
+        const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-default-ui-theme');
+        const lat = address_info.coordinates.latitude;
+        const lon = address_info.coordinates.longitude;
+
+        move_map_to_coordinates(map, lat, lon, 15)
+        currentAddressMarker = new YMapDefaultMarker({
+          coordinates: [lon, lat],
+          iconName: 'fallback',
+          size: 'micro',
+        });
+        map.addChild(currentAddressMarker);
+
+        updateWaterParameters(
+          address_info.created_at,
+          address_info.water_parameters
+        );
       }
 
       async function move_map_to_coordinates(map, lat, lon, zoom_level) {
@@ -356,12 +437,10 @@
 
       document.addEventListener('keydown', function(e) {
         if (e.code === "Escape") {
-          if (currentHexagonMarker) {
-            map.removeChild(currentHexagonMarker);
-            currentHexagonMarker = null;
-          }
+          resetAllMarkers();
           coordinates = get_latlon_of_minsk_center();
           move_map_to_coordinates(map, coordinates[0], coordinates[1], 12);
+          updateWaterParameters(null, null)
         }
       });
 
@@ -376,6 +455,7 @@
                       this.classList.add('invalid');
                       this.blur();
                   } else {
+                    resetAllMarkers();
                     move_map_to_hexagon_and_show_water_parameters(map, this.value);
                   }
               }
@@ -388,9 +468,39 @@
               }
           });
 
-          document.getElementById('update-btn').addEventListener('click', async () => {
+          const addressInput = document.getElementById('address-input');
+
+          // Validate on Enter key press
+          addressInput.addEventListener('keydown', function(e) {
+              if (e.code === "Enter" && this.value != "") {
+                  fetch_address_info(this.value).then(address_info => {
+                    if (!address_info) {
+                        this.classList.add('invalid');
+                        this.blur();
+                    } else {
+                      resetAllMarkers();
+                      document.getElementById('hex-resolution').value="None";
+                      clearHexagons();
+                      move_map_to_address_and_show_water_parameters(map, address_info)
+                    }
+                  })
+              }
+          });
+
+          // Remove invalid state when user starts typing
+          addressInput.addEventListener('input', function() {
+              if (this.classList.contains('invalid')) {
+                  this.classList.remove('invalid');
+              }
+          });
+
+          document.getElementById('hex-resolution').addEventListener('change', async () => {
               const resolution = document.getElementById('hex-resolution').value;
-              await updateHexagons(resolution);
+              if (resolution === "None") {
+                clearHexagons();
+              } else {
+                await updateHexagons(resolution);
+              }
           });
       });
     </script>
@@ -408,21 +518,31 @@
         <div class="control-group">
           <label for="hex-resolution">Разрешение гексагонов на карте:</label>
           <select id="hex-resolution">
+            <option value="None">Без гексагонов</option>
             <option value="7">7 (крупные)</option>
             <option value="8" selected>8 (средние)</option>
           </select>
         </div>
 
         <div class="control-group">
-          <label for="address">Адрес:</label>
-          <input type="text" id="address" placeholder="Пример: Республика Беларусь, г. Минск, Газеты Правда просп., 42">
+          <label for="address-input">Адрес:</label>
+          <input type="text" id="address-input" placeholder="Пример: Республика Беларусь, г. Минск, Газеты Правда просп., 42">
         </div>
 
-        <button id="update-btn">Обновить гексагоны</button>
+        <div class="control-group">
+          <label for="created-at-timestamp">Последнее время обновления гексагонов</label>
+          <input type="text" id="created-at-timestamp" readonly>
+        </div>
+
       </div>
 
       <div class="water-params-panel">
         <div class="water-params-title">Параметры воды</div>
+
+        <div class="param-row">
+          <div class="param-name">Время обновления</div>
+          <div class="param-ts-value" id="created-at-value">-</div>
+        </div>
 
         <div class="param-row">
           <div class="param-name">Запах</div>

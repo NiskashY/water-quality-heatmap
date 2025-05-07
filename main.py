@@ -8,7 +8,7 @@ from external.web.ato.client import get_all_addresses
 from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task, save_coordinates, \
     save_aggregated_hexagons_information
 from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, \
-    retrieve_address_info
+    retrieve_addresses_info
 from model.geo import make_hex_id, AddressInfo, Point, Hexagon
 from model.water_parameters import Parameter, WaterParameters
 
@@ -34,7 +34,7 @@ def test_enrich_and_print():
 
 def enrich_and_save():
     addresses = get_all_addresses()
-    houses = retrieve_address_info(addresses, geocoder_requests_limit=5)
+    houses = retrieve_addresses_info(addresses, geocoder_requests_limit=5)
     dump_addresses_to_file(houses)
 
 def test_avg_parameters():

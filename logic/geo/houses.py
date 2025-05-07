@@ -2,6 +2,7 @@ import datetime
 import json
 import logging
 import copy
+from typing import Optional
 
 import h3
 import yandex_geocoder
@@ -52,8 +53,22 @@ def read_already_fetched_houses(addresses) -> list[AddressInfo]:
 
     return from_pg
 
+def get_from_geocoder(address: str, geocoder: GeocoderClient) -> AddressInfo | None:
+    try:
+        coordinates: model.geo.Point = geocoder.coordinates(address)
+        return AddressInfo(
+            created_at=datetime.datetime.now(),
+            address=address,
+            coordinates=coordinates,
+            water_parameters=None,
+        )
+    except yandex_geocoder.exceptions.NothingFound as e:
+        logging.warning(f'Not found coordinates for address={address}. e={e}')
+    except yandex_geocoder.exceptions.InvalidKey as e:
+        logging.error("Limit of requests reached. Consider changing api-key or increasing limits")
+    return None
 
-def retrieve_address_info(addresses: list[str], geocoder_requests_limit=None):
+def retrieve_addresses_info(addresses: list[str], geocoder_requests_limit=None):
     geocoder = GeocoderClient()
 
     houses: list[AddressInfo] = read_already_fetched_houses(addresses)
@@ -63,21 +78,24 @@ def retrieve_address_info(addresses: list[str], geocoder_requests_limit=None):
         need_to_process_address = list(filter(lambda x: x not in already_fetched_addresses, addresses))
         need_to_process_address = need_to_process_address[:geocoder_requests_limit or 10]
         for address in tqdm(need_to_process_address, desc="Fetch coordinates from geocoder"):
-            try:
-                coordinates: model.geo.Point = geocoder.coordinates(address)
-                houses.append(AddressInfo(
-                    created_at=datetime.datetime.now(),
-                    address=address,
-                    coordinates=coordinates,
-                    water_parameters=None,
-                ))
-            except yandex_geocoder.exceptions.NothingFound as e:
-                logging.warning(f'Not found coordinates for address={address}. e={e}')
-            except yandex_geocoder.exceptions.InvalidKey as e:
-                logging.error("Limit of requests reached. Consider changing api-key or increasing limits")
+            address_info = get_from_geocoder(address, geocoder)
+            if address_info:
+                houses.append(address_info)
 
-    dump_addresses_to_file(houses)
+    # dump_addresses_to_file(houses)
     return houses
+
+def retrieve_address_info(address: str) -> Optional[AddressInfo]:
+    already_fetched_houses = read_already_fetched_houses([address])
+    already_fetched_addresses = {obj.address: idx for idx, obj in enumerate(already_fetched_houses)}
+
+    if address in already_fetched_addresses:
+        return already_fetched_houses[already_fetched_addresses[address]]
+
+    logging.info(f"Fetch address {address} from geocoder")
+    geocoder = GeocoderClient()
+    return get_from_geocoder(address, geocoder)
+
 
 def dump_addresses_to_file(addresses_with_coordinates: list[AddressInfo]):
     with open(f'{get_path_for_saving()}/houses_geo_info.json', "w") as stream:
