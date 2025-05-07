@@ -113,6 +113,6 @@ def save_aggregated_hexagons_information():
 
 def calculate_water_parameters_task():
     save_coordinates_and_water_parameters()
-    save_aggregated_hexagons_information()
+    # save_aggregated_hexagons_information()
 
 

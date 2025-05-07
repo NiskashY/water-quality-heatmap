@@ -11,10 +11,22 @@
         margin: 0;
         padding: 0;
       }
-      .controls {
+      .controls-container {
+        display: flex;
         padding: 15px;
         background: #f5f5f5;
         border-bottom: 1px solid #ddd;
+        gap: 20px;
+      }
+      .control-panel {
+        flex: 1;
+      }
+      .water-params-panel {
+        flex: 1;
+        background: white;
+        padding: 15px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       }
       .control-group {
         margin-bottom: 15px;
@@ -41,22 +53,69 @@
       button:hover {
         background: #1458cc;
       }
+      .hint_window {
+        position: absolute;
+        transform: translate(40px, -50%);
+        padding: 14px;
+        background: #ffffff;
+        width: 124px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px 0px rgba(95, 105, 131, 0.1), 0px 4px 24px 0px rgba(95, 105, 131, 0.04);
+        gap: 8px;
+      }
+      .hint_window__title {
+        font-weight: 500;
+        font-size: 12px;
+        color: #050d33;
+        margin-bottom: 8px;
+      }
+      .hint_window__text {
+        font-weight: 400;
+        font-size: 10px;
+        color: #7b7d85;
+      }
       #map {
         width: 100%;
         height: 600px;
       }
-      #info-panel {
-        padding: 15px;
-        background: #f9f9f9;
-        border-top: 1px solid #ddd;
+      .param-row {
+        display: flex;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+      }
+      .param-name {
+        flex: 2;
+        font-weight: bold;
+      }
+      .param-value {
+        flex: 1;
+        text-align: right;
+      }
+      .param-units {
+        flex: 1;
+        color: #666;
+        text-align: right;
+      }
+      .param-limits {
+        flex: 2;
+        color: #666;
+        font-size: 0.9em;
+        text-align: right;
+      }
+      .water-params-title {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        color: #196dff;
+        font-weight: bold;
       }
     </style>
     <script>
       let map;
       let currentHexagons = [];
 
-      async function fetch_hexagons_with_colors(hex_res) {
-          url = `http://localhost:5000/v1/hexagon/all/${hex_res}/colors`;
+      async function fetch_hexagons_info(hex_res) {
+          url = `http://localhost:5000/v1/hexagon/all/${hex_res}/info`;
           const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -75,34 +134,72 @@
           currentHexagons = [];
       }
 
+      function getPolygonStyle(r, g, b, fillOpacityValue) {
+          const POLYGON_STYLE = {
+            stroke: [{color: '#196dff', width: 2}],
+            fill: `rgb(${r}, ${g}, ${b})`,
+            fillOpacity: fillOpacityValue,
+            simplificationRate: 0
+          };
+          return POLYGON_STYLE
+      }
+
+      function updatePolygonProps(polygon, fillOpacityValue) {
+          polygon.update({
+            id: polygon.id,
+            geometry: polygon.geometry,
+            style: getPolygonStyle(
+                polygon.properties.color[0],
+                polygon.properties.color[1],
+                polygon.properties.color[2],
+                fillOpacityValue
+            ),
+            properties: polygon.properties
+          });
+
+          // Update water parameters display when hovering
+          if (fillOpacityValue > 1) { // Only when mouse enters
+            updateWaterParameters(polygon.properties.hint.avg_water_parameters);
+          }
+      }
+
+      function updateWaterParameters(params) {
+          document.getElementById('smell-value').textContent = params?.smell ? Number(params.smell.value).toFixed(3) : '-';
+          document.getElementById('taste-value').textContent = params?.taste ? Number(params.taste.value).toFixed(3) : '-';
+          document.getElementById('color-value').textContent = params?.color ? Number(params.color.value).toFixed(3) : '-';
+          document.getElementById('muddiness-value').textContent = params?.muddiness ? Number(params.muddiness.value).toFixed(3) : '-';
+          document.getElementById('general-mineralization-value').textContent = params?.general_mineralization ? Number(params.general_mineralization.value).toFixed(3) : '-';
+      }
+
       async function updateHexagons(hex_res) {
           clearHexagons();
-          const hexagon_with_colors = await fetch_hexagons_with_colors(hex_res);
-          const {YMapFeature} = ymaps3;
+          const hexagons_info = await fetch_hexagons_info(hex_res);
 
-          hexagon_with_colors.forEach(function(item, index) {
-              const [hex_id, [r, g, b]] = item;
+          hexagons_info.forEach(function(item, index) {
+              const hex_id = item.hex_id;
+              const [r, g, b] = item.hex_color;
+              const created_at = item.created_at;
+              const avg_water_parameters = item.avg_water_parameters;
+
               const hexagonBoundary = h3.cellToBoundary(hex_id);
 
               const coordinates = hexagonBoundary.map(point => [point[1], point[0]]);
               coordinates.push(coordinates[0]);
 
-              const POLYGON_STYLE = {
-                stroke: [{color: '#196dff', width: 2}],
-                fill: `rgb(${r}, ${g}, ${b})`,
-                fillOpacity: 0.7,
-                simplificationRate: 0
-              };
-
-              const polygon = new YMapFeature({
+              const polygon = new ymaps3.YMapFeature({
+                  id: `polygon_${hex_id}`,
                   geometry: {
                       type: 'Polygon',
                       coordinates: [coordinates]
                   },
-                  style: POLYGON_STYLE,
+                  style: getPolygonStyle(r, g, b, 0.7),
                   properties: {
                       hex_id: hex_id,
-                      color: [r, g, b]
+                      color: [r, g, b],
+                      hint: {
+                        "hex_id": hex_id,
+                        "avg_water_parameters": avg_water_parameters
+                      }
                   }
               });
 
@@ -113,7 +210,8 @@
 
       async function initMap() {
           await ymaps3.ready;
-          const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapListener} = ymaps3;
+          const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapListener, YMapEntity} = ymaps3;
+          const {YMapHint, YMapHintContext} = await ymaps3.import('@yandex/ymaps3-hint@0.0.1');
 
           map = new YMap(
               document.getElementById('map'),
@@ -127,6 +225,68 @@
                   new YMapDefaultSchemeLayer({}),
                   new YMapDefaultFeaturesLayer({})
               ]
+          );
+
+          map.addChild(
+              (hint = new YMapHint({
+                  hint: (object) => object?.properties?.hint
+              }))
+          );
+
+          hint.addChild(
+              new (class MyHint extends YMapEntity {
+                  _createElement() {
+                      const windowElement = document.createElement('div');
+                      windowElement.classList.add('hint_window');
+
+                      const windowElementTitle = document.createElement('div');
+                      windowElementTitle.classList.add('hint_window__title');
+
+                      const windowElementText = document.createElement('div');
+                      windowElementText.classList.add('hint_window__text');
+
+                      windowElement.appendChild(windowElementTitle);
+                      windowElement.appendChild(windowElementText);
+                      return windowElement;
+                  }
+
+                  _onAttach() {
+                      this._element = this._createElement();
+
+                      this._detachDom = ymaps3.useDomContext(this, this._element);
+                      this._watchContext(
+                          YMapHintContext,
+                          () => {
+                              const hintContext = this._consumeContext(YMapHintContext)?.hint;
+                              this._element.firstChild.textContent = hintContext?.hex_id;
+                              this._element.lastChild.textContent = "Параметры воды";
+                          },
+                          {immediate: true}
+                      );
+                  }
+                  _onDetach() {
+                      this._detachDom();
+                  }
+              })()
+          );
+
+          map.addChild(
+            new YMapListener({
+              onMouseEnter(type, entity) {
+                if (type) {
+                  if (type.type == "feature") {
+                    updatePolygonProps(type.entity, 2)
+                  }
+                }
+              },
+              onMouseLeave(type, entity) {
+                if (type) {
+                  if (type.type == "feature") {
+                    updatePolygonProps(type.entity, 0.7)
+                  }
+                }
+              }
+            })
           );
 
           const defaultResolution = document.getElementById('hex-resolution').value;
@@ -146,26 +306,67 @@
 
   <body>
     <div id="map"></div>
-    <div class="controls">
-      <div class="control-group">
-        <label for="hex-id">ID гексагона:</label>
-        <input type="text" id="hex-id" readonly>
+    <div class="controls-container">
+      <div class="control-panel">
+        <div class="control-group">
+          <label for="hex-id">ID гексагона:</label>
+          <input type="text" id="hex-id" readonly>
+        </div>
+
+        <div class="control-group">
+          <label for="hex-resolution">Разрешение гексагона:</label>
+          <select id="hex-resolution">
+            <option value="7">7 (крупные)</option>
+            <option value="8" selected>8 (средние)</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="address">Адрес:</label>
+          <input type="text" id="address" readonly>
+        </div>
+
+        <button id="update-btn">Обновить гексагоны</button>
       </div>
 
-      <div class="control-group">
-        <label for="hex-resolution">Разрешение гексагона:</label>
-        <select id="hex-resolution">
-          <option value="7">7 (крупные)</option>
-          <option value="8" selected>8 (средние)</option>
-        </select>
-      </div>
+      <div class="water-params-panel">
+        <div class="water-params-title">Параметры воды</div>
 
-      <div class="control-group">
-        <label for="address">Адрес:</label>
-        <input type="text" id="address" readonly>
-      </div>
+        <div class="param-row">
+          <div class="param-name">Запах</div>
+          <div class="param-value" id="smell-value">-</div>
+          <div class="param-units">Баллы</div>
+          <div class="param-limits">Норма: <2</div>
+        </div>
 
-      <button id="update-btn">Обновить гексагоны</button>
+        <div class="param-row">
+          <div class="param-name">Цветность</div>
+          <div class="param-value" id="color-value">-</div>
+          <div class="param-units">Баллы</div>
+          <div class="param-limits">Норма: <2</div>
+        </div>
+
+        <div class="param-row">
+          <div class="param-name">Мутность</div>
+          <div class="param-value" id="muddiness-value">-</div>
+          <div class="param-units">мг/дм3</div>
+          <div class="param-limits">Норма: <1.5</div>
+        </div>
+
+        <div class="param-row">
+          <div class="param-name">Привкус</div>
+          <div class="param-value" id="taste-value">-</div>
+          <div class="param-units">Баллы</div>
+          <div class="param-limits">Норма: <2</div>
+        </div>
+
+        <div class="param-row">
+          <div class="param-name">Общая минерализация</div>
+          <div class="param-value" id="general-mineralization-value">-</div>
+          <div class="param-units">мг/дм3</div>
+          <div class="param-limits">Норма: 100-1000</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

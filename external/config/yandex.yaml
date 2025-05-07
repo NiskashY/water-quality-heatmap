@@ -1,7 +1,6 @@
 yandex:
   geocoder:
 #    api_key: "52afd32b-2096-48e3-a8cf-8126cc58c620"
-    api_key: "73d85061-9a55-44c1-a354-caada1fc9e8e"
-    requests_limit: 2
+    api_key: "350d73aa-6e63-4ea4-a773-ac2baeadf011"
+    requests_limit: 0
     chunk_request_size: 10
-  js_maps:

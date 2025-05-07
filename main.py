@@ -120,6 +120,7 @@ if __name__ == "__main__":
     # enrich_and_save()
     # #
     calculate_water_parameters_task()
+    # save_aggregated_hexagons_information()
     # save_coordinates()
     # save_aggregated_hexagons_information()
 
