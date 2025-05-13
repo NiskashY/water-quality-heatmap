@@ -1,3 +1,9 @@
+# Example of geo_config.yaml
+# map_settings:
+#   allowed_hexagons_resolutions:
+#     - 7
+#     - 8
+
 import os, yaml
 from dataclasses import dataclass
 

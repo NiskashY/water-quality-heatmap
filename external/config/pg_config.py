@@ -1,3 +1,9 @@
+# Example of pg.yaml
+# pg:
+#   dbname: some_db
+#   username: some_admin
+#   password: some_password
+
 import os, yaml
 from dataclasses import dataclass
 
