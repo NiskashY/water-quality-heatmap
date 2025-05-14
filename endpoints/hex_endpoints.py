@@ -2,6 +2,7 @@ import json
 import logging
 
 from flask import Flask, jsonify
+from flask_cors import CORS
 
 from external.config.geo_config import GeoConfig, read_geo_config
 from external.pg.client import PgClient
@@ -10,6 +11,8 @@ from logic.water_quality.water_parameters import retrieve_water_parameters
 from model.geo import Hexagon, GeoEncoder
 
 app = Flask(__name__)
+CORS(app)
+
 logging.basicConfig(
     format='%(levelname)s:%(name)s - [%(asctime)s] "%(message)s"',
     datefmt='%d/%b/%Y %H:%M:%S',  # Формат даты как у Werkzeug
