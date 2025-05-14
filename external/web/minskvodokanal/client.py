@@ -104,7 +104,7 @@ class MinskVodokanalClient:
     def v1_request(self, address: str) -> Optional[WaterParameters]:
         for i in range(self.__retries_count):
             try:
-                logging.debug(f"MinskVodokanal GET request for {address}")
+                logging.info(f"MinskVodokanal GET request for {address}")
                 self.__driver.get(self.__url)
 
                 logging.debug("Send address to site")

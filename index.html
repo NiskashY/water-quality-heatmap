@@ -3,30 +3,48 @@
   <head>
     <title>Гексагональная карта с выбором параметров</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="https://api-maps.yandex.ru/v3/?apikey=73d85061-9a55-44c1-a354-caada1fc9e8e&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=b67a306e-b4a1-42c0-a68b-4f8ae4b5b77b&lang=ru_RU"></script>
+<!--    <script src="https://api-maps.yandex.ru/v3/?apikey=73d85061-9a55-44c1-a354-caada1fc9e8e&lang=ru_RU"></script>-->
     <script src="https://unpkg.com/h3-js"></script>
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #map-container {
+        flex: 7; /* 60% высоты */
+        position: relative;
+      }
+      #map {
+        width: 100%;
+        height: 100%;
       }
       .controls-container {
+        flex: 3; /* 40% высоты */
         display: flex;
         padding: 15px;
         background: #f5f5f5;
-        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
         gap: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
       }
       .control-panel {
         flex: 1;
+        min-width: 0;
       }
       .water-params-panel {
         flex: 1;
+        min-width: 0;
         background: white;
         padding: 15px;
         border-radius: 4px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        overflow-y: auto;
       }
       .control-group {
         margin-bottom: 15px;
@@ -41,6 +59,7 @@
         padding: 8px;
         border: 1px solid #ddd;
         border-radius: 4px;
+        box-sizing: border-box;
       }
       .invalid {
         border-color: #ff0000;
@@ -78,10 +97,6 @@
         font-size: 10px;
         color: #7b7d85;
       }
-      #map {
-        width: 100%;
-        height: 600px;
-      }
       .param-row {
         display: flex;
         margin-bottom: 10px;
@@ -117,12 +132,55 @@
         color: #196dff;
         font-weight: bold;
       }
+
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+        }
+        .controls-container {
+          flex-direction: column;
+        }
+        #map-container {
+          flex: 1;
+          min-height: 60vh;
+        }
+      }
     </style>
     <script>
       ymaps3.import.registerCdn('https://cdn.jsdelivr.net/npm/{package}', [
         '@yandex/ymaps3-default-ui-theme@0.0.19',
         '@yandex/ymaps3-hint@0.1.1'
       ]);
+
+      function get_server_url() {
+        return 'fetchers.testniskashywaterqualityheatmaprepo.ip-ddns.com/'
+      }
+
+      async function fetch_hexagons_info(hex_res) {
+          url = `http://${get_server_url()}/v1/hexagon/all/${hex_res}/info`;
+          const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+              'Access-Control-Allow-Origin': '*'
+            }
+          });
+          const result = await response.json();
+          console.log("Response from http server for hexagon colors", result);
+          return result;
+      }
+
+      async function fetch_address_info(address) {
+          url = `http://${get_server_url()}/v1/address/${address}/info`;
+          const response = await fetch(url, {
+            method: 'GET',
+            headers: {
+              'Access-Control-Allow-Origin': '*'
+            }
+          });
+          const result = await response.json();
+          console.log("Response from http server for address_info", result);
+          return result;
+      }
 
       let map;
       let map_features_layer;
@@ -153,32 +211,6 @@
           map.removeChild(currentHexagonMarker);
           currentHexagonMarker = null;
         }
-      }
-
-      async function fetch_hexagons_info(hex_res) {
-          url = `http://localhost:5000/v1/hexagon/all/${hex_res}/info`;
-          const response = await fetch(url, {
-            method: 'GET',
-            headers: {
-              'Access-Control-Allow-Origin': '*'
-            }
-          });
-          const result = await response.json();
-          console.log("Response from http server for hexagon colors", result);
-          return result;
-      }
-
-      async function fetch_address_info(address) {
-          url = `http://localhost:5000/v1/address/${address}/info`;
-          const response = await fetch(url, {
-            method: 'GET',
-            headers: {
-              'Access-Control-Allow-Origin': '*'
-            }
-          });
-          const result = await response.json();
-          console.log("Response from http server for address_info", result);
-          return result;
       }
 
       function clearHexagons() {
@@ -454,9 +486,19 @@
                   if (!h3.isValidCell(this.value)) {
                       this.classList.add('invalid');
                       this.blur();
+<!--                      alert('Invalid hex. Example of valid hex_id = 881f4e14cdfffff')-->
                   } else {
-                    resetAllMarkers();
-                    move_map_to_hexagon_and_show_water_parameters(map, this.value);
+                    const h3_rs = h3.getResolution(this.value);
+                    if (h3_rs != 7 && h3_rs != 8) {
+                      this.classList.add('invalid');
+                      this.blur();
+                      alert('Hex resolution out of bounds. Supported resolutions = [7, 8]')
+                    } else {
+                      resetAllMarkers();
+                      document.getElementById('hex-resolution').value=h3_rs;
+                      updateHexagons(h3_rs);
+                      move_map_to_hexagon_and_show_water_parameters(map, this.value);
+                    }
                   }
               }
           });
@@ -496,10 +538,10 @@
 
           document.getElementById('hex-resolution').addEventListener('change', async () => {
               const resolution = document.getElementById('hex-resolution').value;
-              if (resolution === "None") {
-                clearHexagons();
-              } else {
+              if (resolution != "None") {
                 await updateHexagons(resolution);
+              } else {
+                clearHexagons();
               }
           });
       });
@@ -507,7 +549,9 @@
   </head>
 
   <body>
-    <div id="map"></div>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
     <div class="controls-container">
       <div class="control-panel">
         <div class="control-group">

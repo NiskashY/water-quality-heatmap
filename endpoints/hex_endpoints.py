@@ -1,13 +1,20 @@
 import json
+import logging
 
 from flask import Flask, jsonify
 
+from external.config.geo_config import GeoConfig, read_geo_config
 from external.pg.client import PgClient
 from logic.geo.houses import retrieve_address_info
 from logic.water_quality.water_parameters import retrieve_water_parameters
 from model.geo import Hexagon, GeoEncoder
 
 app = Flask(__name__)
+logging.basicConfig(
+    format='%(levelname)s:%(name)s - [%(asctime)s] "%(message)s"',
+    datefmt='%d/%b/%Y %H:%M:%S',  # Формат даты как у Werkzeug
+    level=logging.INFO,
+)
 
 @app.route("/v1/hexagon/all/<int:hex_res>/colors", methods=["GET"])
 def get_hexagons_with_colors(hex_res: int):
@@ -43,3 +50,9 @@ def get_address_info(address: str):
             )
 
     return json.dumps(address_info, cls=GeoEncoder, ensure_ascii=False)
+
+
+@app.route("/v1/hexagon/available_resolutions", methods=["GET"])
+def get_get_available_resolutions():
+    geo_config = read_geo_config()
+    return geo_config.allowed_hexagons_resolutions
