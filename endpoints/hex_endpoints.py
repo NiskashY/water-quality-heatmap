@@ -1,11 +1,15 @@
 import json
 import logging
+import time
 
+import schedule
 from flask import Flask, jsonify
 from flask_cors import CORS
 
 from external.config.geo_config import GeoConfig, read_geo_config
 from external.pg.client import PgClient
+from external.web.ato.client import save_addresses
+from logic.cron.calculate_water_parameters_task import save_coordinates_and_water_parameters
 from logic.geo.houses import retrieve_address_info
 from logic.water_quality.water_parameters import retrieve_water_parameters
 from model.geo import Hexagon, GeoEncoder

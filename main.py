@@ -1,4 +1,5 @@
 import logging
+import time
 
 import h3
 import schedule
@@ -121,9 +122,12 @@ def test_pg_client_select_all_available_address_info():
 
 schedule.every().monday.at('03:00', 'Europe/Minsk').do(save_addresses)
 schedule.every().day.at('22:00', 'Europe/Minsk').do(save_coordinates_and_water_parameters)
+schedule.every().day.at('02:00', 'Europe/Minsk').do(save_aggregated_hexagons_information)
 
 if __name__ == "__main__":
-    pass
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
     # test_pg_client_select_address_info()
     # test_pg_client_select_hex_info()
     # test_pg_client_select_all_hexes()
