@@ -57,15 +57,16 @@ def get_houses_for_street(street_num, session):
         logging.error(f"Ошибка при получении домов для улицы {street_num}: {e}")
         return []
 
-def get_all_addresses():
+def get_all_addresses(use_prefetched_values=True):
     """Получаем все адреса Минска"""
     addresses = []
     geo_prefix = 'Республика Беларусь, г. Минск'
 
-    with open(f'{get_path_for_saving()}/minsk_addresses.txt') as f:
-        lines = f.read().splitlines()
-        if lines:
-            return [f'{geo_prefix}, {address}' for address in lines]
+    if use_prefetched_values:
+        with open(f'{get_path_for_saving()}/minsk_addresses.txt') as f:
+            lines = f.read().splitlines()
+            if lines:
+                return [f'{geo_prefix}, {address}' for address in lines]
 
     with requests.Session() as session:
         logging.info(f'ATO.BY client. Starting web-scraping.')
@@ -85,5 +86,15 @@ def get_all_addresses():
                 for house in houses:
                     full_address = f"{street['name']}, {house}"
                     addresses.append(f'{geo_prefix}, {full_address}')
+
+    return addresses
+
+def save_addresses():
+    """Обновляем адреса"""
+    addresses = get_all_addresses(use_prefetched_values=False)
+
+    with open(f'{get_path_for_saving()}/minsk_addresses.txt', 'w') as f:
+        f.writelines(f"{item}\n" for item in addresses)
+
 
     return addresses

@@ -1,3 +1,9 @@
+# Example of yandex.yaml
+# yandex:
+#   geocoder:
+#     api_key: "<YOUR_API_KEY>"
+#     requests_limit: 0
+#     chunk_request_size: 10
 import os, yaml
 from dataclasses import dataclass
 

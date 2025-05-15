@@ -2,11 +2,10 @@ import logging
 import random
 
 from tqdm import tqdm
-import more_itertools as mit
 
 from external.pg.client import PgClient
 from external.web.ato.client import get_all_addresses
-from external.config.yandex_configs import read_geocoder_config
+from external.config.yandex_configs import GeocoderConfig, read_geocoder_config
 
 from logic.geo.houses import retrieve_addresses_info
 from logic.water_quality.color import determine_color
@@ -63,15 +62,7 @@ def save_coordinates():
             address_info.water_parameters
         )
 
-def save_coordinates_and_water_parameters():
-    geocoder_config = read_geocoder_config()
-
-    addresses_of_minsk = get_all_addresses()
-    all_addresses_infos = retrieve_addresses_info(
-        addresses_of_minsk,
-        geocoder_requests_limit=geocoder_config.requests_limit
-    )
-
+def save_water_parameters(all_addresses_infos: list[AddressInfo], geocoder_config: GeocoderConfig):
     batched = list(mit.chunked(all_addresses_infos, geocoder_config.chunk_request_size))
     random.shuffle(batched)
     for idx, addresses_infos in enumerate(batched):
@@ -95,7 +86,19 @@ def save_coordinates_and_water_parameters():
                 address_info.address,
                 address_info.coordinates,
                 fetched_water_parameters
-            )
+            ) 
+
+def save_coordinates_and_water_parameters():
+    geocoder_config = read_geocoder_config()
+
+    addresses_of_minsk = get_all_addresses()
+    all_addresses_infos = retrieve_addresses_info(
+        addresses_of_minsk,
+        geocoder_requests_limit=geocoder_config.requests_limit
+    )
+    save_water_parameters(all_addresses_infos, geocoder_config)
+
+
 
 def save_aggregated_hexagons_information():
     pg_client = PgClient()

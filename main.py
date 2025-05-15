@@ -1,13 +1,15 @@
 import logging
 
 import h3
+import schedule
 
 import model
 from external.pg.client import PgClient
 from external.web.ato.client import get_all_addresses
 from external.web.minskvodokanal.client import MinskVodokanalClient
+from external.web.ato.client import get_all_addresses, save_addresses
 from logic.cron.calculate_water_parameters_task import calculate_water_parameters_task, save_coordinates, \
-    save_aggregated_hexagons_information
+    save_aggregated_hexagons_information, save_coordinates_and_water_parameters, save_water_parameters
 from logic.geo.houses import dump_addresses_to_file, read_already_fetched_houses, enrich_with_hexagons, \
     retrieve_addresses_info
 from model.geo import make_hex_id, AddressInfo, Point, Hexagon
@@ -117,7 +119,11 @@ def test_pg_client_select_all_available_address_info():
     res = pg_client.get_all_address_info()
     assert len(res) == 12
 
-# if __name__ == "__main__":
+schedule.every().monday.at('03:00', 'Europe/Minsk').do(save_addresses)
+schedule.every().day.at('22:00', 'Europe/Minsk').do(save_coordinates_and_water_parameters)
+
+if __name__ == "__main__":
+    pass
     # test_pg_client_select_address_info()
     # test_pg_client_select_hex_info()
     # test_pg_client_select_all_hexes()
@@ -139,8 +145,8 @@ def test_pg_client_select_all_available_address_info():
 # print(h3_cell)
 # print(nearby_house)
 #
-client = MinskVodokanalClient()
-print(client.v1_request("Республика Беларусь, г.Минск, ул. Панченко 76"))
+# client = MinskVodokanalClient()
+# print(client.v1_request("Республика Беларусь, г.Минск, ул. Панченко 76"))
 #
 # pg_client = PgClient()
 # print(pg_client.get_hex("891fb466257ffff"))
