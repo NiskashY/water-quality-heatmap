@@ -62,6 +62,7 @@ def get_from_geocoder(address: str, geocoder: GeocoderClient) -> AddressInfo | N
             address=address,
             coordinates=coordinates,
             water_parameters=None,
+            is_fetched_from_pg=False
         )
     except yandex_geocoder.exceptions.NothingFound as e:
         logging.warning(f'Not found coordinates for address={address}. e={e}')

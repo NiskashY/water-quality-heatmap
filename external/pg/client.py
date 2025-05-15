@@ -186,7 +186,8 @@ def _parse_address_info(db_row) -> AddressInfo:
         created_at=created_at,
         address=address,
         coordinates=Point(latitude=float(coordinates[0]), longitude=float(coordinates[1])),
-        water_parameters=_parse_water_params(water_params)
+        water_parameters=_parse_water_params(water_params),
+        is_fetched_from_pg=True,
     )
 
 

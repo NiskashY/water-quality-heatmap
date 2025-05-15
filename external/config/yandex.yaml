@@ -4,5 +4,5 @@ yandex:
     # api_key: "350d73aa-6e63-4ea4-a773-ac2baeadf011" # localhost key
     # api_key: "2b0da60a-c6f2-4567-8484-23ac0bc459f0" # ipv4 key
     api_key: "73d85061-9a55-44c1-a354-caada1fc9e8e" # ipv4 key
-    requests_limit: 10000
+    requests_limit: 1000
     chunk_request_size: 10

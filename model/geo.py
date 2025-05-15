@@ -29,6 +29,7 @@ class AddressInfo:
     address: str
     coordinates: Point
     water_parameters: Optional[WaterParameters]
+    is_fetched_from_pg: bool
 
 class GeoEncoder(JSONEncoder):
     def default(self, obj: Any) -> Any:
@@ -57,7 +58,7 @@ class GeoDecoder(JSONDecoder):
             return WaterParameters(**dct)
 
         if 'created_at' in dct and 'address' in dct and 'coordinates' in dct:
-            addr = AddressInfo(**dct)
+            addr = AddressInfo(**dct, is_fetched_from_pg=True)
             addr.created_at = datetime.strptime(addr.created_at, '%Y-%m-%d %H:%M:%S.%f')
             return addr
         if 'address' in dct and 'coordinates' in dct:

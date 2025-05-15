@@ -9,6 +9,7 @@ from flask_cors import CORS
 from external.config.geo_config import GeoConfig, read_geo_config
 from external.pg.client import PgClient
 from external.web.ato.client import save_addresses
+from external.web.minskvodokanal.client import MinskVodokanalClient
 from logic.cron.calculate_water_parameters_task import save_coordinates_and_water_parameters
 from logic.geo.houses import retrieve_address_info
 from logic.water_quality.water_parameters import retrieve_water_parameters
@@ -42,6 +43,11 @@ def get_hexagon_info(hex_id: str):
     hexagon = pg_client.get_info_about_hex(hex_id)
     return json.dumps(hexagon, cls=GeoEncoder, ensure_ascii=False)
 
+@app.route("/v1/address/<address>/water", methods=["GET"])
+def get_address_water(address: str):
+    client = MinskVodokanalClient()
+    water_parameters = client.v1_request(address)
+    return json.dumps(water_parameters, cls=GeoEncoder, ensure_ascii=False)
 
 @app.route("/v1/address/<address>/info", methods=["GET"])
 def get_address_info(address: str):
