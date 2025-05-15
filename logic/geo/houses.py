@@ -13,6 +13,7 @@ from tqdm.contrib.logging import logging_redirect_tqdm
 import model
 from external.pg.client import PgClient
 from external.yandex.geocoder.client import GeocoderClient
+from external.config.yandex_configs import read_geocoder_config
 from model.geo import GeoPointEncoder, make_hex_id, AddressInfo, GeoEncoder, Point, GeoDecoder
 from resources.utils import get_path_for_saving
 
@@ -65,7 +66,7 @@ def get_from_geocoder(address: str, geocoder: GeocoderClient) -> AddressInfo | N
     except yandex_geocoder.exceptions.NothingFound as e:
         logging.warning(f'Not found coordinates for address={address}. e={e}')
     except yandex_geocoder.exceptions.InvalidKey as e:
-        logging.error("Limit of requests reached. Consider changing api-key or increasing limits")
+        logging.error(f"Limit of requests reached. Consider changing api-key = {read_geocoder_config().api_key} or increasing limits")
     return None
 
 def retrieve_addresses_info(addresses: list[str], geocoder_requests_limit=None):
