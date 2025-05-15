@@ -1,0 +1,4 @@
+minskvodokanal:
+    daily_requests_limit: 600
+    daily_consecutive_empty_responses_threshold: 10
+    chunk_request_size: 10
