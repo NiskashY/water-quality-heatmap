@@ -153,12 +153,12 @@
       ]);
 
       function get_server_url() {
-        return 'fetchers.testniskashywaterqualityheatmaprepo.ip-ddns.com'
-<!--        return 'localhost:5000'-->
+        return 'https://fetchers.testniskashywaterqualityheatmaprepo.ip-ddns.com'
+<!--        return 'http://localhost:5000'-->
       }
 
       async function fetch_hexagons_info(hex_res) {
-          url = `http://${get_server_url()}/v1/hexagon/all/${hex_res}/info`;
+          url = `${get_server_url()}/v1/hexagon/all/${hex_res}/info`;
           const response = await fetch(url, {
             method: 'GET',
             headers: {
@@ -171,7 +171,7 @@
       }
 
       async function fetch_address_info(address) {
-          url = `http://${get_server_url()}/v1/address/${address}/info`;
+          url = `${get_server_url()}/v1/address/${address}/info`;
           const response = await fetch(url, {
             method: 'GET',
             headers: {
