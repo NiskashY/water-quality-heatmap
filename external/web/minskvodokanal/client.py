@@ -91,19 +91,17 @@ class MinskVodokanalClient:
     """
 
     def __init__(self):
-        chrome_options = Options()
-        chrome_options.add_argument("--headless=new")
+        self.chrome_options = Options()
+        self.chrome_options.add_argument("--headless=new")
         logging.debug("Starting webdriver for minskvodokanal")
-        self.__driver = webdriver.Chrome(options=chrome_options)
         self.__retries_count = 2
         logging.debug("Webdriver started")
 
-    def __del__(self):
-        self.__driver.quit()
 
     def v1_request(self, address: str) -> Optional[WaterParameters]:
         for i in range(self.__retries_count):
             try:
+                self.__driver = webdriver.Chrome(options=self.chrome_options)        
                 logging.info(f"MinskVodokanal GET request for {address}")
                 self.__driver.get(self.__url)
 
@@ -136,5 +134,7 @@ class MinskVodokanalClient:
                 return wp
             except selenium.common.exceptions.StaleElementReferenceException as e:
                 logging.error(e)
+            finally:
+                self.__driver.close()
 
         return None
