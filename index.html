@@ -153,8 +153,8 @@
       ]);
 
       function get_server_url() {
-        return 'http://fetchers.testniskashywaterqualityheatmaprepo.ip-ddns.com'
-        // return 'http://localhost:5000'
+        // return 'http://fetchers.testniskashywaterqualityheatmaprepo.ip-ddns.com'
+        return 'http://localhost:5000'
       }
 
       async function fetch_hexagons_info(hex_res) {
@@ -271,6 +271,8 @@
 
       async function updateHexagons(hex_res) {
           clearHexagons();
+          resetAllMarkers();          
+          updateWaterParameters(null, null);
           const hexagons_info = await fetch_hexagons_info(hex_res);
 
           document.getElementById('created-at-timestamp').value = findMaxCreatedAt(hexagons_info);
