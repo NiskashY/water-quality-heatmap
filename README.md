@@ -1,4 +1,8 @@
-# Сайт
+# water-quality-heatmap
+Показывает качество воды по гексагонам на основе данных из Минского водоканала 
+
+![Preview](resources/image.png)
+
 https://testniskashywaterqualityheatmaprepo.ip-ddns.com/
 
 # Заходим в виртуальное окружение питона
