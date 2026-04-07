@@ -1,4 +1,5 @@
-# Сайт
+![Preview](resources/image.png)
+
 https://testniskashywaterqualityheatmaprepo.ip-ddns.com/
 
 # Заходим в виртуальное окружение питона
